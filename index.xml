@@ -1,0 +1,255 @@
+﻿
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head profile="http://gmpg.org/xfn/11">
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>protocol7  </title>
+
+ <meta name="generator" content="WordPress 2.8.4" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="http://protocol7.com/wp/wp-content/themes/jekkyl/style.css" type="text/css" media="screen" />
+	<!--[if lt ie 7]>	
+		<link rel="stylesheet" type="text/css" media="screen" href="http://protocol7.com/wp/wp-content/themes/jekkyl/ie-win.css" />
+	<![endif]-->	
+	
+<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://protocol7.com/feed/" />
+
+<link rel="alternate" type="text/xml" title="RSS .92" href="http://protocol7.com/feed/rss/" />
+
+<link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="http://protocol7.com/feed/atom/" />
+
+<link rel="pingback" href="http://protocol7.com/wp/xmlrpc.php" />
+
+	<link rel='archives' title='January 2011' href='http://protocol7.com/archives/2011/01/' />
+	<link rel='archives' title='April 2010' href='http://protocol7.com/archives/2010/04/' />
+	<link rel='archives' title='October 2009' href='http://protocol7.com/archives/2009/10/' />
+	<link rel='archives' title='June 2009' href='http://protocol7.com/archives/2009/06/' />
+	<link rel='archives' title='April 2009' href='http://protocol7.com/archives/2009/04/' />
+	<link rel='archives' title='March 2009' href='http://protocol7.com/archives/2009/03/' />
+	<link rel='archives' title='February 2009' href='http://protocol7.com/archives/2009/02/' />
+	<link rel='archives' title='December 2008' href='http://protocol7.com/archives/2008/12/' />
+	<link rel='archives' title='November 2008' href='http://protocol7.com/archives/2008/11/' />
+	<link rel='archives' title='October 2008' href='http://protocol7.com/archives/2008/10/' />
+	<link rel='archives' title='August 2008' href='http://protocol7.com/archives/2008/08/' />
+	<link rel='archives' title='July 2008' href='http://protocol7.com/archives/2008/07/' />
+	<link rel='archives' title='June 2008' href='http://protocol7.com/archives/2008/06/' />
+	<link rel='archives' title='May 2008' href='http://protocol7.com/archives/2008/05/' />
+	<link rel='archives' title='April 2008' href='http://protocol7.com/archives/2008/04/' />
+	<link rel='archives' title='March 2008' href='http://protocol7.com/archives/2008/03/' />
+	<link rel='archives' title='February 2008' href='http://protocol7.com/archives/2008/02/' />
+	<link rel='archives' title='January 2008' href='http://protocol7.com/archives/2008/01/' />
+	<link rel='archives' title='December 2007' href='http://protocol7.com/archives/2007/12/' />
+	<link rel='archives' title='November 2007' href='http://protocol7.com/archives/2007/11/' />
+	<link rel='archives' title='October 2007' href='http://protocol7.com/archives/2007/10/' />
+	<link rel='archives' title='September 2007' href='http://protocol7.com/archives/2007/09/' />
+	<link rel='archives' title='August 2007' href='http://protocol7.com/archives/2007/08/' />
+	<link rel='archives' title='July 2007' href='http://protocol7.com/archives/2007/07/' />
+	<link rel='archives' title='June 2007' href='http://protocol7.com/archives/2007/06/' />
+	<link rel='archives' title='May 2007' href='http://protocol7.com/archives/2007/05/' />
+	<link rel='archives' title='April 2007' href='http://protocol7.com/archives/2007/04/' />
+	<link rel='archives' title='March 2007' href='http://protocol7.com/archives/2007/03/' />
+	<link rel='archives' title='February 2007' href='http://protocol7.com/archives/2007/02/' />
+	<link rel='archives' title='January 2007' href='http://protocol7.com/archives/2007/01/' />
+	<link rel='archives' title='December 2006' href='http://protocol7.com/archives/2006/12/' />
+	<link rel='archives' title='November 2006' href='http://protocol7.com/archives/2006/11/' />
+	<link rel='archives' title='October 2006' href='http://protocol7.com/archives/2006/10/' />
+	<link rel='archives' title='September 2006' href='http://protocol7.com/archives/2006/09/' />
+	<link rel='archives' title='August 2006' href='http://protocol7.com/archives/2006/08/' />
+	<link rel='archives' title='July 2006' href='http://protocol7.com/archives/2006/07/' />
+	<link rel='archives' title='June 2006' href='http://protocol7.com/archives/2006/06/' />
+	<link rel='archives' title='May 2006' href='http://protocol7.com/archives/2006/05/' />
+	<link rel='archives' title='April 2006' href='http://protocol7.com/archives/2006/04/' />
+	<link rel='archives' title='March 2006' href='http://protocol7.com/archives/2006/03/' />
+	<link rel='archives' title='February 2006' href='http://protocol7.com/archives/2006/02/' />
+	<link rel='archives' title='January 2006' href='http://protocol7.com/archives/2006/01/' />
+	<link rel='archives' title='December 2005' href='http://protocol7.com/archives/2005/12/' />
+	<link rel='archives' title='November 2005' href='http://protocol7.com/archives/2005/11/' />
+	<link rel='archives' title='October 2005' href='http://protocol7.com/archives/2005/10/' />
+	<link rel='archives' title='September 2005' href='http://protocol7.com/archives/2005/09/' />
+	<link rel='archives' title='August 2005' href='http://protocol7.com/archives/2005/08/' />
+	<link rel='archives' title='July 2005' href='http://protocol7.com/archives/2005/07/' />
+	<link rel='archives' title='June 2005' href='http://protocol7.com/archives/2005/06/' />
+	<link rel='archives' title='May 2005' href='http://protocol7.com/archives/2005/05/' />
+	<link rel='archives' title='April 2005' href='http://protocol7.com/archives/2005/04/' />
+	<link rel='archives' title='February 2005' href='http://protocol7.com/archives/2005/02/' />
+	<link rel='archives' title='January 2005' href='http://protocol7.com/archives/2005/01/' />
+	<link rel='archives' title='August 2004' href='http://protocol7.com/archives/2004/08/' />
+	<link rel='archives' title='July 2004' href='http://protocol7.com/archives/2004/07/' />
+	<link rel='archives' title='June 2004' href='http://protocol7.com/archives/2004/06/' />
+	<link rel='archives' title='May 2004' href='http://protocol7.com/archives/2004/05/' />
+	<link rel='archives' title='November 2003' href='http://protocol7.com/archives/2003/11/' />
+	<link rel='archives' title='September 2003' href='http://protocol7.com/archives/2003/09/' />
+	<link rel='archives' title='August 2003' href='http://protocol7.com/archives/2003/08/' />
+	<link rel='archives' title='July 2003' href='http://protocol7.com/archives/2003/07/' />
+	<link rel='archives' title='June 2003' href='http://protocol7.com/archives/2003/06/' />
+	<link rel='archives' title='May 2003' href='http://protocol7.com/archives/2003/05/' />
+	<link rel='archives' title='April 2003' href='http://protocol7.com/archives/2003/04/' />
+	<link rel='archives' title='March 2003' href='http://protocol7.com/archives/2003/03/' />
+	<link rel='archives' title='February 2003' href='http://protocol7.com/archives/2003/02/' />
+	<link rel='archives' title='January 2003' href='http://protocol7.com/archives/2003/01/' />
+	<link rel='archives' title='December 2002' href='http://protocol7.com/archives/2002/12/' />
+	<link rel='archives' title='November 2002' href='http://protocol7.com/archives/2002/11/' />
+	<link rel='archives' title='October 2002' href='http://protocol7.com/archives/2002/10/' />
+	<link rel='archives' title='September 2002' href='http://protocol7.com/archives/2002/09/' />
+	<link rel='archives' title='August 2002' href='http://protocol7.com/archives/2002/08/' />
+	<link rel='archives' title='July 2002' href='http://protocol7.com/archives/2002/07/' />
+	<link rel='archives' title='June 2002' href='http://protocol7.com/archives/2002/06/' />
+	<link rel='archives' title='May 2002' href='http://protocol7.com/archives/2002/05/' />
+	<link rel='archives' title='April 2002' href='http://protocol7.com/archives/2002/04/' />
+	<link rel='archives' title='March 2002' href='http://protocol7.com/archives/2002/03/' />
+	<link rel='archives' title='February 2002' href='http://protocol7.com/archives/2002/02/' />
+	<link rel='archives' title='January 2002' href='http://protocol7.com/archives/2002/01/' />
+	<link rel='archives' title='November 2001' href='http://protocol7.com/archives/2001/11/' />
+	<link rel='archives' title='October 2001' href='http://protocol7.com/archives/2001/10/' />
+	<link rel='archives' title='September 2001' href='http://protocol7.com/archives/2001/09/' />
+
+<link rel='stylesheet' id='openid-css'  href='http://protocol7.com/wp/wp-content/plugins/openid/f/openid.css?ver=519' type='text/css' media='all' />
+<script type='text/javascript' src='http://protocol7.com/wp/wp-includes/js/jquery/jquery.js?ver=1.3.2'></script>
+<script type='text/javascript' src='http://protocol7.com/wp/wp-content/plugins/openid/f/openid.js?ver=519'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://protocol7.com/wp/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://protocol7.com/wp/wp-includes/wlwmanifest.xml" /> 
+<link rel='index' title='protocol7' href='http://protocol7.com' />
+<meta name="generator" content="WordPress 2.8.4" />
+	<link href="http://protocol7.com/wp/wp-content/plugins/google-syntax-highlighter/Styles/SyntaxHighlighter.css" type="text/css" rel="stylesheet" />
+	        <script src='/mint/?js' type='text/javascript' language='javascript'></script>
+        <link rel='openid.server' href='http://www.myopenid.com/server' />
+        <link rel='openid.delegate' href='http://niklas.gustavsson.myopenid.com/' />
+        <meta http-equiv='X-XRDS-Location' content='http://niklas.gustavsson.myopenid.com/xrds' />
+	 <!-- Start Quantcast tag -->
+	 <script type='text/javascript' src='http://edge.quantserve.com/quant.js'></script>
+	 <script type='text/javascript'>
+		_qacct='p-33NoKC8zjhcr6';quantserve();</script>
+	<!-- End Quantcast tag -->
+
+
+         <link rel='stylesheet' type='text/css' href='http://protocol7.com/wp-custom/my-styles.css'></head>
+<script type='text/javascript'>
+var gaJsHost = (('https:' == document.location.protocol) ? 'https://ssl.' : 'http://www.');
+document.write(unescape('%3Cscript src="' + gaJsHost + 'google-analytics.com/ga.js" type="text/javascript"%3E%3C/script%3E'));
+</script>
+<script type='text/javascript'>
+var pageTracker = _gat._getTracker('UA-4857807-1');
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<meta name='microid' content='521136dce7428310f4ec7169ef3ffc66bda4c671' />
+</head>
+
+<body>
+<div class="site">
+  <div class="title">
+    <a href="http://protocol7.com">protocol7</a>
+    <a class="extra" href="/">home</a>
+  </div>
+
+	
+<div id="main-navigation">
+  <div id="main-navigation-inner">
+
+   <div class="contact">
+     <ul>
+      <li class="first"><a href="/">Home</a></li>
+      <li class=""><a href="/archive/">Archives</a></li>
+      <li class=""><a href="/projects/">Projects</a></li>
+      <li class="last"><a href="/about/">About</a></li>
+    </ul>
+  </div>
+  </div>
+</div>
+
+<div id="home">
+  <p>
+
+    <br/>
+    <!--h1>Blog Posts</h1-->
+    <ul class="posts">
+			        <li><span>09 Jan 2011</span> &raquo; <a href="http://protocol7.com/archives/2011/01/09/introducing-apache-vysper/">Introducing Apache Vysper</a></li>
+			        <li><span>04 Apr 2010</span> &raquo; <a href="http://protocol7.com/archives/2010/04/04/syncing-tweets-to-wordpress/">Syncing tweets to Wordpress</a></li>
+			        <li><span>26 Oct 2009</span> &raquo; <a href="http://protocol7.com/archives/2009/10/26/speaking-at-oredev/">Speaking at Oredev</a></li>
+			        <li><span>03 Jun 2009</span> &raquo; <a href="http://protocol7.com/archives/2009/06/03/was-plugin-for-nagios/">WAS plugin for Nagios</a></li>
+			        <li><span>12 Apr 2009</span> &raquo; <a href="http://protocol7.com/archives/2009/04/12/spring-time-clean-up/">Spring time clean up</a></li>
+			        <li><span>04 Apr 2009</span> &raquo; <a href="http://protocol7.com/archives/2009/04/04/my-sdc-presentation/">My SDC presentation</a></li>
+			        <li><span>22 Mar 2009</span> &raquo; <a href="http://protocol7.com/archives/2009/03/22/sdc-2009/">SDC 2009</a></li>
+			        <li><span>05 Mar 2009</span> &raquo; <a href="http://protocol7.com/archives/2009/03/05/scrum-for-real/">Scrum for real</a></li>
+			        <li><span>05 Mar 2009</span> &raquo; <a href="http://protocol7.com/archives/2009/03/05/ftpserver-one-oh/">FtpServer one oh</a></li>
+			        <li><span>24 Feb 2009</span> &raquo; <a href="http://protocol7.com/archives/2009/02/24/building-despotify-on-ubuntu/">Building Despotify on Ubuntu</a></li>
+			    </ul>
+  </p>
+</div>
+
+<div class="twitter">
+  <div id="twitter_div">
+    <h1 class="sidebar-title">Tweets</h1>
+    <ul id="twitter_update_list"></ul>
+
+    <p  style="display:block;text-align:right;">
+    <a href="http://twitter.com/protocol7" id="twitter-link">follow me on Twitter</a> - 
+    <a href="http://protocol7.com/tweets">synced copy</a>
+</p>
+  </div>
+</div>
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/protocol7.json?callback=twitterCallback2&amp;count=5"></script>
+
+		  <div class="footer">
+
+    <div class="contact">
+<!--      <p>
+        <img src="/images/niklas-small.jpg" alt="" align="middle"/>
+      </p> -->
+    
+    </div>
+    <div class="contact">
+      <strong>Niklas Gustavsson</strong><br />
+      <a href="mailto:niklas@protocol7.com">niklas@protocol7.com</a><br />
+      <a href="http://twitter.com/protocol7/">twitter.com/protocol7</a><br />
+      <a href="http://www.last.fm/user/protocol7">last.fm/user/protocol7</a><br />
+    </div>
+
+    <div class="contact">
+      <br />
+      <a href="http://github.com/protocol7/">github.com/protocol7</a><br />
+      <a href="http://flickr.com/photos/protocol7/">flickr.com/photos/protocol7</a><br />
+      <a href="http://delcious.com/protocol7/">delcious.com/protocol7</a><br />
+    </div>
+
+
+    <div class="contact">
+    <h2>Upcoming Events</h2>
+
+<!--     <a href="http://www.oredev.org/prod/oredev/site.nsf/docsbycodename/session?opendocument&sid=74973266B956E2E7C1257593006F5518&day=4&track=E92AC6A14535633BC12575A5004943A0">
+          <strong>2009-11-05: </strong>Øredev 2009 - Malmö
+        </a>-->
+    </div>
+   </div>
+
+  <div class="twitter">
+    <div id="twitter_div">
+      <a href="http://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 licensed</a> unless otherwise specified.
+    </div>
+
+  </div>
+<script class="javascript" src="http://protocol7.com/wp/wp-content/plugins/google-syntax-highlighter/Scripts/shCore.js"></script>
+<script class="javascript" src="http://protocol7.com/wp/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushCSharp.js"></script>
+<script class="javascript" src="http://protocol7.com/wp/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushPhp.js"></script>
+<script class="javascript" src="http://protocol7.com/wp/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushJScript.js"></script>
+<script class="javascript" src="http://protocol7.com/wp/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushJava.js"></script>
+<script class="javascript" src="http://protocol7.com/wp/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushVb.js"></script>
+<script class="javascript" src="http://protocol7.com/wp/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushSql.js"></script>
+<script class="javascript" src="http://protocol7.com/wp/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushXml.js"></script>
+<script class="javascript" src="http://protocol7.com/wp/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushDelphi.js"></script>
+<script class="javascript" src="http://protocol7.com/wp/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushPython.js"></script>
+<script class="javascript" src="http://protocol7.com/wp/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushRuby.js"></script>
+<script class="javascript" src="http://protocol7.com/wp/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushCss.js"></script>
+<script class="javascript" src="http://protocol7.com/wp/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushCpp.js"></script>
+<script class="javascript">
+dp.SyntaxHighlighter.ClipboardSwf = 'http://protocol7.com/wp/wp-content/plugins/google-syntax-highlighter/Scripts/clipboard.swf';
+dp.SyntaxHighlighter.HighlightAll('code');
+</script>
+   
+</body>
+</html>

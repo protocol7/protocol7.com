@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+  <ShortName>Geocaching</ShortName>
+  <Description>Geocaching waypoint</Description>
+  <Contact>niklas@protocol7.com</Contact>
+  <Url type="text/html" 
+       method="get"
+       template="http://www.geocaching.com/seek/cache_details.aspx?wp={searchTerms}">
+  </Url>
+  <LongName>Geocaching</LongName>
+  <Image height="16" width="16" type="image/vnd.microsoft.icon">http://www.geocaching.com/favicon.ico</Image>
+</OpenSearchDescription>

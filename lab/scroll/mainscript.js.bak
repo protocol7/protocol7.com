@@ -1,0 +1,121 @@
+ff.barScroll = new Object()
+ff.barScroll.intPicWidth = 11
+ff.barScroll.intArrowHeight = 11
+ff.barScroll.intBarHeight = 11
+ff.barScroll.xOffset = 10
+ff.barScroll.scrollSpeed = 6
+ff.barScroll.urlBarPic = "bar.gif"
+ff.barScroll.urlBarBgPic = "bar_bg.gif"
+ff.barScroll.urlUpArrowPic = "arrow_up.gif"
+ff.barScroll.urlDownArrowPic = "arrow_down.gif"
+ff.barScroll.timer = null
+
+ff.barScroll.init = function(strLayer, blnNoBar, blnNoBarBg){
+	ff.barScroll[strLayer] = new Object()
+	ff.barScroll[strLayer].h = ff.getH(strLayer)
+	ff.barScroll[strLayer].sh = ff.getScrollH(strLayer)
+	ff.barScroll[strLayer].y = ff.getY(strLayer)
+	if(ff.barScroll[strLayer].sh>ff.barScroll[strLayer].h){
+		ff.barScroll[strLayer].maxscroll = ff.barScroll[strLayer].sh - ff.barScroll[strLayer].h
+		ff.barScroll[strLayer].curpos = 0
+
+		var x = ff.getX(strLayer) + ff.getW(strLayer) + ff.barScroll.xOffset
+		var str1 = "<a href='javascript:void(0)' onmouseover=\"ff.barScroll.arrow('" + strLayer + "', "; var str2 = ")\" onmouseout=\"clearTimeout(ff.barScroll.timer)\"><img src='"; var str3 = "' border='0'></a>"
+
+		if(!ff.getObj(strLayer + "ArrowUp")) ff.createLayer(strLayer + "ArrowUp", x, ff.barScroll[strLayer].y, ff.barScroll.intPicWidth, 5, str1 + "1" + str2 + ff.barScroll.urlUpArrowPic + str3)
+
+		var a = ff.barScroll[strLayer].y+ff.barScroll[strLayer].h-ff.barScroll.intArrowHeight
+		if(!ff.getObj(strLayer + "ArrowDown")) ff.createLayer(strLayer + "ArrowDown", x, a, ff.barScroll.intPicWidth, 5, str1 + "-1" + str2 + ff.barScroll.urlDownArrowPic + str3)
+
+		var a = ff.barScroll[strLayer].y+ff.barScroll.intArrowHeight
+		var b = ff.barScroll[strLayer].h - 2*ff.barScroll.intArrowHeight
+
+		if(!blnNoBarBg){
+			if(!ff.getObj(strLayer + "BarBg")) ff.createLayer(strLayer + "BarBg", x, a, ff.barScroll.intPicWidth, 6,  "<img src='bar_bg.gif' width=" + ff.barScroll.intPicWidth + " height=" + b + ">")
+			ff.catchMouseEvent("click", "ff.barScroll.click", strLayer+"BarBg")	
+		}
+		if(!blnNoBar){
+			if(!ff.getObj(strLayer + "Drag")){
+				ff.createLayer(strLayer + "Drag", x, a, ff.barScroll.intPicWidth, 7, "<img name='" + strLayer + "DragPic' src='bar.gif' border='0'>")
+				if(ff.ie) document.ondragstart = function(){ return false}
+				ff.catchMouseEvent("mousedown", "ff.barScroll.startDrag", strLayer+"Drag")	
+			}
+			else ff.moveTo(strLayer + "Drag", null, ff.barScroll[strLayer].y+ff.barScroll.intArrowHeight) 
+		}
+	}
+}
+
+ff.barScroll.scroll = function(strLayer, perc) {
+	ff.barScroll[strLayer].curpos = parseInt(perc * ff.barScroll[strLayer].maxscroll)
+
+	var scrollHeight = ff.barScroll[strLayer].h - 3*ff.barScroll.intArrowHeight
+
+	ff.moveTo(strLayer+"Drag", null, perc * (scrollHeight-ff.barScroll.intBarHeight) + ff.barScroll[strLayer].y + ff.barScroll.intArrowHeight)
+	ff.moveTo(strLayer, null, ff.barScroll[strLayer].y - ff.barScroll[strLayer].curpos)
+	ff.clip(strLayer, ff.barScroll[strLayer].curpos, ff.getW(strLayer), ff.barScroll[strLayer].curpos+ff.barScroll[strLayer].h,0)
+}
+
+ff.barScroll.arrow = function(strLayer, direction){
+	if(ff.getObj(strLayer)){
+		ff.barScroll[strLayer].curpos -= direction*ff.barScroll.scrollSpeed
+		if(ff.barScroll[strLayer].curpos<0) ff.barScroll[strLayer].curpos = 0
+		else if(ff.barScroll[strLayer].curpos>ff.barScroll[strLayer].maxscroll) ff.barScroll[strLayer].curpos = ff.barScroll[strLayer].maxscroll
+
+		ff.barScroll.scroll(strLayer, ff.barScroll[strLayer].curpos / ff.barScroll[strLayer].maxscroll)
+		ff.barScroll.timer = setTimeout("ff.barScroll.arrow('" + strLayer + "', " + direction + ")", 30)
+	}
+}
+
+ff.barScroll.startDrag = function(evt){
+	if(ff.ie) var targetID = window.event.srcElement.parentElement.id
+	else if(ff.ns4 || ff.w3c) var targetID = evt.target.name
+	ff.barScroll.curDrag = targetID.substr(0,targetID.indexOf("Drag"))
+	ff.barScroll.deltaY = ff.getEventY(evt) - ff.getY(ff.barScroll.curDrag + "Drag")
+	ff.catchMouseEvent("mousemove", "ff.barScroll.drag")	
+	ff.catchMouseEvent("mouseup", "ff.barScroll.stopDrag")
+	return false
+}
+
+ff.barScroll.stopDrag = function(evt){
+	ff.catchMouseEvent("mousemove", "ff.barScroll.drag", null, true)	
+	ff.catchMouseEvent("mouseup", "ff.barScroll.stopDrag", null, true)
+}
+
+ff.barScroll.drag = function(evt){
+	var topY = ff.getEventY(evt) - ff.barScroll.deltaY 
+	var scrollTop = ff.barScroll[ff.barScroll.curDrag].y + ff.barScroll.intArrowHeight
+	var scrollHeight = ff.barScroll[ff.barScroll.curDrag].h - 2*ff.barScroll.intArrowHeight
+		
+	var scrollBottom = scrollTop + ff.barScroll[ff.barScroll.curDrag].h - 2*ff.barScroll.intArrowHeight - ff.barScroll.intBarHeight
+
+	if(topY>=scrollTop && topY<=scrollBottom) var scrollPerc = (topY - scrollTop) / (scrollHeight-ff.barScroll.intBarHeight)
+	else if(topY<scrollTop) var scrollPerc = 0
+	else if(topY>scrollBottom) var scrollPerc = 1
+
+	ff.barScroll.scroll(ff.barScroll.curDrag, scrollPerc)
+}
+
+ff.barScroll.gotoAnchor = function(strLayer, anchorName){
+	var anchorY = ff.getImgPos(anchorName, true).y
+	if(anchorY>ff.barScroll[strLayer].sh - ff.barScroll[strLayer].h) var perc = 1
+	else var perc = anchorY/ff.barScroll[strLayer].maxscroll
+	ff.barScroll.scroll(strLayer, perc)
+}
+
+ff.barScroll.gotoAnchor2 = function(strLayer, anchorName){
+	if(ff.ie) anchorY = theframe.document.all[anchorName].offsetTop
+	else var anchorY = ff.getImgPos(anchorName, true).y
+	if(anchorY>ff.barScroll[strLayer].sh - ff.barScroll[strLayer].h) var perc = 1
+	else var perc = anchorY/ff.barScroll[strLayer].maxscroll
+	ff.barScroll.scroll(strLayer, perc)
+}
+
+ff.barScroll.addWheelSupport = function(strLayer){
+	
+}
+
+
+ff.barScroll.click = function(strLayer){
+	alert(78)
+}
+

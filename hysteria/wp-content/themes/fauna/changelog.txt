@@ -1,0 +1,314 @@
+Fauna Changelog
+----------------------
+Beta 1 was the first public release.
+
+Beta 2 Fixes:
+
+	- Fixed get_links showing only one category
+	- Made sure more stuff could be translated
+	- checked for wp 2.0 compatability! All dandy, including backwards compatability too!
+	- Added a clever breadcrumb trail to the sidebar on all pages, this also visually looks better than an empty sidebar
+	- Added Gravatar support -- if both gravatar and favatars are installed, gravatars will be used for comments, favatars for trackbacks.
+	- Added 404.php template
+	- Improved look for password protected posts
+	- Fixed a bug where the sidebar would creep beneath the main contents, when login was required to comment
+	- Fixed a bug where the comment anchor is gone when there are no comments
+	- Fixed a bug where trackbacks would say "trackbaced on 3 days ago" when Time Since was also enabled
+	- Upped the contrast of top page links
+	- Styled definition lists: DL DT DD
+	- Added Wordpress 2.0 theme screenshot
+	- Increased size of submit button
+	- Added preliminary options page. I'm currently evaluating whether/how to use it. Your feedback positive and/or negative on this is essential.
+	- Added a few colour tweaks of the header, customizable using the options page
+	- Added option to write an about text, and removed the previous sidebar blog description
+	- Added option to type in a custom header URL, width and height
+	- Added option to turn off the header
+	- Changed font priority with Arial before Helvetica, due to borkage on Windows
+	- Changed last 50 entries to last 20 entries
+	- Fixed a problem where a large floated image followed by less text than the image would overflow the bottom of the box
+	- Added basic Ultimate Tag Warrior support, including tag clouds on the archives page. Basic means it shows tags nicely when the plugin is activated, but you may want to customize it a bit yourself
+	- Hid ICQ, MSN and such information from the author page by default, until I figure something better (Your suggestions?)
+	- Went over the code again and added _e() and __() functions where I had previously forgotten it (for localization purposes). This is the reason almost all files are changed. Sorry about this. On the upside, changes should be much smaller for Beta 3.
+	- Changed "XML" to "RSS". I may add a standardized RSS icon in the future.
+	- Updated Fauna Image pack to contain the two new color tweaks, Flora and Frost
+	- Released Live Preview Plugin separately
+
+Beta 3 Fixes:
+
+	- Fixed preg_grep error in themetoolkit.
+	- Fixed a bug where category would not show "next / previous" links if there were several pages
+	- Fix problem with sidenote layout in IE
+	- Removed "Long vertical shadow" from commentbox area... it wasn't necessary and CSS is simpler for it
+	- Commented out "Textarea: Larger | Smaller" functionality. It's still there, it's just disabled by default.
+	- Removed "Your Comment"... it seemed superfluous
+	- Fixed a problem with auto clearing floats
+	- Added category list to datebased archives
+	- Changed archives sidebar to not show empty categories
+	- Removed the white box around "Next Entries" and "Previous Entries" links, replaced it with a transparent box
+	- Fixed topmargin when no header is used
+	- Added a generic background header color so when large images are loading, it doesn't look like something is missing.
+	- Added "quote comment" functionality
+	- Added a version number in the template META tag
+	- Changed default height of comment box from 12 to 20 lines
+	- Replaced a redundant <u> tag with <span> and CSS set to underline
+	- Changed post_nav_link to previous_posts_link and next_posts_link
+	- Replaced redundant class .entry with id #main
+	- Did template cleanups here and there
+	- Did MAJOR code cleanups in the comment files, simplified white container box code, and documented. This'll be helpful for modders.
+	- Separated out comment-meta (trackback links and such) to a separate template file, since the same code was used in both sidebar.php and comment-popup.php
+	- Removed som redundant <br> tags and replaced them with proper CSS
+	- Added support for Edit Comments
+	- Added option to align sidebar to the right
+	- Added option to hide links and meta on frontpage
+	- Added option to show categories on frontpage
+	- Added option to show calendar on frontpage
+
+Beta 4 Fixes:
+
+	- Moved all font css to fauna-default.css
+	- Wrote some instructions in the top of fauna-default.css
+	- Added an option to specify a custom stylesheet. This might make it easier to upgrade to future versions of Fauna.
+	- Dropped category RSS meta link, since the code wasn't 2.0 compatible
+	- Due to incredible work by Ozh on his Themetoolkit (http://frenchfragfactory.net/ozh/my-projects/wordpress-theme-toolkit-admin-menu/), checkboxes now function properly. Ozh has actually made a workaround to a bug in Wordpress itself. Send him a thank you note.
+	- Removed a superfluous DIV from page.php and page-archives.php (Thanks Levi)
+	- Added a few HTML comments in some of the templates, including search.php (Thanks Levi)
+	- Fixed a problem in template-postloop.php where uncommenting the_author_link wouldn't work (Thanks Sadish)
+	- Fixed a problem in template-sidenote.php where it said "1 Comments" (Thanks Sadish)
+	- Had to add class "post" to template-sidenote.php and template-postloop.php in order to fix an overflow problem
+	- Added some default values to the options page. This means the default configuration for Fauna is now actually shown in the options page, rather than the options being empty as they have been so far
+	- Changed noteworthy heart font to Lucida Console, because it looks really good in that font.
+	- Moved an .entry-date border style from style.css to fauna-default.css
+	- Moved a yellow inputfield focus class to fauna-default.css (Thanks Levi)
+	- Fixed a nasty bug where sites with more than one author would have author pages with errors on them (Thanks a lot, Levi)
+	- Made consistent vertical spacing in UL lists in the sidebar (Thanks Simplex)
+	- Did some tweaks to the header width / height options so you can change the header of the all mastheads, not just custom ones
+	- Added option to change background image and color
+	- Removed the searchbox background. I've been pondering this for ages. While it did serve the purpose of connecting above with below, visually, I think it looks a bit better without. Your thoughts?
+	- Due to popular demand, I added another special category: Sidenotes. To do this, I renamed the previous "Sidenotes" category to "Asides". Now it works like this: "Asides" or "Dailies" are small posts in the main post-list, while "Sidenotes" are relegated to the sidebar. For those of you who are using a "Sidenotes" category for your small posts in the main post-list and don't want those relegated to the sidebar, simply go "Manage > Categories", and in the "Category slug" for your Sidenotes category, type in "asides" or "dailies". Then you'll keep your behaviour.
+	- Fixed a problem with the new sidenotes and "Previous posts" not working
+
+Beta 5 Fixes:
+
+	- Beta 5 is fully localyzed by Ralph Inselsbacher from Austria with help from "Sternenlicht" from Germany. Visit Ralphs website, http://rainonline.ws, or "Sternenlicht"'s website, http://www.sternengarten.info/garten/. Their work will make it much easier to translate the theme to other languages.
+	- Moved wp_head down to the bottom of the head. Might fix some issues with plugins, such as wp-shortstats.
+	- Replaced do_action('wp_footer'); with wp_footer(); in footer.php. Might fix things like abovementioned.
+	- Made sure page breadcrumbs and "custom sidebar content" shows up in the same box.
+	- Moved the included "Get Custom Fields" plugin to functions.php rather than sidebar.php
+	- Moved the "Get Noteworthy Link" function from header.php to functions.php
+	- Fixed a bug where the contents of template-commentmeta wasn't used for pages
+	- Added an option to show all comments in a popup window (previously you had to uncomment a line in header.php to do this)
+	- Moved all options generated CSS from header.php to functions.php. This significantly simplifies the header.php file.
+	- Added option to show author. This will give you a link to the author of each post, both on the main page and on permalinks
+	- Fixed a further bug with wp_list_authors, that caused trouble on the author page when only one author was attached, and that author was admin. This'll also be fixed in the Wordpress core in version 2.1.
+	- Removed the underline from the logo hover state. This looks a tad better, and will improve things for people using custom backgrounds.
+	- Added option to show trackback body text
+	- Added this line to fauna-default.css: #trackbacklist li { border: 1px solid #FBFCFD; }
+	- Fixed a bug where showing and hiding the formatting information would move the initial link (meta.js)
+	- Removed "-moz-border-radius" from main stylesheet. It wasn't used.
+	- Added option for Liquid Width! It works in internet explorer. I had to add a "inner" class to sidebar.php, and the rounded corners on the headers can no longer be burnt into the images, but this'll be fixed using other means
+	- Added CSS based, imageless, rounded corners to the header for two reasons; 1: to have rounded corners, even with liquid width display; 2: to simplify the development of custom header images. Note: If you prefer to have this rounded corners syntax generated using JavaScript (right now it's written using PHP), go edit the functions.php file around line 335. The code is there.
+	- Fixed a bug where "quote comment" wouldn't work for Internet Explorer
+	- Added option to type in your own "noteworthy" icon. Default is %26hearts; which is &hearts; urlencoded (has to be). This is the default heart icon. HTML is allowed, so you can insert an image.
+	- To accommodate for liquid width display and custom noteworthy icon, I changed the appearance of a post headline link from block to inline
+	- Centered the footer, instead of offsetting it as it has been so far. This will look better for people who use liquid width display, or have the sidebar to the right side.
+	- Added an email obfuscation function to functions.php and used it on author.php, and made it display AIM, YIM and Jabber information by default, in their obfuscated forms. Since ICQ and MSN info was removed in Wordpress 2 from the profile info, there's no need to show them in Fauna
+	- Added extensive Universal Tag Warrior 3 (UTW3) support. I wouldn't normally do this, but UTW seems to be a widely used plugin. So widely in fact that I'm surprised it's not yet part of the core. Support includes extra templates, "tag.php" and "page-tagsearch.php".
+	- Added extensive Extended Live Archives support. Man is this plugin a mess. Not only is the code ugly, but the CSS is horrible! I'm really hoping they'll clean this up, and atleast remove the <font> tags. In any case, the archives template will now show the ELA on the top if the plugin is installed.
+	- Changed most widths, paddings and so on to use the relative em unit rather than pixels.
+	- Changed sidebar to use LI list items instead of divs for contents. This is more semantically correct, and will allow for Wordpress Widgets in the future.
+	- Uncommented textfield focus colors because it never really looked good.
+	- Added option to use "simple" search style. That means no search button and "search" text in the search field instead. Both methods are fairly standardised now, and almost equally usable (the one WITH the search button being most usable).
+	- Used the fact that the archives template can actually grab the text you write. Now it displays it at the top of the archive page.
+	- Added support for Wordpress "Widgets" (http://automattic.com/code/widgets/). If enabled, the sidebar on the homepage or single archive pages will show the widgetized sidebar. Note: There seems to be a bug in the "Links" Widget giving it a wrong headline.
+	- Fixed a problem with Flash content not being clickable, for instance, the Wordpress Audio Player. This also fixed a problem with random lines appearing in blockquotes when scrolling. Unfortunately, if a really long line of code or a URL is posted, it will exceed the available real-estate and float in the air
+	- Unfortunately, word-wrap for long lines is no longer supported. The fix I had, by adding a horisontal scrollbar to long content, introduced unfixable bugs. It seems, word-wrap in CSS is just impossible, currently. If anyone has a solution, let me know.
+	- Changed the font used for code in fauna-default.css ever so slightly to Bitstream Vera Sans Mono with no unique color.
+	- Added support for Nice Categories plugin.
+	- Replaced all XML and RSS links with a new standardized Feed icon. This also means a redesign of the footer. For the better, I think.
+	- Changed the color of strike and del tags in fauna-default.css
+	- Added support for assigning custom headers to individual pages, and even individual posts. To use a custom header, edit the page or post to which you want the custom header, and add a custom field with the key "header", and the absolute or relative URL to the header image as value. Voila.
+	- Improved the display of "special categories" in the archives page - now with RSS and post count.
+	- Majorly cleaned up the options page. Overall readability and usability should be much improved
+	- Added linebreak support (wpautop) to "Page custom content". Usually you'd have to use Textile or Markdown to get linebreaks to show up.
+	- Added wptexturize, wpautop, Textile, Textile 2 and Markdown support to the "About Weblog" area at the top of the sidebar.
+	- Checked that "Live Comment Preview" (http://dev.wp-plugins.org/wiki/LiveCommentPreview) plugin works with Fauna. It does. No built-in support is necessary.
+	- Removed "Read comments" from single post archive sidebar meta when there are no comments
+	- Reworked the Textile Live Preview plugin to be simpler. That is, now you just upload and activate, and it should work, not just for Fauna. This also means that with Fauna Beta 5, if you want the Textile Live Preview, you have to get the newest Textile Live Preview plugin, which will be released at the same time.
+	- Added a new file: "functions-custom.php". This file contains all functions I consider "core" to Fauna, that is - Get Custom Fields, Noteworthis, and Email Obfuscate. These are all functions I consider too small or important to turn into plugins. Having this in a separate file means that people who dislike the options page (functions.php and themetoolkit.php) can simply throw it out and choose to hack Fauna instead. This is what I'll be doing for my redesign. Remember "my-hacks.php"? Well this is just like it, except it works better.
+	- Fixed a problem where the timestamp was hardcoded instead of rely on the built-in Wordpress syntax.
+
+RC Fixes So Far:
+
+	- Fixed multiple authors bug in the sidebar on the author page. (Levi)
+	- Changed "on his weblog" to "on this weblog" on author page. (Levi)
+	- Cleaned up template-commentmeta.php (Joen)
+	- Cleaned "This Entry" meta (Joen)
+	- Removed doubly defined "code" and "pre" font size CSS from style.css (Joen)
+	- Change comment moderation small tag to a div and removed extra css from stylesheets (Joen)
+	- Made sure long code strings wrapped in "pre" tags overflow properly (Joen)
+	- Added support for coComment. Commenters can now use bookmarklet or extension to track comments (Ralph)
+	- Fixed '%1$s has authored %2$s -> entries <-on this weblog:' (Ralph)
+	- Added background repeat and background align options and simplified generated CSS code. We're really starting to hit the upper amount of options before people should start to learn CSS, but I figure if we can customize background at all, we need these. (Joen)
+	- Added option to specify number of Sidenotes to show. (Joen)
+	- Uncommented "Subscribe without commenting" feature by default. (Joen)
+	- Gave "custom sidebar content" it's own LI.
+	- Moved all "Meta" info (search, single posts, etc.) above Widgets. (Joen)
+	- Added support for WP Admin Bar 2. (Ralph)
+	- Changed "All Tags" in sidebar to a comma seperated list. (Ralph)
+	- Changed sidebar position of the pages meta/page list to be above all other sidebar content. (Levi)
+	- Changed sidebar page list to respect 'Page Order'. (Levi)
+	- Removed redundant "Home" link from "next / prev" navigation on single posts. Additionally left/right aligned next/prev links. (Joen)
+	- Added new GIF feed icon, 12x12 and removed both the large and small previous ones. (Joen)
+	- Added Sticky Note support with textile in the options page. (Joen)
+	- Removed entire comments link when comments are off, instead of that "Comments off" message. (Joen)
+	- Removed redundant permalink for asides when comments off... the TITLE is a permalink alread (Joen)y
+	- Added icon for "Edit This". It did require quite a bit of HTML cleanups and CSS, but i think it's worth it. (Joen)
+	- Removed permalink for sidenotes with comments disabled... the headline IS a permalink so it was redundant.
+	- Removed "page-searchtags.php" as not enough people seemed to use it. Will add it to an "addons" at a later point. (Joen)
+	- Moved fauna-default.css to "styles/default/default.css" to make things simpler. (Joen)
+	- Moved all templates (files with tiny codesnippets) to templates directory. (Joen)
+	- Added several new templates to simplify core code. (Joen)
+	- Removed all references to "masthead images" from styles/default/default.css style. Now the header is separate from the default style, and a feature reserved for people using the options page. (Joen)
+	- Made the sidebar be right-aligned by default. I think it makes more sense, since the sidebar is, essentially, secondary.  (Joen)
+	- Renamed "template-postloop.php" to "template-post.php" and added a new "template-postloop.php". This will cause asides to show as asides even in category view.
+	- Removed feature that kept noteworthy posts topmost in categories. It didn't work with paged views, and was a generally useless feature.
+	- Cleaned up behaviour of "asides boxes" so the code is sharper, more compatible, easier to use, and mainly, stable. (Joen)
+	- Added "tags" icon (Joen)
+	- Moved entry meta to be below headline (Joen)
+	- Tweaked color of noteworthy icon to be slightly more in tune with the greenery of it all (Joen)
+	- Fixed some issues with the new right aligned asides commentlink. (Joen)
+	- Added support for Relative Dates plugin. It works better than Time Since. (Joen)
+	- Added "subscribed" message when an author posts comments. (Joen)
+	- Changed "comment headers". Favatars are now left aligned, and instead of a separate timestamp area, it now says "Commentator said 3 minutes ago:" instead of "Commentator said:". (Joen)
+	- Added quote icon (which needs some improvement), and moved edit and quote icons to the top right of comments. (Joen)
+	- Fixed a regression where the tag icon would show even when UTW wasn't used. (Joen)
+	- Improved quote icon. (Joen)
+	- Checked for the third time that timestamps work. (Joen)
+	- Added "is_index()" conditional function to bundled extensions (functions-custom.php). It'll return true if you're on the root of your server (i.e. /). (Joen)
+	- Changed behaviour or template-post.php to show excerpt on everything but the homepage and permalinks. Previously it would only do this if there was a written excerpt. (Joen)
+	- Removed h2 title on archives page. The page content is editable, which is fine, but having an extra header makes no sense. (Joen)
+	- Prettied up the archive page. Made 2 columns. (Joen)
+	- Added new and improved "Quote comment" code. It is partially derived from Alex King's JS Quicktags code (http://www.alexking.org/). It supports textile syntax, and you can now either quote the entire comment (click), or quote your selection (select then click). Plus, no more nested blockquotes! (Joen)
+	- Added new, simpler default gravatar based on feedback by Levi. (Joen)
+	- Fixed a bug where alt-text wasn't shown for category XML links, causing archives and category views not to validate. (Joen)
+	- Changed "template-nextprev.php" to use classes "prev" and "next" instead of "align-left" and "align-right". Additionally removed right angle quotes and left angle quotes to style.css as CSS3 generated content. This will allow people using "Right-To-Left" text to easily switch placements of next and prev links, without modifying core code. (Joen)
+	- Fixed a bug where the header would "collapse" due to no height being defined by default. Added 200 as the default height. (Joen)
+	- Added option to change the text of the very first link that used to say "blog". (Joen)
+	- Fixed a bug where the category view wouldn't show sidenotes (thanks Patrick). (Joen)
+	- Prettied up the options page, and made sure the "delete" button wasn't so prominent in the right side below "store options". (Joen)
+	- Fixed a typo in the options page (thanks Patrick). (Joen)
+	- Added "max-width" option to help for liquid width display. Works in browsers except IE6 and below. Fortunately IE7 comes out next week. (Joen)
+	- Sorted and cleaned up the options page even further. (Joen)
+	- Fixed an issue where the now right-aligned-by-default sidebar couldn't be left aligned. (Joen)
+	- Added link to an as-yet non-existant Fauna stylesheet directory. (Joen)
+	- Added "position: relative;" to wrapper, to allow better for absolute positioning in themes (Joen)
+	- Added div#nav to header.php to allow for more custom style configuration (Joen)
+	- Added an updated PO and POT file, and updated german localization (Ralph)
+	- Updated Fauna to adhere to the latest fixes in Internet Explorer 7. That means making sure two IE hacks are now IE6 exclusive (style-ieonly.css) (Joen).
+	- Removed support for Gravatar 1.0, and added preliminary support for Gravatar 2 and newer. (Joen)
+	- Tweaked Gravatar 2 support. It now works pretty well. Please test. (Joen)
+	- Made sure Gravatars could be used WITH Favatars at the same time. (Joen)
+	- Changed behaviour of JS collapsed/hidden content so it's not hidden for people who have JS disabled. (Joen)
+	- Went over all files again to see for missing Gettext enabled phrases. Found a few, including one in the search. NOW they should be nailed. (Joen)
+	- Added support for Gravatar 2.5 and disabled transparency hover effects for Safari since it had probelms rendering it. (Joen)
+
+RC2 Fixes:
+
+	- Removed support for WP Admin Bar. It's just clutter, and not very hard to add oneself. (Joen)
+	- Removed IE6 min-width hack. It was ugly as best, and it's fixed in IE7. If we do add min-width for IE6 back, it'll be a different hack. (Joen)
+	- Changed liquid width display to be 100% width, it scales prettier. (Joen)
+	- Fixed problem with "No posts" showing when no sidenotes category was created. (Joen)
+	- Fixed (I really really hope) a major problem with a number of plugins, not the least of which was "Bad Behavior". The problem was that I was using $_POST to store global Fauna variables. Apparently this caused Bad Behaviour to, well, "post" its options upon simply loading the options page for that plugin. This caused Bad behaviour, and other plugins options pages to simply show "Options saved" when just entering it, essentially killing any info already typed in. I hope using ENV instead of POST fixes this, without causing new problems. (Joen)
+	- Hopefully fixed problem with themetoolkit.php and PHP 5. (Joen)
+	- Changing POST to ENV wasn't good enough. GLOBALS was, so now the issue mentioned two change up should REALLY be fixed. (Joen)
+	- Lots of minor bugfixes, including some sidenote feed link blunders, some typos, some CSS cleanups and stuff. (Joen)
+	- IMPORTANT! Replaced quite a lot of deprecated function calls with the new 2.1 function calls. Unfortunately this means, as of this, Fauna RC2 only supports Wordpress 2.1+. (Joen)
+	- Updated deprecated "get_settings" function to the new "get_option", which furthers the 2.1 exclusivity. (Joen)
+	- Added language tags to html head (2.1 also). (Joen)
+	- Made "Edit this" icons have a much larger hit area (26x26px vs. 12x12px) to solve problems with edit icons clashing with titles. (Joen)
+	- Created hover icons for edit and quote. (Joen)
+	- Fixed a validation error with quote and gravatar. (Joen)
+	- Fixed problem with commentlink border showing up in IE6 and 7 on closed posts. (Joen)
+	- Removed option to select the search style that has a push button. It fixed a huge bug in opera, and the other style looks better anyway. (Joen)
+	- Added a ".inner" div inside the #main div. This will allow people who don't want boxes, to have a single background color for the main post area. The #main div wasn't enough, if we want to keep the liquid width display feature. (Joen)
+	- Cleaned up search page title margins. (Joen)
+	- Removed support for Paged Navigation. It was only used on the search page, and not really that useful. Just clutter. (Joen)
+	- Removed options for background-align and background repeat. It cluttered the options page, was illogical, conflicting, hard to use, and I think - rarely used. Now, if you specify a custom background image, it will simply tile. If you want more power than that, you have to edit your custom style, which is fortunately rather easy. (Joen)
+	- Since we're now using Nifty Corners, we can benefit from the fact that we can read the background color via Javascript. As such, it's now easier for custom style authors to use the header feature iRen Fauna, since it is no longer tied into the colors of the default theme. (Joen)
+	- Fixed problem where Opera couldn't show the &hearts; noteworthy icon. Added a Opera only hack. (Joen)
+	- Things seem to work with PHP5 now. Tested on XAMPP. (Joen)
+	- Updated PO and POT files. (Joen)
+	- Removed some options in favor of Wordpress 2.2 Widgets (Joen)
+	- Fixed issues with Javascript and "Share This". (Joen)
+	- Removed Sidenotes from the sidebar and made it into a widget that is automatically activated when the Fauna theme is activated. The good thing is, this allows you to sort the Sidenotes box along with the rest of the widgets. The bad news is, old users will have to upgrade to wordpress 2.2, or install the Widget plugin (http://automattic.com/code/widgets/). (Joen)
+	- Updated to the latest version of nifty corners, now entitled "Nifty Cube". Hopefully this'll help in solving some Safari problems. (Joen)
+	- Fixed problem with Nifty Corners on Safari. The #menu and #searchbox floats interfered with the calculated width of the header. So I moved #header out of #nav and added an auto clearing float in CSS. (Joen)
+	- Fixed a very recent problem with Sidenotes widget not appearing. (Joen)
+	- Completely rewrote the Options Page so that it works in WPMU and added the Custom Header API. (Martin)
+	- Fixed a few regressions with the style-directories and bg images. (Joen)
+	- Removed themetoolkit.php! W00t! Thanks Martin. (Joen)
+	- Added Nifty Corners back to the new options page. (Joen)
+	- Added back textile and markdown support for the about text and sticky notes. (Joen)
+	- Added stripslashes to about and sticky notes. Thanks sunburntkamel. (Joen)
+	- Added back Sidenotes widget that broke with the new options page. (Joen)
+	- Replaced deprecated next_posts_link et. al. with next_posts_link. Unfortunately, for RTL styles sake, this meant removing the tiny angled brackets. (Joen)
+	- Fixed a tiny validation error with the Nifty Corners solution. (Joen)
+	- Finally gave the RTL stylesheet the treatment. Should look great now. RTL language speaking, please test. (Joen)
+	- Fixed a problem where I had forgotten an "inner div" on the category page. (Joen)
+	- Added back the liquid width feature that had regressed from the new options page. I chose to scrap the max-width feature as well, and set it to a fixed 1200px. It just felt like it was an extremely niche feature. (Joen)
+	- Fixed problem with header api page and header height. Thanks sunburntkamel. (Joen)
+	- Decided to remove support for custom headers per posts. (Joen)
+	- Added back help and documentation link. Decided to scrap tiny help links, for clutterfree purposes. Additionally, these options have been sacrificed: header width, header max-width, background color. (Joen)
+	- Added back option to show author link in posts. (Joen)
+	- Removed old forum link from the style.css. (Joen)
+	- Added a default header height value, when "custom header" is selected. (Joen)
+	- This certainly is a learning experience. GLOBALS is read only, so I've moved the remaining global variables to defines. Hopefully everyones happy now. (Joen)
+	- Updated instructions message for custom image headers. (Joen)
+	- Fixed problems with the Custom Image Header tab appearing and disappearing the wrong times. (Joen)
+	- Tiny change: Rounded corners now enabled by default. (Joen)
+- Last minute fix to bundled headers. (Joen)
+	- Another last minute fix to stripslashes and sticky notes. (Joen)
+	
+Final Fixes:
+	- Fixed problem with "do not edit this" on archives page. (Joen)
+	- Changed wording of Widget text on options page, and did smart things with the link. Thanks James.  (Joen)
+	- Fixed a tiny regression with the new global variables. (Joen)
+	- Fixed problem in comments-popup.php that made it not work. (Joen)
+	- Fixed colors for tracbacks in nocturnal. (Joen)
+	- Fixed problem with edit links on trackbacks. (Joen)
+	- Fixed a conflict between Paged Comments plugin and Fauna. We both used the variable $asides. Ours is now called $fauna_asides. (Joen)
+	- Fixed error, when deleting functions.php, returns "Fatal error: Call to undefined function: fauna_info() in [...]header.php on line 13" (Martin)
+	- Upped version number to 1.0 final! Woo! (Joen)
+	- Fixed "Next Prev" problem. (Joen)
+	- Various DPI related fixes. Thanks eclipseguru. (Joen)
+	- Removed the old fauna screenshot and added a brand new Fauna logo. After all, with the style selector, Fauna is not just a single look, more like a framework. (Joen)
+	- Changed "help" link in theme introduction to point to google code, where the Wiki is. (Joen)
+	- Finally fixed problem with opening and closing unified asides boxes. I hope this is it. (Joen)
+	- Improved way single post feeds were generated, and moved .feedicon class to wrapping A rather than direct image. Makes it easier to style. (Joen)
+	- Fixed a problem in various files where alt="Feed" wasn't translatable. (Joen)
+	- Added a comment ID to comment LIs. (Joen)
+	- Fixed a problem where the sidenote feed wouldn't work in the sidebar category list. (Joen)
+	- Fixed problem with category errors when upgrading to WP 2.3 (Joen)
+	- Removed support for nice categories. It's obsolete cruft. (Joen)
+	- Removed support for UTW. (Joen)
+	- Added Wordpress 2.3 specific tagging capabilities. That means tags shown on homepage, permalinks, tag template and updated archvies page. (Joen)
+	- Optimized way "special" categories are shown on the archives page. Replaced 9 unoptimized lines of custom code with 1 line of Wordpress native code. (Joen)
+	- Fixed a problem with the nextprev template. (Joen)
+	- Fixed (hopefully really this time) a problem with aside box not being closed properly if the last post on a page is in aside. (Joen)
+	- Per request of a theme author, I've added the ability to type in the full URL of a header image. Considering the fact that we have the ability to type in the full URL of the background, it would be unfair to deny that ability for headers. Also should be good for wp.com users, eventually. (Joen)
+	- Fixed javascript problem with recently added header image background box. (Joen)
+	- Updated PO and POT files. (Joen)
+	- Made sure admin shows up in template-authormeta.php. Thanks Patrick. (Joen)
+	- Fixed problem with tag name on tag pages. (Joen)
+	- Made sure Fauna special categories are backwards compatible with 2.2 using a version compare. (Joen)
+	- Made all new wp 2.3 tag stuff conditional so it SHOULD be 2.2 backwards compatible. UTW is still out, though. (Joen)
+	- Made sure "Tagged" and the tag icon on posts only shows up when a post actually has tags. Thanks James, I finally got it through my thick skull. (Joen)
+	- Added a print stylesheet by popular demand. It resides in the "meta" folder, and will be used only when a page is printed. This also meant adding an extra div to the commentform template. (Joen)
+	- Fixed problem where print stylesheet wouldn't use full print area when using liquid width display. (Joen)
+	- Fixed cosmetic issue with the stylesheet. (Joen)
+	- Fixed problems with new and improved class based Textile 2 plugin. (Joen)
+	- Fixed problems with quote feature not using improved Textile. (Joen)
+	- Made the wp tag cloud list on the left of tag display pages inline. (Joen)
+	- Fixed problems with archive counters lying to us. Thanks Patrick. (Joen)
+	- Removed Gravatars 2 support and replaced it with Easy Gravatars support. Thanks a lot, James, you've been instrumental. (Joen)
+	- I think I added back the neat gravatar alpha hover effects for Safari, now that Saf3 supports it properly. (Joen)

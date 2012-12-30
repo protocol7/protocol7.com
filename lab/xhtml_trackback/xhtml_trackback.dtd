@@ -1,0 +1,48 @@
+<!--
+By Niklas Gustavsson (niklas@protocol7.com)
+
+Applied for the problem of embeddning RDF in XHTML for automatic trackback parsing, 
+from http://www.pinkjuice.com/XHTML_plus_embed.dtd
+
+this DTD can be found at::
+  http://www.protocol7.com/lab/xhtml_trackback/xhtml_trackback.dtd
+  
+Example of use at:
+  http://www.protocol7.com/lab/xhtml_trackback/xhtml_trackback.html
+
+<!DOCTYPE html
+  PUBLIC "-//protocol7//DTD XHTML_plus_trackback 1.0//EN"
+  "http://www.protocol7.com/lab/xhtml_trackback/xhtml_trackback.dtd">
+
+  I'm in no way a DTD or RDF expert so feel free to send me corrections or improvments!
+  /niklas
+-->
+
+<!ELEMENT rdf:RDF (rdf:Description)>
+
+<!ELEMENT rdf:Description EMPTY>
+
+<!ATTLIST rdf:Description
+	rdf:about CDATA #REQUIRED
+	dc:identifer CDATA #REQUIRED
+	dc:title CDATA #REQUIRED
+	trackback:ping CDATA #REQUIRED
+>
+
+<!ATTLIST html
+	xmlns:rdf %URI; #FIXED "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+       xmlns:dc %URI; #FIXED "http://purl.org/dc/elements/1.1/"
+       xmlns:trackback %URI; #FIXED "http://madskills.com/public/xml/rss/module/trackback/"
+>
+
+<!-- copied, plus embed in %special; -->
+<!ENTITY % special.pre
+  "br | span | bdo | map">
+<!ENTITY % special
+  "%special.pre; | object | rdf:RDF | img">
+
+<![INCLUDE[
+<!ENTITY % xhtmldtd
+  PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd" >
+%xhtmldtd;]]>

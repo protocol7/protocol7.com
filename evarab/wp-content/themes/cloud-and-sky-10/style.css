@@ -1,0 +1,275 @@
+/*  
+Theme Name: Cloud and Sky
+Theme URI: http://www.zalebox.com
+Description: Cloud and Sky theme 2 Columns is a white and blue, clean and simple, fixed width, widget ready theme
+Version: 1.0
+Author: Zalebox
+Author URI: http://www.zalebox.com
+*/
+
+body {
+	background: #ffffff;
+	color: #000000;
+	font-size: 11px;
+	font-family: Arial, Verdana, Helvetica, Arial, Sans-Serif;
+	margin: 0px 0px 0px 0px;
+	}
+a, a:visited{
+	color: #3399cc;
+	text-decoration: none;
+	}
+	
+a:hover{
+	color: #ff9900;
+	text-decoration: underline;
+	}
+#container { 
+	background: #ffffff;
+	width: 960px; 
+	text-align: left; 
+	margin: 0 auto; 
+	border-left: 1px dotted #CCCCCC;
+	border-right: 1px dotted #CCCCCC;
+	}
+
+#header { 
+	background: #ffffff url(images/header-bg.gif) top center no-repeat;
+	height: 150px; 
+	padding: 5px 0px 0px 10px;
+	text-align: left;
+	}
+#header h2 {
+	color: #ffffff;
+	font-size: 30px;
+	font-family: Arial, Tahoma, Verdana, Georgia, Times New Roman, Sans-Serif;
+	font-weight: bold;
+	/*text-transform: uppercase;*/
+	margin: 0px;
+	}
+
+#header h2 a {
+	color: #ffffff;
+	text-decoration: none;
+	}
+
+#header h2 a:hover {
+	color: #ff9900;
+	text-decoration: none;
+	}
+
+#header h3 {
+	color: #ffffff;
+	font-size: 13px;
+	font-family: Georgia, Times New Roman, Sans-Serif;
+	font-weight: bold;
+	/*text-transform: uppercase;*/
+	/*text-indent: 10px; */
+	margin: 0px;
+	}
+
+#menu { 
+	background: #368DCC;
+	width: 960px; 
+	margin-top: 0px;
+	margin-bottom: 0px; 
+	text-align: right;
+	}
+#menu h2 {
+	color: #ffffff;
+	font-size: 13px;
+	font-family: Arial, Verdana, Helvetica, Arial, Sans-Serif;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	}
+#menu li {
+	display: inline;
+	list-style-type: none;
+	margin: 0px;
+	padding: 0px;
+	}
+		
+#menu ul {
+	margin: 0px;
+	padding: 4px;
+	}
+	
+#menu ul li a {
+	font-family: Arial, Verdana, Helvetica, Arial, Sans-Serif;
+	font-size: 13px;
+	color: #ffffff;
+	padding: 6px 6px 6px 6px;
+	margin: 0px 3px 0px 3px;
+	text-decoration: none;
+	}
+
+#menu ul li a:hover {
+	color: #ffffff;
+	padding: 6px 6px 6px 6px;
+	text-decoration: underline;
+	}
+
+
+#content { 
+	width: 630px; 
+	float: left; 
+	margin-left: 5px;
+	margin-bottom: 20px;
+	margin-top: 20px;
+	}
+#content p{
+	margin: 0px;
+	line-height: 18px;
+	padding: 0px 0px 15px 0px;
+	}
+	
+#content p img{
+	border: none;
+	margin-right: 5px;
+	margin-bottom: px;
+	}
+#content h1 {
+	color: #333333;
+	font-size: 22px;
+	font-family: Arial, Verdana, Helvetica Bold, Arial Bold, Verdana, Sans-Serif;;
+	font-weight: normal;
+	padding: 10px 10px 10px 10px;
+	line-height: 150%
+	margin: 0px;
+	}
+	
+#content h1 a  {
+	color: #006699;
+	text-decoration: underline;
+	}
+
+#content h1 a:hover {
+	color: #000000;
+	text-decoration: none;
+	}
+
+#content h2 {
+	color: #3399cc;
+	font-size: 18px;
+	font-family: Arial, Verdana, Helvetica Bold, Arial Bold, Verdana, Sans-Serif;;
+	margin: 0px;
+	line-height: 150%;
+	/*text-transform: uppercase;*/
+	}
+#content h2 a  {
+	color: #3399cc;
+	text-decoration: none;
+	}
+
+#content h2 a:hover {
+	color: #ff9900;
+	text-decoration: none;
+	}
+
+blockquote{
+	margin: 0px 0px 0px 25px;
+	padding: 0px 25px 0px 10px;
+	font-style: italic;
+	color: #666666;
+	border-left: 1px solid #cccccc;
+	}
+	
+#content blockquote p{
+	margin: 0px 0px 20px 0px;
+	padding: 0px;
+	}
+
+.postspace {
+	width: 440px;
+	height: 32px;
+	margin: 0px;
+	padding: 0px;
+	}
+.postspace2 {
+	width: 440px;
+	height: 0px;
+	margin: 0px;
+	padding: 0px;
+	}
+
+#sidebar { 
+	width: 250px; 
+	float: right; 
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 0px 15px 15px 15px; 
+	border-left: 1px dotted #cccccc;
+	}
+#sidebar p{
+	margin: 0px;
+	line-height: 18px;
+	padding: 0px 0px 15px 0px;
+	}
+	
+#sidebar p img{
+	border: none;
+	margin-right: 5px;
+	margin-bottom: px;
+	}
+
+#sidebar h2 {
+	color: #3399cc;
+	font-size: 18px;
+	font-family: Arial, Verdana, Helvetica Bold, Arial Bold, Verdana, Sans-Serif;;
+	list-style: none;
+	padding: 0px 0px 10px 0px;
+	margin: 0px;
+	margin-left: 0px;
+	margin-bottom: 5px;
+	/*text-transform: uppercase;*/
+	border-bottom: 1px dotted #cccccc;
+	}
+
+#sidebar ul {
+	list-style: none;
+	margin: 0px;
+	padding: 0px 0px 20px 20px;
+	}
+	
+#sidebar li {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	}
+	
+#sidebar ul li {
+	list-style: square inside;
+	margin: 0px;
+	padding: 5px 0px 0px 0px;
+	}
+	
+#sidebar ul li a {
+	color: #000000;
+	text-decoration: none;
+	}
+
+#sidebar ul li a:hover {
+	color: #3399cc;
+	/*text-decoration: underline;*/
+	}
+
+#footer { 
+	background: #ffffff url(images/footer.gif) top center repeat-x;
+	width: 960px; 
+	text-align: center;
+	color: #ffffff;
+	border-top: 1px solid #ffffff;
+	clear: both;
+	padding: 40px 0px 30px 0px; 
+}
+#footer a {
+	color: #ffffff;
+	text-decoration: none;
+	}
+
+#footer a:hover {
+	color: #ff9900;
+	/*text-decoration: underline;*/
+	}
+
+#main_start {position: absolute;left: -10000px;};

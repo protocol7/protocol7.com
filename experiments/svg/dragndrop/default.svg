@@ -1,0 +1,25 @@
+<?xml version="1.0" standalone="no"?>
+<svg xmlns:a3="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" a3:scriptImplementation="Adobe">
+<title>protocol7 dragtext</title>
+<script xlink:href="p7.svg.dragndrop.js"/>
+<rect x="-1000000" y="-1000000" width="10000000%" height="10000000%" fill="#EA8400" />
+
+<g transform="translate(10,20)">
+	<line x1="-5" y1="-12" x2="-5" y2="30" stroke="#654321" fill="none" />
+	<text x="0" y="0" fill="#654321" font-size="12px" style="pointer-events:none;">
+		<tspan>This example shows a simple </tspan>
+		<tspan x="0" dy="1em">drag n drop mechanism for SVG. </tspan>
+		<tspan x="0" dy="1em">Works with zoom and pan.</tspan>
+	</text>
+</g>
+
+
+<g onmousedown="p7.svg.dragdrop(evt)" transform="translate(150,150)">
+	<text x="0" y="0" fill="#654321" font-size="16px" style="pointer-events:none;">
+		<tspan x="0" y="0" opacity="0.4">protocol7</tspan>
+		<tspan x="12" y="1em" font-size="11px">drag me</tspan>
+	</text>
+	<rect x="0" y="-12" width="100" height="30" fill-opacity="0" />
+</g>
+
+</svg>

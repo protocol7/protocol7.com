@@ -1,0 +1,325 @@
+/*
+
+	Nocturnal Fauna Style
+
+	A dark version of the default Fauna style.	
+	
+*/
+
+/*
+
+	Widths
+	
+*/
+#wrapper {
+	min-width: 780px;
+	width: 780px; 			/* Entire blog width */
+}
+#body {
+	padding: 0 1.5em;
+}
+#sidebar {
+	width: 31%;				/* Sidebar width */
+	float: right;
+}
+#main {
+	width: 69%;				/* Main column width */
+	float: left;
+}
+#sidebar ul.inner {
+	padding: 0 0 0 .8em;
+}
+#header {
+	height: 200px;
+}
+.left #sidebar {
+	float: left;
+}
+.left #sidebar ul.inner {
+	padding: 0 .8em 0 0;
+}
+.left #main {
+	float: right;
+}
+
+/* 
+
+	Background
+	
+*/
+.bg { 
+	background: #212324 url('bg.gif') no-repeat center top;
+}
+#header {
+	background-image: url('../../images/masthead-fauna.jpg');
+	background-repeat: repeat-x !important;
+	background-position: center top;
+}
+/*
+
+	Colors
+
+*/
+body {
+	color: #A7A7A3;				/* Text color */
+}
+.box, #sidebar ul.inner li {
+	background-color: #343839;		/* Box background color */
+}
+#sidebar, #secondary, #copyright {
+	color: #A5A5A3;				/* Sidebar text color */
+}
+
+/* 
+
+	Link Colors
+	
+*/
+a:link, a:active { text-decoration: underline; color: #C8BEA4; }
+a:visited { text-decoration: underline; color: #A99970; }
+a:hover, a:focus { text-decoration: underline; color: #DFDACA; }
+
+#sidebar a:link, #sidebar a:active { text-decoration: none; color: #BCB8AF; }
+#sidebar a:visited { text-decoration: none; color: #A7A296; }
+#sidebar a:hover { text-decoration: underline; color: #D6D3CF; }
+
+h2 a:link, h2 a:active, h2 a:visited {
+	color: #C5BCA7;
+}
+h2 a:hover, h2 a:focus {
+	color: #DDD9CC;
+}
+p.commentlink, .entry-meta {
+	color: #989D3C !important;
+}
+p.commentlink a {
+	color: #989D3C !important;
+}
+p.commentlink a:hover, .entry-meta a:hover {
+	color: #D3D764 !important;
+}
+.entry-meta a {
+	color: #BABF57!important;
+}
+#main p a img {
+	border-bottom: 1px solid #17A;
+}
+#main p a img:hover {
+	border-bottom: 1px solid #6BD;
+}
+#menu a:link, #menu a:visited { color: #8A8A86; }
+#menu a:active, #menu a:hover { color: #fff; }
+body#index li#current-index a, body#index #current-index a:visited,
+#menu .current_page_item a, #menu .current_page_item a:visited
+{
+	color: #fff !important;
+}
+#sidebar li.current_page_item>a, #sidebar li.current_page_item>a:visited {	/* Only works in modern browsers */
+	color: #A5A5A3;
+	font-weight: bold;
+}
+h1 a:link, h1 a:visited {	/* Logo */
+	color: #8A8A86;
+}
+h1 a:hover, h1 a:active {
+	color: #fff;
+}
+
+/* 
+
+	Fonts
+	
+*/
+h1 {
+	font: bold 240%/100% "Trebuchet MS", Arial, Helvetica, sans-serif; 
+}
+body {
+	font: 70%/190% Verdana, Arial, Helvetica, sans-serif;
+}
+cite, input, textarea, select, .inputbox, #commentform textarea, .searchbox, .pushbutton, .pushbutton-wide {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+}
+h2 {
+	font: normal 140% Arial, Helvetica, sans-serif;
+}
+#main h3 {
+	font: normal 135% Arial, Helvetica, sans-serif;
+}
+.noteworthy {
+	font: 135% "Lucida Sans Unicode", Arial, sans-serif;
+}
+/* Opera can't render &hearts; symbol with Lucida, so set generic font */
+@media all and (min-width: 0px){ 
+.noteworthy {
+	font: 135% serif;
+}
+}
+.noteworthy a {
+	color:#FF7953 !important;
+}
+.noteworthy a:hover {
+	color:#FF8F6F !important;
+}
+code, pre, kbd, samp {
+	font: 95% "Bitstream Vera Sans Mono", 'Courier New', Courier, Fixed, monospace;
+}
+p.commentlink {
+	border-left: 1px dotted #C2C76D;
+}
+p.commentlink {
+	font: normal 140% Arial, Helvetica, sans-serif;
+}
+.aside p.commentlink {
+	font: normal 100% Verdana, Arial, Helvetica, sans-serif;
+}
+.asides h2, .asides h3, .sidenote h2, .sidenote h3 {
+	font: normal 100% Verdana, Arial, Helvetica, sans-serif;
+}
+
+/*
+
+	Various
+	
+*/
+acronym, abbr {
+	border-bottom: 1px dashed #C63;
+}
+strike, del {
+	color: #797977;
+}
+ins {
+	color: #989D3C;
+}
+label:hover {
+	color: #000;
+}
+fieldset {
+	border: 1px solid #F4F8FB;
+	background-color: #F4F8FB;
+}
+legend {
+	background-color: #fff;
+}
+.notice { 	/* Moderation Message */
+	color: #97DAE8; 
+	border-top: 1px solid #175866;
+	border-bottom: 1px solid #175866;
+	background-color: #0D3139;
+}
+blockquote, pre {
+	border-left: 1px solid #CCCCCA;
+}
+#tags-allowed {
+	color: #97DAE8; 
+	border-top: 1px solid #175866;
+	border-bottom: 1px solid #175866;
+	background-color: #0D3139;
+}
+
+/* 
+
+	Comments & Trackbacks
+	
+*/
+.comment-even {
+	background-color: #0D3139;
+}
+.comment-odd {
+	background-color: #0D3139; 		/* Change this colour to add "Flip flopping" backgrounds */
+}
+.comment-author { 					/* Author background color */
+	background-color: #0F3A44;
+}
+a.comment-permalink {
+	color: #C5BCA7 !important;				/* Text color */
+	text-decoration: none !important;
+	border-bottom: 1px dotted #C5BCA7;
+}
+#trackbacklist li a {
+	background-color: #165461;
+}
+#trackbacklist li {
+	border: 1px solid #165461;
+	background-color: #0D3139;
+}
+#trackbacklist li small {
+	color: #C5BCA7;
+}
+#trackbacklist li a:hover {
+	background-color: #1D6D7E;
+}
+#trackbacklist li a:active {
+	background-color: #238498;
+}
+
+/*
+
+	Search
+	
+*/
+.search-results small {
+	font-size: 100%;
+}
+.search-results small a {
+	color: #989D3C !important;
+	text-decoration: none !important;
+}
+
+
+/* 
+
+	Calendar
+	
+*/
+#wp-calendar caption {
+	color: #989D3C;
+}
+#wp-calendar a {
+	background-color: #414647;
+}
+#wp-calendar a:hover {
+	background-color: #454A4B !important;
+}
+
+/* 
+
+	Plugins
+
+*/	
+/* Brian's Latest Comments */
+#recent-activity small a:link, #recent-activity small a:visited, .secondary small a:link, .secondary small a:visited {
+	color: #ACC;
+}
+/* Ultimate Tag Warrior */
+.technoratitags {
+	color: #989D3C !important;
+}
+.technoratitags a {
+	color: #989D3C !important;
+	border-bottom: 1px dotted #989D3C;
+	text-decoration: none;
+}
+.technoratitags a:hover {
+	color: #D3D764 !important;
+	border-bottom: 1px dotted #D3D764;
+	text-decoration: none;
+}
+.longtailvert a {
+	padding: 0 .5em;
+	text-decoration: none;
+	color: #fff;
+}
+.longtailvert a:hover {
+	background: #DFDACA;
+}
+
+/* Textile */
+.caps {	
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* Google Hilite */
+.hilite {
+	background-color: #DEEBF3;
+	color: #000;
+}

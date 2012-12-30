@@ -1,0 +1,19 @@
+/*
+Theme Name: Textback
+Theme URI: http://http://www.amypink.com
+Description: The official AMY & PINK Theme.
+Version: 1.0
+Author: Marcel Winatschek
+Author URI: http://www.amypink.com/
+
+See style-core.css for additional styles.
+See style-ie.css for ie-specific fixes.
+*/
+
+body {margin: 0; padding: 0; background: #fff; text-align: center; font: 12px 'Lucida Grande','Arial', sans-serif;}
+table, td {font: 10px 'Lucida Grande','Arial', sans-serif; color: #000;}
+
+/*-smilies without a border-*/
+body img.wp-smiley {
+	border:none;
+}

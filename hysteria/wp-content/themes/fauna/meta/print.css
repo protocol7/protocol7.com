@@ -1,0 +1,35 @@
+/*
+
+	Print Stylesheet
+	
+*/
+
+body {
+	margin: 2em;
+}
+* {
+	background: none !important;
+}
+h1, #nav, #header, #sidebar, #leavecomment, .prev, .next, #footer, hr, .commentlink {
+	display: none;
+}
+
+.entry-meta {
+	color: #333333 !important;
+}
+
+h2, h3, h4, a:link, a:visited {
+	color: #000000 !important;
+	text-decoration: underline !important;
+	border: 0 !important;
+}
+
+.notice {
+	border: 2px solid #333333;
+}
+
+#wrapper, #body, #main {
+	padding: 0 !important;
+	margin: 0 !important;
+	width: 100% !important;
+}

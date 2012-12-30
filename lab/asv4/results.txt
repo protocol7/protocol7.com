@@ -1,0 +1,19 @@
+Animated cursors (http://www.protocol7.com/lab/asv4/anim_cursor.svg)
+	Animated cursors was workin in PDF, haven't got it working in the browser plugin
+
+Text flow
+	Working (http://www.protocol7.com/lab/asv4/text_flow.svg)
+	
+JavaScript, DOM
+	Window (and _window_impl)
+		_window_impl.startSimpleDnD()	4 parameters. What does it do?
+		_window_impl.trace()		1 parameter. What does it do?
+		_window_impl.transformShapes	??
+		_window_impl.selection		??
+		_window_impl.setTextInputHint	??
+	
+	SvgDocument
+		importNode() - not implemented
+		
+	SvgElement
+		transform - not implemented

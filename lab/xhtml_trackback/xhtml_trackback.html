@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+  PUBLIC "-//protocol7//DTD XHTML_plus_trackback 1.0//EN"
+  "http://www.protocol7.com/lab/xhtml_trackback/xhtml_trackback.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Trackback RDF in XHTML</title>
+	</head>
+	<body>
+		<p>
+			<rdf:RDF>
+		         <rdf:Description rdf:about="http://www.foo.com/archive.html#foo"
+				dc:identifer="http://www.foo.com/archive.html#foo"
+				dc:title="Foo Bar"
+				trackback:ping="http://www.foo.com/tb.cgi/5" />
+	         	</rdf:RDF>
+		</p>
+	</body>
+</html>

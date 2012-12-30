@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+
+<body>
+<script language="javascript" type="text/javascript">
+
+function nuBlurrarVi(){
+//alert(hitTest(event.screenX,event.screenY))
+//alert("sasd")
+	//if(!hitTest(event.screenX,event.screenY)) 
+	self.blur()
+	self.focus()
+}
+
+function hitTest(x,y){
+	var flashLeft=window.screenLeft+roffe.offsetLeft+1
+	var flashRight=flashLeft+roffe.offsetWidth
+	var flashTop=window.screenTop+roffe.offsetTop+1
+	var flashBottom=flashTop+roffe.offsetHeight
+
+	if(x>flashLeft && x<flashRight && y>flashTop && y<flashBottom) return true
+	else return false
+	
+}
+
+onblur = nuBlurrarVi
+//onblur = self.focus
+
+</script>
+
+
+<OBJECT classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000"
+ codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0"
+ WIDTH=150 HEIGHT=150 id="roffe">
+ <PARAM NAME=movie VALUE="flash.swf"> <PARAM NAME=quality VALUE=high> <PARAM NAME=bgcolor VALUE=#D6D3CE>
+</OBJECT>
+
+
+</body>
+</html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<svg onmousemove="mm()">
+
+
+<polygon id="pol1" points="200,100 300,150 200,200 100,150" fill="red" />
+<polygon id="pol2" points="200,100 300,150 300,100" fill="blue" />
+<polygon id="pol3" points="200,100 100,150 100,100" fill="blue" />
+<polygon id="pol4" points="200,200 300,150 300,200" fill="blue" />
+<polygon id="pol5" points="200,200 100,150 100,200" fill="blue" />
+
+<script>
+<![CDATA[
+
+function mm(){
+	var x = evt.clientX - 100
+	var y = evt.clientY - 150
+	var id
+	
+	if(y<0 && x<100){
+		// NW quadrant
+		if(-y > x/2) id = "pol3"
+		else id = "pol1"
+	}
+	else if(y<0 && x>=100){
+		// NE quadrant
+		x = x - 100
+		y = 50 + y
+
+		if(y < x/2) id = "pol2"
+		else id = "pol1"
+	}
+	else if(y>0 && x<100){
+		// SW quadrant
+		if(y > x/2) id = "pol5"
+		else id = "pol1"
+	}
+	else if(y>0 && x>=100){
+		// SE quadrant
+		x = x - 100
+		y = 50 - y
+		
+		if(y < x/2) id = "pol4"
+		else id = "pol1"
+	}
+	
+	
+	document.getElementById("pol1").setAttribute("fill", "red")
+	for(var i = 2; i<6; i++) document.getElementById("pol" + i).setAttribute("fill", "blue")
+	
+	var e = document.getElementById(id)
+	if(e) e.setAttribute("fill", "purple")
+
+	parent.status = x + " -- " + y + " -- " + id
+}
+
+]]>
+</script>
+
+</svg>
+
+ 

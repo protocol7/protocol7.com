@@ -1,0 +1,81 @@
+body {
+	font-size : 11px;
+	font-family : Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color : #3B506B;
+	background-color : #FFF;
+	scrollbar-arrow-color: #506888;
+	scrollbar-base-color: #E3E8E8;
+	scrollbar-track-color: #FFF;	
+}
+td, th {
+	font-size : 11px;
+}
+
+a {
+	color : #3B506B;
+}
+.bold {
+	font-size : 12px;
+	font-family : Arial;
+	font-weight : bold;
+	color : #3B506B;
+	text-decoration : none;
+}
+
+#logg { 
+     position: absolute;  
+     visibility:visible;  
+     left:7;  
+     top:60;  
+     z-index:1; 
+}
+
+#header { 
+     position: absolute;  
+     visibility:visible;  
+     left:0;  
+     top:5;   
+     z-index:1; 
+}
+
+#content{
+	width: 410px;	
+}
+
+#rightCol{
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	width: 180px;
+}
+
+h1{
+	font-size: 16px;
+}
+
+h2{
+	font-size: 14px;
+}
+
+label{
+	display: block;
+}
+
+.postFooter{
+	font-size : 10px;	
+}
+
+.postFooter a{
+	font-weight: normal;
+}
+
+.postFooter p{
+	padding: 0px;
+	margin: 0px;
+	margin-bottom: 2px;
+}
+
+.post{
+	padding-bottom: 5px;
+	border-bottom: 1px dashed #ccc;
+}

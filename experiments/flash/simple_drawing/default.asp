@@ -1,0 +1,1 @@
+<%Response.Redirect "simple_drawing.swf"%>

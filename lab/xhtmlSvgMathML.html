@@ -1,0 +1,34 @@
+<html xmlns:m="http://www.w3.org/1998/Math/MathML" xmlns:svg="http://www.w3.org/2000/svg">
+<head>
+	<title></title>
+   <object id="MathPlayer" classid="clsid:32F66A20-7614-11D4-BD11-00104BD3F987"></object>
+   <?import namespace="m" implementation="#MathPlayer" ?>
+	
+	<object id="AdobeSVG" classid="clsid:78156a80-c6a1-4bbf-8e6a-3cd390eeb4e2" viewastext></object>
+	<?import namespace="svg" implementation="#AdobeSVG"?>
+</head>
+
+<body>
+<p>
+Some equation:
+<m:math>
+      <m:mi>y</m:mi>
+		<m:mo>=</m:mo>
+	   <m:msup>
+         <m:mi>x</m:mi>
+         <m:mn>2</m:mn>
+      </m:msup>
+</m:math>
+</p>
+
+<svg:svg viewBox="0 0 100 100" width="1in" height="1in">
+	<svg:polyline points="0,0 0,100 100,100" fill="none" stroke="black" stroke-width="1px"/>
+	<svg:path d="M0,100 C100,100,100,0,100,0" fill="none" stroke="red" stroke-width="1px"/>
+	<svg:text x="10" y="15"><svg:tspan>A plot of y</svg:tspan><svg:tspan dy="1em" x="10">against x</svg:tspan></svg:text>
+</svg:svg>
+
+
+
+
+</body>
+</html>

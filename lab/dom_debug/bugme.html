@@ -1,0 +1,113 @@
+<html>
+<head>
+<title>Dom Debug</title>
+<script language="JavaScript" type="text/javascript">
+
+var debug = {}
+debug.onload = function(){
+	this.tbl = document.getElementById("domtree")
+	this.propstbl = document.getElementById("domprops")
+	this.walk(opener.document.body, "root", 0)
+}
+
+debug.showProps = function(tr){
+	this.propstbl.removeChild(this.propstbl.firstChild)
+	var e = tr.elm
+	var arr = []
+	for(var i in e){
+		arr.push({k:i, v:e[i]})
+	}
+	arr.sort(function(a,b){
+		if(a.k>b.k) return 1
+		else return -1
+	})
+	
+	for(var i = 0; i<arr.length; i++){
+		var tr = this.propstbl.insertRow()
+		var td = tr.insertCell()
+		td.innerText = arr[i].k
+		var td = tr.insertCell()
+
+		td.innerText = arr[i].v
+	}
+}
+
+debug.openNode = function(id){
+	var tr = document.getElementById(id)
+	var tb = tr.parentNode
+	var cn = tb.childNodes
+	for(var i = 0; i<cn.length; i++){
+		if(cn[i].nodeParent==id) cn[i].style.display = "block"
+	}
+	debug.showProps(tr)
+}
+
+debug.walk = function(e, parent, level){
+	var tr = this.tbl.insertRow()
+	var id = "node" + Math.round(Math.random()*100000)
+	tr.id = id
+	tr.nodeParent = parent
+	tr.elm = e
+	tr.onclick = new Function('debug.openNode("' + id + '")')
+	if(parent!="root") tr.style.display = "none"
+	
+	for(var i = -1; i<level; i++){
+		var td = tr.insertCell()
+		td.width = 15
+		td.innerText = "+"
+	}
+	
+	var td = tr.insertCell()
+	td.colspan = 100
+
+	if(e.nodeType==1 && e.id!="domtree"){
+		td.innerText = e.tagName
+
+		var cn = e.childNodes
+		for(var i = 0; i<cn.length; i++){
+			this.walk(cn[i], id, level+1)
+		}
+	}
+	else if(e.nodeType==3){
+		td.innerText = "TextNode"
+	}
+	else if(e.nodeType==8){
+		td.innerText = "<!-- Comment -->"
+	}
+
+}
+
+var win = window
+window.onload = function(){
+	debug.onload()
+}
+
+</script>
+
+<style>
+body, td{
+	font-family: verdana;
+	font-size: 11px;
+}
+</style>
+
+</head>
+
+<body>
+
+
+
+
+
+<div style="position:absolute; left:0px; top:0px;">
+<table id="domtree"></table>
+</div> 
+<div style="position:absolute; left:300px; top:0px;width:300px; height:300px; overflow:auto;">
+<table id="domprops"></table>
+</div> 
+<br>
+<br>
+<br>
+
+</body>
+</html>

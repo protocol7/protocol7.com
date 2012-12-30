@@ -1,0 +1,106 @@
+<html>
+<head>
+	<title>Untitled</title>
+	
+<style>
+.gg {font-family:arial;
+	font-size:11px;}
+a{	color: black;
+	text-decoration: none;}
+</style>
+	
+<script language="javaScript" type="text/javascript" src="functions.js"></script>
+<script language="javaScript" type="text/javascript">
+
+ff.nodeTree = new Object()
+ff.nodeTree.root = {level:0, childNodes:[]}
+ff.nodeTree.straightList = []
+ff.nodeTree.fontClass = "gg"
+ff.nodeTree.intLayerHeight = 15
+ff.nodeTree.intXOffset = 17
+
+
+ff.nodeTree.click = function(node){
+	if(this.expanded) this.close()
+	else this.open()
+}
+
+ff.nodeTree.close = function(blnNotFirst){
+	if(!blnNotFirst) ff.nodeTree.intMoveDown = -1
+	if(ff.getVis(this.layer)){
+		ff.nodeTree.intMoveDown++
+		if(blnNotFirst) ff.hide(this.layer)
+		for(var i=0; i<this.childNodes.length; i++) this.childNodes[i].close(1)
+		this.expanded = false
+	}
+	var arrMoveDown = ff.nodeTree.straightList.slice(this.straightCount+1)
+	if(!blnNotFirst) for(var k in arrMoveDown) if(ff.getVis(arrMoveDown[k].layer)) ff.moveBy(arrMoveDown[k].layer, null, -ff.nodeTree.intLayerHeight * ff.nodeTree.intMoveDown)
+}
+
+ff.nodeTree.open = function(){
+	var arrMoveDown = ff.nodeTree.straightList.slice(this.straightCount+1)
+	for(var k in arrMoveDown) if(ff.getVis(arrMoveDown[k].layer)) ff.moveBy(arrMoveDown[k].layer, null, ff.nodeTree.intLayerHeight * this.childNodes.length)
+
+	for(var i=0; i<this.childNodes.length; i++){
+		ff.show(this.childNodes[i].layer)
+		ff.moveTo(this.childNodes[i].layer, null, ff.getY(this.layer) + ff.nodeTree.intLayerHeight * (this.childNodes[i].childNodeIndex + 1))
+	}
+	this.expanded = true
+}
+
+ff.nodeTree.node = function(strId, parentNode, content){
+	this.id = strId
+	this.parentNode = parentNode
+	this.content = content
+	this.childNodes = []
+	this.childNodeIndex = this.parentNode.childNodes.length
+	this.parentNode.childNodes[this.childNodeIndex] = this
+	this.expanded = false
+	this.level = 1
+	var tmpNode = this.parentNode
+	while(tmpNode.level>0){tmpNode = tmpNode.parentNode;this.level++}
+	this.click = ff.nodeTree.click
+	this.close = ff.nodeTree.close
+	this.open = ff.nodeTree.open
+}
+
+
+ff.nodeTree.create = function(nodeInitOpen, node){
+	if(!node) node = ff.nodeTree.root
+
+	node.straightCount = ff.nodeTree.straightList.length
+	ff.nodeTree.straightList[node.straightCount] = node
+
+	if(node.level!=0){
+		var strContent = "<a href='javascript:" + node.id + ".click()'><font class='" + ff.nodeTree.fontClass + "'>" + node.content + "</font></a>"
+		node.layer = ff.createLayer(node.id+"Layer", ff.nodeTree.intXOffset*(node.level-1), node.childNodeIndex*ff.nodeTree.intLayerHeight, 100, 1, strContent)
+		if(node.level>1) ff.hide(node.layer)
+	}
+	for(var i=0; i<node.childNodes.length; i++) ff.nodeTree.create(null, node.childNodes[i])
+
+	if(nodeInitOpen){
+		for(var i=1; i<nodeInitOpen.level+1; i++){
+			var nodeTmp = nodeInitOpen
+			while(nodeTmp.level>i) nodeTmp = nodeTmp.parentNode
+			nodeTmp.open()
+		}
+	}
+}
+
+nn1 = new ff.nodeTree.node("nn1", ff.nodeTree.root, "Hejsan")
+nn2 = new ff.nodeTree.node("nn2", ff.nodeTree.root, "tjena")
+nn1n1 = new ff.nodeTree.node("nn1n1", nn1, "kalle")
+nn1n2 = new ff.nodeTree.node("nn1n2", nn1, "kalle1324")
+nn1n1n1 = new ff.nodeTree.node("nn1n1n1", nn1n1, "kalle2")
+
+</script>
+
+
+</head>
+
+<body onload="ff.nodeTree.create()">
+
+&nbsp;&nbsp;
+
+</body>
+</html>

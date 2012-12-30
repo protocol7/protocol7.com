@@ -1,0 +1,106 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/2000/svg">
+<svg xmlns:a3="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" a3:scriptImplementation="Adobe">
+<defs>
+<g id="cell">
+	<circle cx="0" cy="0" r="100" fill="white" fill-opacity="0" stroke="#ccc" />
+</g>
+<path id="val" fill-opacity="0.5" fill="#C59B88" d="M35.732,71.207c14.924-0.302,27.512-6.473,31.616-21.664C72.3,31.214,67.869,6.504,46.97,1.33C36.089-1.365,21.874-0.556,12.459,5.961C1.523,13.533-0.838,27.608,0,40.052C1.409,60.972,15.766,70.801,35.732,71.207"/>
+</defs>
+
+<rect x="0" y="0" width="100%" height="100%" fill="white" />
+
+<script xlink:href="p7_svg_dragndrop.js" />
+<script xlink:href="attract.js" />
+
+<script>
+<![CDATA[
+// keeps sum total positions of values on stage
+var sumx=new Array();
+var sumy=new Array();
+// keeps average positions of values on stage
+var avgx=new Array();
+var avgy=new Array();
+// keeps number of nodes of each value
+var cnt=new Array();
+// keeps a list of all cells on stage
+var cList=new Array();
+
+var celldepth = 0
+var colors = ["C59B88", "EDB684", "EBE381", "7EA5CF", "769B6A", "5D6A68"]
+
+function setTransform(e, sWhich, sValue){
+	var tr = e.getAttribute("transform")
+	var re = new RegExp(sWhich + "\\([^\\)]*\\)")
+	tr = tr.replace(re, sWhich + "(" + sValue + ")")
+	e.setAttribute("transform", tr )
+}
+
+function seekHome(){
+	this.rot += this.vr
+	setTransform(this, "rotate", this.rot)
+	
+	var dfx=0;
+	var dfy=0;
+	for (k = 0;k < this.vals.length; k++) {
+		var v = this.vals[k]
+
+		m = v.color
+		dfx += (avgx[m] - this.x)/this.vals.length;
+		dfy += (avgy[m] - this.y)/this.vals.length;
+	}
+	dfx = dfx/20
+	dfy = dfy/20
+	this.x += dfx
+	this.y += dfy
+	
+	var t = this.getAttribute("transform")
+	setTransform(this, "translate", this.x + ", " + this.y)
+}
+
+function calculateAverages(){
+	for(var m=0;m<9;m++) {
+		sumx[m]=0;
+		sumy[m]=0;
+		cnt[m]=0;
+	}
+
+	for (j=0;j<cList.length;j++) {
+		var ctm = cList[j].getCTM()
+		for (k = 0; k < cList[j].vals.length; k++) {
+			var v = cList[j].vals[k]
+
+			p = getCenterPoint(v, ctm)
+			var m = v.color
+
+			sumx[m]+=p.x
+			sumy[m]+=p.y
+			cnt[m]++;
+		}
+	}
+	for (m=1;m<9;m++) {
+		avgx[m]=sumx[m]/cnt[m];
+		avgy[m]=sumy[m]/cnt[m];
+		var pp = {x:avgx[m], y:avgy[m]}
+	}
+}
+
+
+
+for(var i = 0; i<1; i++){
+	makecell()
+}
+
+function doIt(){
+	calculateAverages()
+	for(var i = 0; i<cList.length; i++){
+		cList[i].seekHome()
+	}
+
+}
+
+setInterval("doIt()", 20)
+//doIt()
+]]>
+</script>
+</svg>

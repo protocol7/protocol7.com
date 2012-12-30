@@ -1,0 +1,538 @@
+/*
+Theme Name: Floral Green
+Theme URI: http://bloggingzone.info
+Description: Floral Green Wordpress Theme
+Version: 1.0
+Author: Ophelia Nicholson
+Author URI: http://ophelianicholson.com
+*/
+
+
+
+/* General */
+
+body {
+	margin: 0;
+	background: #ffffff;
+}
+
+h1, h2, h3, h4 {
+	margin: 0;
+}
+
+img {
+	border: 0;
+}
+
+.clear {
+	clear: both;
+	height: 0;
+	overflow: hidden;
+}
+
+
+/* Page */
+
+#page {
+	margin: 0 auto;
+	width: 1000px;
+	background: url("images/page.gif") repeat-y;
+}
+
+#page-top {
+	width: 1000px;
+	background: url("images/page_top.jpg") no-repeat;
+}
+
+#page-bottom {
+	width: 1000px;
+	background: url("images/page_bottom.jpg") no-repeat left bottom;
+}
+
+
+/* Header */
+
+#header {
+	width: 1000px;
+	height: 175px;
+	position: relative;
+}
+
+	/* Header - Info */
+	
+	#header #header-info {
+		position: absolute;
+		top: 50px;
+		left: 50px;
+	}
+	
+	#header #header-info h1 {
+		color: #ffffff;
+		font: bold 35px Century Gothic, Helvetica, Arial, sans-serif;
+	}
+	
+	#header #header-info h1 a {
+		color: #ffffff;
+		text-decoration: none;
+	}
+	
+	#header #header-info .description {
+		color: #ffffff;
+		font: italic 19px Century Gothic, Helvetica, Arial, sans-serif;
+		padding-left: 25px;
+	}
+	
+	/* Header - Search */
+	
+	#header #header-search {
+		position: absolute;
+		top: 141px;
+		left: 685px;
+		width: 279px;
+		height: 34px;
+	}
+	
+	#header #header-search #searchform {
+		margin: 0;
+		padding: 0;
+		width: 279px;
+		height: 34px;
+	}
+	
+	#header #header-search #s {
+		width: 245px;
+		height: 18px;
+		padding: 8px 0;
+		border: 0;
+		font: bold 13px Century Gothic, Helvetica, Arial, sans-serif;
+		color: #000000;
+		background: transparent;
+		float: left;
+	}
+	
+	#header #header-search #searchsubmit {
+		background: transparent;
+		border: none;
+		width: 34px;
+		height: 34px;
+		padding: 0;
+		float: right;
+	}
+
+
+/* Main */
+
+#main {
+	width: 1000px;
+}
+
+	/* Main - Sidebar */
+	
+	#sidebar {
+		float: left;
+		width: 200px;
+		padding: 0 25px 200px 12px;
+		font: normal 12px/18px Century Gothic, Helvetica, Arial, sans-serif;
+		color: #000000;
+	}
+	
+	#sidebar a {
+		color: #ff6600;
+		text-decoration: none;
+	}
+	
+	#sidebar a:hover {
+		text-decoration: underline;
+	}
+	
+	/* Main - Sidebar - Boxes */
+	
+	#sidebar .sidebar-box {
+		width: 200px;
+		background: url("images/sidebar_box.gif") repeat-y;
+	}
+	
+	#sidebar .sidebar-box-top {
+		width: 200px;
+		background: url("images/sidebar_box_top.gif") no-repeat;
+	}
+	
+	#sidebar .sidebar-box-bottom {
+		width: 200px;
+		background: url("images/sidebar_box_bottom.gif") no-repeat left bottom;
+	}
+	
+	#sidebar .sidebar-box-blank {
+		width: 200px;
+		margin: 10px 0;
+		text-align: center;
+	}
+	
+	#sidebar .sidebar-box-feed {
+		width: 200px;
+		margin-top: 5px;
+	}
+	
+		/* Sidebar - Titles */
+		
+		#sidebar h3 {
+			width: 160px;
+			height: 53px;
+			padding-left: 40px;
+			font: bold 15px/53px Century Gothic, Helvetica, Arial, sans-serif;
+			color: #ffffff;
+			background: url("images/sidebar_title.jpg") no-repeat;
+		}
+		
+		#sidebar h3.first {
+			background: url("images/sidebar_title_first.jpg") no-repeat;
+		}
+		
+		/* Sidebar - Menus */
+		
+		#sidebar ul {
+			margin: 0;
+			padding: 0 15px 20px 10px;
+			list-style-type: none;
+		}
+		
+		#sidebar ul li {
+			color: #000000;
+			font: normal 12px/28px Century Gothic, Helvetica, Arial, sans-serif;
+		}
+		
+		#sidebar ul li a {
+			color: #000000;
+			padding-left: 15px;
+			text-decoration: none;
+			display: block;
+			border-bottom: 1px solid #ff9900;
+		}
+		
+		#sidebar ul li a:hover {
+			text-decoration: underline;
+		}
+		
+			/* Sidebar - Menus - Submenus */
+			
+			#sidebar ul li ul {
+				padding: 0;
+			}
+		
+		/* Sidebar - Forms */
+		
+		#sidebar #searchform {
+			margin: 0;
+			padding: 20px 0;
+			width: 200px;
+			text-align: center;
+		}
+		
+		#sidebar #searchform #s {
+			width: 150px;
+		}
+		
+		/* Sidebar - Tables */
+		
+		#sidebar #calendar_wrap {
+			margin: 0 auto;
+			width: 145px;
+			padding-bottom: 8px;
+		}
+		
+		#sidebar #calendar_wrap table {
+			width: 145px;
+		}
+		
+		#sidebar #calendar_wrap caption {
+			font-weight: bold;
+		}
+		
+		#sidebar #calendar_wrap tbody {
+			text-align: right;
+		}
+		
+		#sidebar #calendar_wrap tfoot #next {
+			text-align: right;
+		}
+		
+		#sidebar #calendar_wrap #today {
+			font-weight: bold;
+		}
+		
+		/* Sidebar - Texts */
+		
+		#sidebar .textwidget {
+			padding: 0 8px 8px 8px;
+		}
+	
+	/* Main - Content */
+	
+	#content {
+		float: left;
+		width: 745px;
+		padding-top: 30px;
+	}
+	
+	/* Main - Content - Post */
+	
+	#content .post {
+		float: left;
+		margin-bottom: 30px;
+		width: 745px;
+	}
+	
+		/* Post - Title */
+		
+		#content .post .post-title {
+			width: 745px;
+			padding-bottom: 10px;
+			color: #91c11b;
+			font: normal 11px Century Gothic, Helvetica, Arial, sans-serif;
+		}
+		
+		#content .post .post-title a {
+			color: #000000;
+			text-decoration: none;
+		}
+		
+		#content .post .post-title a:hover {
+			text-decoration: underline;
+		}
+		
+		#content .post .post-title .post-title-right {
+			float: left;
+		}
+		
+		#content .post .post-title .post-date {
+			float: left;
+			color: #ffffff;
+			text-align: center;
+			text-transform: lowercase;
+			width: 48px;
+			height: 44px;
+			padding: 9px 0 0 12px;
+			margin-right: 15px;
+			font: normal 12px Century Gothic, Helvetica, Arial, sans-serif;
+			background: url("images/post_date.jpg") no-repeat;
+		}
+		
+		#content .post .post-title .post-date span {
+			display: block;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 20px;
+			padding-top: 3px;
+		}
+		
+		#content .post .post-title h2 {
+			color: #64a404;
+			font: normal 25px Century Gothic, Helvetica, Arial, sans-serif;
+			padding-bottom: 3px;
+		}
+		
+		#content .post .post-title h2 a {
+			color: #64a404;
+			text-decoration: none;
+		}
+		
+		#content .post .post-title h2 a:hover {
+			text-decoration: underline;
+		}
+		
+		#content .post .post-title .post-title-info {
+			height: 20px;
+			line-height: 20px;
+			padding-left: 18px;
+			background: url("images/post_title_info.gif") no-repeat;
+		}
+		
+		#content .post .post-title .post-title-info .post-title-info-item {
+			width: 70px;
+			float: left;
+		}
+		
+		#content .post .post-title .post-title-info .post-title-author {
+			color: #000000;
+		}
+		
+		/* Post - Entry */
+		
+		#content .post .post-entry {
+			font: normal 13px/19px Century Gothic, Helvetica, Arial, sans-serif;
+			color: #000000;
+			width: 715px;
+			padding: 0 15px;
+		}
+		
+		#content .post .post-entry a {
+			color: #ff6600;
+			text-decoration: none;
+		}
+		
+		#content .post .post-entry a:hover {
+			text-decoration: underline;
+		}
+		
+		#content .post .post-entry a.more-link {
+			font-weight: bold;
+		}
+		
+		#content .post .post-entry blockquote {
+			border-left: 6px solid #d7ee65;
+			margin: 0 15px 0 40px;
+			padding-left: 15px;
+			color: #5d9704;
+			font-size: 12px;
+			line-height: 18px;
+		}
+		
+		/* Post - Info */
+		
+		#content .post .post-info {
+			clear: both;
+			width: 685px;
+			height: 70px;
+			padding: 14px 30px 0 30px;
+			font: normal 11px Century Gothic, Helvetica, Arial, sans-serif;
+			color: #ff6600;
+			background: url("images/post_info.gif") no-repeat;
+		}
+		
+		#content .post .post-info a {
+			color: #ff6600;
+			text-decoration: none;
+		}
+		
+		#content .post .post-info a:hover {
+			text-decoration: underline;
+		}
+		
+		/* Post - Subtitle */
+		
+		#content .post h3 {
+			margin: 20px 0 5px 0;
+			color: #64a404;
+			font: bold 15px Century Gothic, Helvetica, Arial, sans-serif;
+		}
+		
+		/* Post - Comments */
+		
+		#content .post .comments {
+			font: normal 13px/19px Century Gothic, Helvetica, Arial, sans-serif;
+			color: #000000;
+			width: 715px;
+		}
+		
+		#content .post .comments ol {
+			margin: 10px 0;
+			padding-left: 25px;
+		}
+		
+		#content .post .comments ol li {
+			padding: 5px;
+		}
+		
+		#content .post .comments ol li a {
+			color: #ff6600;
+			text-decoration: none;
+		}
+		
+		#content .post .comments ol li a:hover {
+			text-decoration: underline;
+		}
+		
+		#content .post .comments ol li.alt {
+			background: #f7ffce;
+		}
+		
+		#content .post .comments ol li cite {
+			color: #ff6600;
+			font-style: normal;
+			font-weight: bold;
+		}
+		
+		#content .post .comments ol li cite a {
+			color: #ff6600;
+			text-decoration: none;
+		}
+		
+		#content .post .comments ol li cite a:hover {
+			text-decoration: underline;
+		}
+		
+		#content .post .comments ol li .commentmetadata a {
+			color: #ff6600;
+			text-decoration: none;
+		}
+		
+		#content .post .comments ol li .commentmetadata a:hover {
+			text-decoration: underline;
+		}
+		
+		/* Post - Comment Form */
+		
+		#content .post #commentform {
+			font: normal 13px/19px Century Gothic, Helvetica, Arial, sans-serif;
+			color: #000000;
+			width: 690px;
+			padding-left: 25px;
+			margin: 0;
+		}
+		
+		#content .post #commentform a {
+			color: #ff6600;
+			text-decoration: none;
+		}
+		
+		#content .post #commentform a:hover {
+			text-decoration: underline;
+		}
+	
+	/* Main - Content - Navigation */
+	
+	#content .navigation {
+		float: left;
+		margin-bottom: 30px;
+		font: bold 13px Century Gothic, Helvetica, Arial, sans-serif;
+		color: #ff6600;
+		width: 725px;
+		padding: 0 10px;
+	}
+	
+	#content .navigation a {
+		color: #ff6600;
+		text-decoration: none;
+	}
+	
+	#content .navigation a:hover {
+		text-decoration: underline;
+	}
+	
+		#content .navigation .navigation-previous {
+			float: left;
+		}
+		
+		#content .navigation .navigation-next {
+			float: right;
+		}
+
+
+/* Footer */
+
+#footer {
+	width: 1000px;
+	height: 107px;
+	color: #ffffff;
+	font: normal 11px/107px Century Gothic, Helvetica, Arial, sans-serif;
+	text-align: center;
+}
+
+#footer a {
+	color: #c1e50e;
+	text-decoration: underline;
+}
+
+#footer a:hover {
+	text-decoration: underline;
+}

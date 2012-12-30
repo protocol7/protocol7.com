@@ -1,0 +1,117 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:p7="http://www.protocol7.com/ns"
+    xmlns:a3="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+    xmlns:xlink="http://www.w3.org/1999/xlink" a3:scriptImplementation="Adobe" onload="_onload()">
+    <title>OPML to SVG</title>
+    <style type="text/css">
+        text{pointer-events:none}
+    </style>
+    <script xlink:href="opml.js"/>
+    <text x="25" y="25" fill="black" font-size="16px">click the squares to explore</text>
+    <svg id="kalle" viewBox="0 0 162 162" x="25" y="30" width="400" height="400"
+        onclick="_onclick(evt)">
+        <script>
+            title = "protocol7"
+        </script>
+        <g transform="translate(81,81)" p7:url="http://www.protocol7.com/default.asp?x=projects">
+            <rect x="0" y="0" width="81" height="81" fill="green"/>
+            <text x="5" y="15" fill="white">projects</text>
+            <g transform="translate(54,27) scale(0.33333)" p7:url="http://www.webjab.org">
+                <rect x="0" y="0" width="81" height="81" fill="black" fill-opacity="0.5"/>
+                <text x="5" y="15" fill="white">webjab</text>
+            </g>
+            <g transform="translate(27,54) scale(0.33333)">
+                <rect x="0" y="0" width="81" height="81" fill="black" fill-opacity="0.5"/>
+                <text x="5" y="15" fill="white">p7.lib</text>
+            </g>
+            <g transform="translate(54,54) scale(0.33333)"
+                p7:url="http://www.protocol7.com/svg-wiki">
+                <rect x="0" y="0" width="81" height="81" fill="black" fill-opacity="0.7"/>
+                <text x="5" y="15" fill="white">svg-wiki</text>
+            </g>
+        </g>
+        <g transform="translate(81,0)" p7:url="http://www.protocol7.com/default.asp?x=code">
+            <rect x="0" y="0" width="81" height="81" fill="yellow"/>
+            <text x="5" y="15" fill="white">code</text>
+            <g transform="translate(27,54) scale(0.33333)"
+                p7:url="http://www.protocol7.com/default.asp?x=projdoc/p7_soap">
+                <rect x="0" y="0" width="81" height="81" fill="black" fill-opacity="0.5"/>
+                <text x="5" y="15" fill="white">p7.soap</text>
+            </g>
+            <g transform="translate(54,54) scale(0.33333)"
+                p7:url="http://www.protocol7.com/default.asp?x=projdoc/p7_xmlrpc">
+                <rect x="0" y="0" width="81" height="81" fill="black" fill-opacity="0.7"/>
+                <text x="5" y="15" fill="white">p7.xmlrpc</text>
+            </g>
+        </g>
+        <g transform="translate(0,81)" p7:url="http://www.protocol7.com/default.asp?x=services">
+            <rect x="0" y="0" width="81" height="81" fill="blue"/>
+            <text x="5" y="15" fill="white">services</text>
+            <g transform="translate(27,27) scale(0.33333)"
+                p7:url="http://www.protocol7.com/services/echo.asp">
+                <rect x="0" y="0" width="81" height="81" fill="black" fill-opacity="0.3"/>
+                <text x="5" y="15" fill="white">echo</text>
+            </g>
+            <g transform="translate(54,27) scale(0.33333)"
+                p7:url="http://www.protocol7.com/services/openwiki.asp">
+                <rect x="0" y="0" width="81" height="81" fill="black" fill-opacity="0.5"/>
+                <text x="5" y="15" fill="white">openwiki</text>
+            </g>
+            <g transform="translate(27,54) scale(0.33333)"
+                p7:url="http://www.protocol7.com/services/shoutcast.asp">
+                <rect x="0" y="0" width="81" height="81" fill="black" fill-opacity="0.5"/>
+                <text x="5" y="15" fill="white">shoutcast</text>
+            </g>
+            <g transform="translate(54,54) scale(0.33333)"
+                p7:url="http://www.protocol7.com/services/dictionary.asp">
+                <rect x="0" y="0" width="81" height="81" fill="black" fill-opacity="0.7"/>
+                <text x="5" y="15" fill="white">dictionary</text>
+            </g>
+        </g>
+        <g transform="" p7:url="http://www.protocol7.com/default.asp?x=experiments">
+            <rect x="0" y="0" width="81" height="81" fill="red"/>
+            <text x="5" y="15" fill="white">experiments</text>
+            <g transform="translate(27,54) scale(0.33333)">
+                <rect x="0" y="0" width="81" height="81" fill="black" fill-opacity="0.5"/>
+                <text x="5" y="15" fill="white">flash</text>
+                <g transform="translate(27,27) scale(0.33333)"
+                    p7:url="http://www.protocol7.com/default.asp?x=experiments/astar">
+                    <rect x="0" y="0" width="81" height="81" fill="black" fill-opacity="0.3"/>
+                    <text x="5" y="15" fill="white">A*</text>
+                </g>
+                <g transform="translate(54,27) scale(0.33333)"
+                    p7:url="http://www.protocol7.com/default.asp?x=experiments/poly1">
+                    <rect x="0" y="0" width="81" height="81" fill="black" fill-opacity="0.5"/>
+                    <text x="5" y="15" fill="white">poly</text>
+                </g>
+                <g transform="translate(27,54) scale(0.33333)"
+                    p7:url="http://www.protocol7.com/default.asp?x=experiments/3dball">
+                    <rect x="0" y="0" width="81" height="81" fill="black" fill-opacity="0.5"/>
+                    <text x="5" y="15" fill="white">3D ball</text>
+                </g>
+                <g transform="translate(54,54) scale(0.33333)"
+                    p7:url="http://www.protocol7.com/default.asp?x=experiments/golomb">
+                    <rect x="0" y="0" width="81" height="81" fill="black" fill-opacity="0.7"/>
+                    <text x="5" y="15" fill="white">golomb</text>
+                </g>
+            </g>
+            <g transform="translate(54,54) scale(0.33333)">
+                <rect x="0" y="0" width="81" height="81" fill="black" fill-opacity="0.7"/>
+                <text x="5" y="15" fill="white">svg</text>
+                <g transform="translate(27,54) scale(0.33333)"
+                    p7:url="http://www.protocol7.com/default.asp?x=experiments/svg/iso1">
+                    <rect x="0" y="0" width="81" height="81" fill="black" fill-opacity="0.5"/>
+                    <text x="5" y="15" fill="white">iso</text>
+                </g>
+                <g transform="translate(54,54) scale(0.33333)"
+                    p7:url="http://www.protocol7.com/default.asp?x=experiments/svg/lines">
+                    <rect x="0" y="0" width="81" height="81" fill="black" fill-opacity="0.7"/>
+                    <text x="5" y="15" fill="white">lines</text>
+                </g>
+            </g>
+        </g>
+    </svg>
+    <text id="hist" x="25" y="450" fill="#CCC" font-size="18px">as</text>
+    <a xlink:href="sddsf.html" id="go" style="visibility:hidden">
+        <text x="390" y="450" fill="black" font-size="18px" style="pointer-events:all;">go!</text>
+    </a>
+</svg>

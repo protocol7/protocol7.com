@@ -1,0 +1,552 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Tweet This 1.6\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2009-08-24 17:43-0000\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Richard X. Thripp <richardxthripp@thripp.com>\n"
+"Language-Team: Richard X. Thripp <richardxthripp@thripp.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: English\n"
+"X-Poedit-Country: UNITED STATES\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: tweet-this.php:297
+#: tweet-this.php:662
+#: tweet-this.php:952
+#: tweet-this.php:1351
+#: lib/tt-options.php:320
+msgid "Tweet This Post"
+msgstr ""
+
+#: tweet-this.php:303
+#: tweet-this.php:970
+#: tweet-this.php:1355
+#: lib/tt-options.php:454
+msgid "Plurk This Post"
+msgstr ""
+
+#: tweet-this.php:309
+#: tweet-this.php:980
+#: tweet-this.php:1360
+#: lib/tt-options.php:474
+msgid "Buzz This Post"
+msgstr ""
+
+#: tweet-this.php:315
+#: tweet-this.php:990
+#: tweet-this.php:1364
+#: lib/tt-options.php:494
+msgid "Delicious"
+msgstr ""
+
+#: tweet-this.php:320
+#: tweet-this.php:1000
+#: tweet-this.php:1369
+#: lib/tt-options.php:514
+msgid "Digg This Post"
+msgstr ""
+
+#: tweet-this.php:326
+#: tweet-this.php:1010
+#: tweet-this.php:1373
+#: lib/tt-options.php:534
+msgid "Facebook"
+msgstr ""
+
+#: tweet-this.php:331
+#: tweet-this.php:1020
+#: tweet-this.php:1377
+#: lib/tt-options.php:554
+msgid "MySpace"
+msgstr ""
+
+#: tweet-this.php:336
+#: tweet-this.php:1030
+#: tweet-this.php:1381
+#: lib/tt-options.php:574
+msgid "Ping This Post"
+msgstr ""
+
+#: tweet-this.php:342
+#: tweet-this.php:1040
+#: tweet-this.php:1384
+msgid "Reddit"
+msgstr ""
+
+#: tweet-this.php:347
+#: tweet-this.php:1050
+#: tweet-this.php:1389
+#: lib/tt-options.php:613
+msgid "Stumble This Post"
+msgstr ""
+
+#: tweet-this.php:367
+#: tweet-this.php:534
+#: tweet-this.php:1352
+#: lib/tt-options.php:326
+msgid "Post to Twitter"
+msgstr ""
+
+#: tweet-this.php:373
+#: tweet-this.php:543
+#: tweet-this.php:1357
+#: lib/tt-options.php:461
+msgid "Post to Plurk"
+msgstr ""
+
+#: tweet-this.php:379
+#: tweet-this.php:552
+#: tweet-this.php:1361
+#: lib/tt-options.php:481
+msgid "Post to Yahoo Buzz"
+msgstr ""
+
+#: tweet-this.php:385
+#: tweet-this.php:564
+#: tweet-this.php:1365
+#: lib/tt-options.php:501
+msgid "Post to Delicious"
+msgstr ""
+
+#: tweet-this.php:392
+#: tweet-this.php:575
+#: tweet-this.php:1370
+#: lib/tt-options.php:521
+msgid "Post to Digg"
+msgstr ""
+
+#: tweet-this.php:398
+#: tweet-this.php:586
+#: tweet-this.php:1374
+#: lib/tt-options.php:541
+msgid "Post to Facebook"
+msgstr ""
+
+#: tweet-this.php:404
+#: tweet-this.php:598
+#: tweet-this.php:1378
+#: lib/tt-options.php:561
+msgid "Post to MySpace"
+msgstr ""
+
+#: tweet-this.php:410
+#: tweet-this.php:613
+#: tweet-this.php:1382
+#: lib/tt-options.php:581
+msgid "Post to Ping.fm"
+msgstr ""
+
+#: tweet-this.php:416
+#: tweet-this.php:625
+#: tweet-this.php:1386
+#: lib/tt-options.php:601
+msgid "Post to Reddit"
+msgstr ""
+
+#: tweet-this.php:422
+#: tweet-this.php:636
+#: tweet-this.php:1390
+#: lib/tt-options.php:620
+msgid "Post to StumbleUpon"
+msgstr ""
+
+#: tweet-this.php:678
+#: tweet-this.php:736
+msgid " characters remaining"
+msgstr ""
+
+#: tweet-this.php:713
+#: tweet-this.php:1416
+msgid "Tweet This"
+msgstr ""
+
+#: tweet-this.php:717
+msgid "Please enter your Twitter username and password under Settings > Tweet This"
+msgstr ""
+
+#: tweet-this.php:720
+msgid "This post has been tweeted. To allow a retweet, set the tt_auto_tweet and tt_tweeted custom fields to false, then save."
+msgstr ""
+
+#: tweet-this.php:724
+msgid "Cannot tweet a private post."
+msgstr ""
+
+#: tweet-this.php:750
+msgid "Send to Twitter"
+msgstr ""
+
+#: tweet-this.php:758
+#: tweet-this.php:802
+#: tweet-this.php:1347
+#: lib/tt-options.php:348
+msgid "New blog post"
+msgstr ""
+
+#: tweet-this.php:1068
+msgid "Tweet This options saved."
+msgstr ""
+
+#: tweet-this.php:1121
+msgid "No icon."
+msgstr ""
+
+#: tweet-this.php:1197
+msgid "Editable text box"
+msgstr ""
+
+#: tweet-this.php:1198
+msgid "Size"
+msgstr ""
+
+#: tweet-this.php:1226
+#, php-format
+msgid "(%1$s Characters)"
+msgstr ""
+
+#: tweet-this.php:1262
+msgid "Login succeeded, you're good to go. Remember to save!"
+msgstr ""
+
+#: tweet-this.php:1269
+msgid "Sorry, login failed."
+msgstr ""
+
+#: tweet-this.php:1271
+msgid "Your username or password is blank or incorrect."
+msgstr ""
+
+#: tweet-this.php:1273
+#, php-format
+msgid "Error message from Twitter: %s"
+msgstr ""
+
+#: tweet-this.php:1302
+#: tweet-this.php:1307
+msgid "Sending you to Twitter..."
+msgstr ""
+
+#: tweet-this.php:1308
+msgid "Click here if nothing happens."
+msgstr ""
+
+#: tweet-this.php:1325
+msgid "The file that constructs the options form, /tweet-this/lib/tt-options.php, is missing."
+msgstr ""
+
+#: tweet-this.php:1415
+msgid "Tweet This Options"
+msgstr ""
+
+#: tweet-this.php:1437
+msgid "Resetting Tweet This options. Please wait..."
+msgstr ""
+
+#: tweet-this.php:1446
+msgid "Tweet This options reset successfully!"
+msgstr ""
+
+#: tweet-this.php:1460
+msgid "Tweet This options imported successfully!"
+msgstr ""
+
+#: tweet-this.php:1464
+msgid "There is something wrong with the provided options. Import aborted."
+msgstr ""
+
+#: tweet-this.php:1544
+#, php-format
+msgid "Twitter links powered by <a href=\"http://richardxthripp.thripp.com/tweet-this\">Tweet This v%1$s</a>, a WordPress plugin for Twitter."
+msgstr ""
+
+#: lib/tt-options.php:25
+msgid "WARNING: TT_OVERRIDE_OPTIONS is set to true in the tt-config.php file in the tweet-this directory. Any options set here will be disregarded; only the options specified in the tt-config.php will be used. Please set TT_OVERRIDE_OPTIONS to false, or set TT_HIDE_MENU to true to remove the options form entirely."
+msgstr ""
+
+#: lib/tt-options.php:36
+msgid "Tweet This options reset."
+msgstr ""
+
+#: lib/tt-options.php:200
+#, php-format
+msgid "<a href=\"http://richardxthripp.thripp.com/tweet-this\">Tweet This</a> v%1$s Options"
+msgstr ""
+
+#: lib/tt-options.php:208
+msgid "Allow_url_fopen and curl are disabled in your PHP configuration. All URLs will be served locally, regardless of your chosen URL service. To fix this, try adding these lines to your <a href=\"http://www.washington.edu/computing/web/publishing/php-ini.html\">php.ini file</a>: `extension = curl.so` and `allow_url_fopen = on`."
+msgstr ""
+
+#: lib/tt-options.php:218
+#, php-format
+msgid "You have <strong>%1$s</strong> published posts and pages. Tweet This has short URLs for <strong>%2$s</strong> of them. URLs are cached as needed."
+msgstr ""
+
+#: lib/tt-options.php:226
+msgid "URL Service"
+msgstr ""
+
+#: lib/tt-options.php:237
+msgid "Local, i.e."
+msgstr ""
+
+#: lib/tt-options.php:241
+msgid "Custom"
+msgstr ""
+
+#: lib/tt-options.php:246
+msgid "Adjix Partner ID"
+msgstr ""
+
+#: lib/tt-options.php:254
+#, php-format
+msgid "Use shorter ad.vu URLs (%1$s Characters)"
+msgstr ""
+
+#: lib/tt-options.php:260
+msgid "URL of API"
+msgstr ""
+
+#: lib/tt-options.php:266
+msgid "The URL service must allow HTTP GET requests, meaning that the long URL is passed to the API as a parameter in the URL itself. HTTP POST is not supported. The output of the API must be a plain-text short URL including the http prefix, <a href=\"http://th8.us/api.php?url=http://richardxthripp.thripp.com/tweet-this\">like this</a>. The only valid variable is \"[LONGURL]\". Please check your blog after specifying the API's URL because its validity will not be confirmed. <a href=\"http://richardxthripp.thripp.com/tweet-this-custom-url-services\">A list of various URL shortening services is available</a>, including the seven removed in Tweet This 1.6."
+msgstr ""
+
+#: lib/tt-options.php:285
+msgid "Curl, which Tweetburner requires, is disabled in your PHP configuration. Choosing Tweetburner will have the same affect as chosing \"Local.\" To fix this, try adding the line `extension = curl.so` to your <a href=\"http://www.washington.edu/computing/web/publishing/php-ini.html\">php.ini file</a>."
+msgstr ""
+
+#: lib/tt-options.php:293
+msgid "Set \"Link\" to \"[BLANK]\" for no link text (also works for extended services). This will be done automatically if you change the icon."
+msgstr ""
+
+#: lib/tt-options.php:298
+msgid "For the editable text box, the \"Link\" field serves as the submit button's text. \"Tweet This Post\" will be used if it is set to \"[BLANK]\"."
+msgstr ""
+
+#: lib/tt-options.php:302
+msgid "You can add @'s and hashtags to \"Tweet Text,\" i.e. \"@richardxthripp [TITLE] [URL] #photography.\""
+msgstr ""
+
+#: lib/tt-options.php:309
+msgid "Insert Tweet This"
+msgstr ""
+
+#: lib/tt-options.php:310
+msgid "Tweet Text"
+msgstr ""
+
+#: lib/tt-options.php:316
+#: lib/tt-options.php:450
+#: lib/tt-options.php:470
+#: lib/tt-options.php:490
+#: lib/tt-options.php:510
+#: lib/tt-options.php:530
+#: lib/tt-options.php:550
+#: lib/tt-options.php:570
+#: lib/tt-options.php:590
+#: lib/tt-options.php:609
+msgid "Link"
+msgstr ""
+
+#: lib/tt-options.php:322
+#: lib/tt-options.php:456
+#: lib/tt-options.php:476
+#: lib/tt-options.php:496
+#: lib/tt-options.php:516
+#: lib/tt-options.php:536
+#: lib/tt-options.php:556
+#: lib/tt-options.php:576
+#: lib/tt-options.php:596
+#: lib/tt-options.php:615
+msgid "Title"
+msgstr ""
+
+#: lib/tt-options.php:334
+msgid "\"Send to Twitter\" defaults to checked on unpublished posts"
+msgstr ""
+
+#: lib/tt-options.php:336
+msgid "Twitter Username"
+msgstr ""
+
+#: lib/tt-options.php:340
+msgid "Password"
+msgstr ""
+
+#: lib/tt-options.php:352
+msgid "Test Twitter Login"
+msgstr ""
+
+#: lib/tt-options.php:358
+msgid "Advanced Options"
+msgstr ""
+
+#: lib/tt-options.php:360
+msgid "Alignment of Links"
+msgstr ""
+
+#: lib/tt-options.php:365
+msgid "Left"
+msgstr ""
+
+#: lib/tt-options.php:369
+msgid "Right"
+msgstr ""
+
+#: lib/tt-options.php:373
+msgid "Center"
+msgstr ""
+
+#: lib/tt-options.php:374
+msgid "Image CSS Class"
+msgstr ""
+
+#: lib/tt-options.php:380
+msgid "Link CSS Class"
+msgstr ""
+
+#: lib/tt-options.php:386
+msgid "CSS to insert. \"[BLANK]\" for none. \"[IMG_CLASS]\" and \"[LINK_CLASS]\" are also valid variables."
+msgstr ""
+
+#: lib/tt-options.php:397
+msgid "Only show Tweet This when viewing single posts or pages"
+msgstr ""
+
+#: lib/tt-options.php:402
+msgid "Hide Tweet This on pages"
+msgstr ""
+
+#: lib/tt-options.php:407
+msgid "Use \"www.\" instead of \"http://\" in shortened URLs"
+msgstr ""
+
+#: lib/tt-options.php:412
+msgid "Don't shorten URLs under 30 characters"
+msgstr ""
+
+#: lib/tt-options.php:417
+msgid "Open links in new windows"
+msgstr ""
+
+#: lib/tt-options.php:422
+msgid "Add nofollow tag to links"
+msgstr ""
+
+#: lib/tt-options.php:427
+msgid "Insert Tweet This message in footer"
+msgstr ""
+
+#: lib/tt-options.php:432
+msgid "Insert Google AdSense ads to support Tweet This"
+msgstr ""
+
+#: lib/tt-options.php:433
+msgid "Some advanced options can only be set in the tt-config.php file in the tweet-this directory."
+msgstr ""
+
+#: lib/tt-options.php:438
+msgid "Extended Services"
+msgstr ""
+
+#: lib/tt-options.php:443
+msgid "Insert Plurk This"
+msgstr ""
+
+#: lib/tt-options.php:444
+msgid "Plurk Text"
+msgstr ""
+
+#: lib/tt-options.php:469
+msgid "Insert Buzz This (Yahoo)"
+msgstr ""
+
+#: lib/tt-options.php:489
+msgid "Insert Delicious"
+msgstr ""
+
+#: lib/tt-options.php:509
+msgid "Insert Digg This"
+msgstr ""
+
+#: lib/tt-options.php:529
+msgid "Insert Facebook"
+msgstr ""
+
+#: lib/tt-options.php:549
+msgid "Insert Myspace"
+msgstr ""
+
+#: lib/tt-options.php:569
+msgid "Insert Ping This"
+msgstr ""
+
+#: lib/tt-options.php:589
+msgid "Insert Reddit"
+msgstr ""
+
+#: lib/tt-options.php:594
+msgid "Reddit This Post"
+msgstr ""
+
+#: lib/tt-options.php:608
+msgid "Insert StumbleUpon"
+msgstr ""
+
+#: lib/tt-options.php:654
+msgid "Save Options"
+msgstr ""
+
+#: lib/tt-options.php:656
+msgid "Reset Options"
+msgstr ""
+
+#: lib/tt-options.php:657
+msgid "Are you sure you want to reset Tweet This to its default options?"
+msgstr ""
+
+#: lib/tt-options.php:661
+msgid "Import / Export Options"
+msgstr ""
+
+#: lib/tt-options.php:663
+msgid "EXPORT"
+msgstr ""
+
+#: lib/tt-options.php:663
+msgid "Excludes your Twitter password. Save the content below to a text file."
+msgstr ""
+
+#: lib/tt-options.php:668
+msgid "IMPORT"
+msgstr ""
+
+#: lib/tt-options.php:673
+msgid "Paste your options here and click \"Import Options.\" Whatever you paste here will be added as-is to the wp_options table for the tweet_this_options row. Importing options from a previous or future version of Tweet This will cause no harm."
+msgstr ""
+
+#: lib/tt-options.php:681
+msgid "Import Options"
+msgstr ""
+
+#: lib/tt-options.php:683
+msgid "Are you sure you want to import these options? Your current options will be overwritten."
+msgstr ""
+
+#: lib/tt-options.php:686
+msgid "Importing options requires WordPress 2.0 or newer. <a href=\"http://codex.wordpress.org/Upgrading_WordPress\">Please upgrade</a>. Alternately, open up phpMyAdmin, select your WordPress database, click the \"wp_options\" table, click \"Browse,\" find the \"tweet_this_options\" row, click the edit icon, paste your options dump into the \"option_value\" field, and finally, click \"Go.\""
+msgstr ""
+
+#: lib/tt-options.php:697
+msgid "Thanks to <a href=\"http://blog.assbach.de/2009/01/11/freie-tweet-this-buttons/\">Sascha Assbach</a> and <a href=\"http://flickr.com/photos/grahamsblog/2347756292/\">Graham Smith</a> for the Tweet This buttons."
+msgstr ""
+
+#: lib/tt-options.php:701
+msgid "If you like Tweet This, <a href=\"http://richardxthripp.thripp.com/donate\">make a donation</a> to its development."
+msgstr ""
+

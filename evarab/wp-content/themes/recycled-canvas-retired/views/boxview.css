@@ -1,0 +1,59 @@
+.box {
+	font-size:small;
+	margin:5px;
+	padding:0;
+	width:237px;
+	float:left;
+	height:125px;
+	overflow:hidden;
+}
+.box h3 {
+
+}
+.box h3 a {
+	margin:0 0 5px 0;
+	height:18px;
+	padding:0 0 0;
+	font-size:15px;
+	display:block;
+	overflow:hidden;
+	text-decoration:none;
+}
+
+.box span { display:block; height:76px; padding:2px 5px 2px 5px; overflow:hidden;margin-bottom:5px;}
+.box .extra {
+	text-align:right;
+	font-size:x-small;
+}
+
+#callout {
+	margin:5px 5px 15px 5px;
+	font-size:small;
+	min-height:150px;
+}
+
+#callout h3 {
+	display:block;
+	background:transparent;
+	height:30px;
+	overflow:hidden;
+	
+}
+#callout h3 a {
+	font-size:22px;
+	margin-bottom:5px;
+	text-decoration:none;
+}
+
+#callout h3 span {
+	display:inline;
+	
+	margin-left:5px;
+	font-size:14px;
+}
+
+#callout span {
+	
+	display:block;
+	padding:5px;
+}

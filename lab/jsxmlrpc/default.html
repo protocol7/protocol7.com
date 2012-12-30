@@ -1,0 +1,30 @@
+<html>
+<head>
+	<title>Untitled</title>
+<script src="js2xmlrpc.js"></script>
+<script src="xmlrpc2js.js"></script>
+<script src="p7xmlRpc.js"></script>
+<script>
+
+window.onload = function(){
+//	var x = new p7.xmlrpc("http://www.protocol7.com/services/echo.asp")
+	var x = new p7.xmlrpc("http://www.stuffeddog.com/speller/speller-rpc.cgi")
+	
+	x.addFunction("speller.spellCheck", "", "check")
+	alert(x.check("helllo world"))
+}
+
+function _callback(data){
+	alert(data)
+}
+
+</script>
+
+</head>
+
+<body>
+
+
+
+</body>
+</html>

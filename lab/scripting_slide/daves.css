@@ -1,0 +1,82 @@
+*{
+	color:white;
+	fill:white;
+	font-family: serif;
+}
+
+body{
+	background-color: black;
+	font-size: 0.7em;	
+	margin:0px;
+}
+	
+#logo{
+	position:absolute;
+	top: 70px;
+	left:25px;
+	width:138px;
+	height:14px;
+	background-image:url(http://legacystatic1.userland.com/snImages/userland.gif);
+}
+		
+#controller{
+	position:absolute;
+	top:70px;
+	right:30px;
+	text-align: center;
+}
+		
+#controller a{
+	color: yellow;
+}
+
+#controller span{
+	display: block;
+}
+
+#slideContent{
+	margin-top:100px;
+	margin-right:155px;
+	margin-left:30px;
+}
+
+#slideContent ul{
+	list-style: none;
+}
+
+#slideContent li{
+	font-size:2.7em;
+	font-weight: bold;
+	margin-bottom:10px;
+}
+
+#slideContent h1{
+	border-bottom: 1px solid white;
+}
+
+embed{
+	margin:10px;
+}
+
+circle{
+	fill: none;
+	stroke:white;
+}
+
+line{
+	fill:none;
+	stroke:white;
+	stroke-width:2px;
+}
+
+path{
+	fill:white;
+}
+
+#bgRect{
+	fill: black;
+}
+
+text, tspan{
+	font-size:1.1em;
+}

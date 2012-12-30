@@ -1,0 +1,26 @@
+#navigation { float: left; }
+
+#navigation ul { float: right; }
+
+#navigation li.active a:link,
+#navigation li.active a:visited
+{
+	color: #555555;
+	background-color: #ffffff;
+}
+
+#content-wrapper { width: 58%; }
+
+#content pre { width: 360px; overflow: hidden; }
+
+#wrapper h3.post-title a:link, 
+#wrapper h3.post-title a:visited
+{
+	border-bottom-width: 0;
+}
+
+#extras { padding-right: 0; margin-right: 0; margin-left: 8px; padding-left: 0; }
+
+#extras #friends ul { padding-left: 0; margin-left: 20px; }
+
+#extras #links { width: 250px; }

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+
+<script language="javascript" type="text/javascript" src="/clvdev/inc_file/clv/functions.js"></script>
+<script language="javascript" type="text/javascript">
+
+
+</script>
+</head>
+
+<body onload="ff.initScroll();" ondragstart="return false">
+
+<div id="roffe" style="position: absolute; top: 100px; left: 100px; width: 100px; clip:rect(0 100 100 0);">
+Lorem ipsum dolor sit amet, consectetaur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum Et harumd und dereud facilis est er expedit distinct. Nam liber te conscient to factor tum poen legum odioque civiuda. Et tam neque pecun modut est neque nonor et imper ned libidig met, consectetur adipiscing elit, sed ut labore et dolore magna aliquam Bis nostrud exercitation ullam mmodo consequet. Duis aute in voluptate velit esse cillum dolore eu fugiat nulla pariatur. At vver eos et accusam dignissum qui blandit est praesent luptatum delenit aigue excepteur sint occae. Et harumd dereud facilis est er expedit distinct. Nam libe soluta nobis eligent optio est congue nihil impedit doming id
+</div>
+
+<div style="position:absolute; left: 210px; top: 100px;"><a href="#" onmouseover="ff.scrollLayer('roffe', 1)" onmouseout="clearTimeout(ff.scrollTimer)"><img src="knapp.gif" border="0" alt=""></a></div>
+<div style="position:absolute; left: 210px; top: 185px;"><a href="#" onmouseover="ff.scrollLayer('roffe', -1)" onmouseout="clearTimeout(ff.scrollTimer)"><img src="knapp.gif" border="0" alt=""></a></div>
+<div style="position:absolute; left: 209px; top: 115px; width: 8px; border: 1px solid black;"><img src='spacer.gif' width=1 height=70></div>
+
+
+
+<br><br>
+<div id="roffeDrag" style="position: absolute; top: 115px; left: 210px;">
+<img src="knapp.gif" border="0" alt="">
+</div>
+
+<br><br>
+
+<script language="javascript" type="text/javascript">
+
+
+ff.startScrollDrag = function(evt){
+	ff.draging = "strLayer"
+	ff.deltaY = ff.getEventY(evt) - ff.getY("roffeDrag")
+	return false
+}
+
+ff.stopScrollDrag = function(){
+	ff.draging = ""
+}
+
+ff.handleScrollDrag = function(evt){
+	if(ff.draging != ""){
+		var mouseY = ff.getEventY(evt)
+		ff.moveTo("roffeDrag", null, mouseY - ff.deltaY)
+	}
+}
+
+ff.initScroll = function(strLayer){
+	ff.draging = ""
+	ff.catchMouseEvent("mousedown", "ff.startScrollDrag", "roffeDrag")	
+	ff.catchMouseEvent("mousemove", "ff.handleScrollDrag")	
+	ff.catchMouseEvent("mouseup", "ff.stopScrollDrag")
+
+}
+
+ff.getEventY = function(evt){
+		if(ff.ns4) return evt.pageY
+		else if (ff.ie) return window.event.clientY
+		else if (ff.w3c) return evt.clientY
+}
+
+ff.catchMouseEvent = function(strEventName, strHandlerFunction, strLayer){
+	if(ff.ns4){
+		if(strLayer){
+			var objLayer = ff.getObj(strLayer)
+			if(objLayer) objLayer.document.captureEvents(eval("Event." + strEventName.toUpperCase()))
+		}
+		else document.captureEvents(eval("Event." + strEventName.toUpperCase()))
+	}
+	if(strLayer){
+		var objLayer = ff.getObj(strLayer)
+		if(objLayer){
+			if(ff.ns4) objLayer.document["on"+strEventName] = eval(strHandlerFunction)
+			else objLayer["on"+strEventName] = eval(strHandlerFunction)
+		}
+	}
+	else document["on"+strEventName] = eval(strHandlerFunction)
+}
+
+
+
+</script>
+</body>
+</html>

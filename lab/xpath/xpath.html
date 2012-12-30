@@ -1,0 +1,222 @@
+<html>
+<head>
+	<title>Untitled</title>
+
+<script language="JavaScript" type="text/javascript">
+
+function XPath(sExp){
+	this.exp = sExp
+	this.single = true
+	this.steps = []
+	this.nodes = []
+
+	this.getSearchSpace = function(oNode, sAxis){
+	
+	}
+	
+	this.addNode = function(oNode){
+		this.nodes.push(oNode)
+	}
+
+	this.removeNode = function(oNode){
+		for(var i = 0; i<this.nodes.length; i++){
+			if(this.nodes[i] == oNode){
+				this.nodes.splice(i, 1)
+				break
+			}
+		}
+	}
+	
+	this.addStep = function(oStep){
+		oStep.xpath = this
+		oStep.index = this.steps.length
+		this.steps.push(oStep)
+	}	
+	
+	//
+	this.parse(sExp)
+}
+
+XPath.step = function(){
+	this.xpath = null
+	this.axis = null
+	this.ns = null
+	this.node = null
+	this.predicate = null
+	
+	this.reAxisAndNode = /^[^\[]*/
+	
+	this.parseAxis = function(sStep){
+		sStep = String(sStep.match(this.reAxisAndNode))
+		if(sStep.charAt(0)=="/"){
+				if(this.index==0){
+				//first step
+				if(sStep.indexOf("//")==0) this.axis = "descandants-of-root"
+				else this.axis = "child-of-root"
+			}
+			else this.axis = "descendant"
+		}
+		else if(sStep.indexOf("::")>-1){
+			this.axis = sStep.match(/^[^::]*/)
+		}
+		else if(sStep.charAt(0) == "@"){
+			this.axis = "attributes"
+		}
+		else{
+			this.axis = "child"
+		}
+	}
+	
+	this.parseNs = function(sStep){
+		sStep = String(sStep.match(this.reAxisAndNode))
+		sStep = sStep.replace(/^[^::]*::/, "")	//remove axis
+		if(sStep.indexOf(":")>-1){
+			this.ns = sStep.match(/^[^:]/)
+		}
+	}
+	
+	this.parseNode = function(sStep){
+		sStep = String(sStep.match(this.reAxisAndNode)) // remove predicates
+		sStep = sStep.substr(sStep.lastIndexOf(":")+1)	// remove axis and ns
+		sStep = sStep.replace(/^@|\//, "")	//remove // and @
+		this.node = sStep
+	}
+	
+	this.parsePredicates = function(){
+	
+	}
+	
+	this.getSearchSpace = function(oNode){
+		a = this.axis
+		if(a=="child"){
+			return oNode.childNodes
+		}
+		else if(a == "child-of-root"){
+			return [oNode.ownerDocument.documentElement]
+		}
+		else{
+			return oNode.childNodes
+		}
+	}
+	
+	this.checkNsAndNode = function(oNode){
+		// c.prefix is wrong, what's the correct syntax?
+		if(!this.ns || this.ns == oNode.prefix){
+			return (oNode.nodeName == this.node || this.node == "*")
+		}
+		else return false
+	}
+
+	this.checkPredicates = function(oNode){
+		return true
+	}
+}
+
+XPath.step.prototype.findNode = function(oNode){
+	aSP = this.getSearchSpace(oNode)
+	aRet = []	// the nodes that satifies this step
+alert(aSP.length)
+	for(var i = 0; i<aSP.length; i++){
+		var c = aSP[i]
+		
+		alert(this.node + " -- " + c.xml)
+		if(this.checkNsAndNode(c) && this.checkPredicates(c)){
+			aRet[aRet.length] = c
+		}
+	}
+	return aRet
+}
+
+XPath.prototype.getStepsFromExp = function(){
+	var aRet = []
+	var s = this.exp
+	var iPredDepth = 0
+	var step = ""
+	while(s){
+		var c = s.charAt(0)
+		step += c
+		if(c=="[") iPredDepth++
+		else if(c=="]") iPredDepth--
+		else if(c=="/" && iPredDepth==0 && step.length>0){
+			if(s!=this.exp && s!=this.exp.substr(1)){
+				aRet[aRet.length] = step.substr(0, step.length-1)
+				step = ""
+			}
+		}
+		s = s.substr(1)
+	}
+	aRet[aRet.length] = step
+	return aRet
+}
+
+XPath.prototype.parse = function(){
+	var aSteps = this.getStepsFromExp()
+
+	for(var i = 0; i<aSteps.length; i++){
+		var s = new XPath.step()
+		this.addStep(s)
+		s.parseAxis(aSteps[i])
+		s.parseNs(aSteps[i])
+		s.parseNode(aSteps[i])
+		s.parsePredicates(aSteps[i])
+
+	}
+}
+
+XPath.prototype.execute = function(oNode){
+	//this.addNode(oNode)
+	var aNodes = [oNode]
+	for(var i = 0; i<this.steps.length; i++){
+		var aNodes2 = []
+		for(var j = 0; j<aNodes.length; j++){
+			aNodes = aNodes.concat(this.steps[i].findNode(aNodes[j]))
+		}
+		
+		if(aNodes2.length==0) break
+		else if(!confirm("sfsd")) aNodes = aNodes2
+	}
+	return aNodes2
+}
+
+XPath.prototype.selectSingleNode = function(oNode){
+	this.single = true
+	var aNodes = this.execute(oNode)
+alert(aNodes)
+	if(aNodes.length==0) return null
+	else return aNodes
+}
+
+
+doc = new ActiveXObject("Msxml2.DOMDocument.3.0")
+doc.load("test.xml")
+
+
+testCases = []
+testCases.push("/root/kalle")
+testCases.push("/root/kalle/roffe")
+testCases.push("//roffe")
+testCases.push("/root/kalle/roffe[@att1]")
+
+function test(){
+	for(var i = 0; i<testCases.length; i++){
+		var msResult = doc.selectSingleNode(testCases[i])
+		
+		var xp = new XPath(testCases[i])
+		xp.parse()
+		var ownResult = xp.selectSingleNode(doc.documentElement)
+		//		alert(ownResult)
+		if(msResult != ownResult) alert(testCases[i] + " --- " + (msResult == ownResult))
+	}
+}
+test()
+
+</script>
+
+</head>
+
+<body>
+
+
+
+</body>
+</html>

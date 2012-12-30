@@ -1,0 +1,1 @@
+<%Response.Redirect "3dball.swf"%>

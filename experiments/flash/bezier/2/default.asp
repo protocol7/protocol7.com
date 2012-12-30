@@ -1,0 +1,1 @@
+<%Response.Redirect "bezier2.swf"%>

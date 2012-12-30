@@ -1,0 +1,49 @@
+/*
+
+	IE Hacks
+	
+	This file contains CSS that is shown only to Windows Internet Explorer.
+
+	Normal CSS (color: #fff;) is shown to IE7.
+	CSS with an underscore prefix (_color: #000;) is shown only to I6 and below.
+									 
+*/
+
+/* Centers in IE 5 */
+body {
+	text-align: center;
+}
+#body {
+	text-align: left;
+}
+
+/* Auto clearing float for IE */
+.box, #tags-allowed, #comment-author, #commentlist li, #af-ela {
+	height: 1%;
+}
+
+/* Custom IE Menu margins */
+#menu {
+	_margin: 1em 0 .8em 1em;
+	_width: 530px;
+}
+#searchbox {
+	_margin: 1em 1.2em 0 0;
+	_width: 160px;
+}
+
+/* Custom list items for IE */
+#main ul {
+	list-style: square;
+}
+
+/* Textarea */ 
+#commentform textarea {
+	width: 97%;
+}
+
+/* Code block word-wrap */
+pre {
+	word-wrap: break-word;
+}
+

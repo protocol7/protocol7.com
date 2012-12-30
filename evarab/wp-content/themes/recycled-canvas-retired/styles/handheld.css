@@ -1,0 +1,157 @@
+
+* {margin:0; padding:0;}
+
+
+body {
+	margin:0;
+	padding:0;
+	font-family: Times, "Times New Roman" serif;
+	line-height:1.2;
+	
+}
+#page {
+	padding:5px;
+}
+#header {
+	margin-top:20px;
+	margin-bottom:10px;
+}
+img {display:none;}
+#header h1 {
+}
+#header h1 a {
+	color:#000;
+	font-size:30pt;
+	text-decoration:none;	
+}
+#header span {
+	font-size:20pt;
+	font-weight:normal;
+	display:inline;
+}
+#headerimg {
+display:none;
+}
+
+#menu {
+	font-size:20px;
+display:block;
+margin-top:10px;
+}
+#menu li {float:left; margin-right:10px; list-style:none;}
+#searchform {display:none;}
+
+
+#content {
+	padding-top:10px;
+	border-top:1px solid #ccc;
+	clear:both;
+	padding-bottom:10px;
+}
+
+#sidebar {
+display:none;
+}
+#sidebar h1 {
+	height:25px; 
+margin-left:-5px; padding:0; margin-bottom:10px;
+}
+#sidebar h1 span {
+	font-size:30px; height:10px;
+}
+#sidebar h4 {
+	font-size:16px;
+}
+#sidebar p {
+	margin-bottom:15px;
+}
+#sidebar ul {
+	list-style:square;
+	margin-left:15px;
+	margin-bottom:15px;
+}
+
+#boxlist {	
+	padding-top:20px;
+	font-size:14pt;
+}
+h3 {font-size:20px;}
+h3.archive {
+	font-size:22px;
+	margin-bottom:15px;
+	padding:5px;
+}
+#singlepost {
+	padding-top:20px;
+}
+
+#comments {
+	margin-top:30px;
+}
+#comments h4 {
+	font-size:16px;
+}
+.commentlist {
+	list-style:none;
+	font-size:14px;
+	margin-left:10px;
+	margin-top:10px;
+}
+.commentlist li {
+	padding:5px 10px 5px 10px;
+	border-left:1px solid #999;
+}
+.commentlist li .commentmeta { font-size:12px; display:block; margin-top:5px; margin-left:2px;}
+
+
+
+#respond {
+	display:none;
+}
+
+
+.clear {
+	clear:both;
+}
+
+#footer {
+	border-top:1px solid #ccc;
+	padding-top:20px;
+	font-size:10pt;
+}
+
+.navigation {display:none; }
+
+.post {padding:5px;}
+.post h3 a {  display:block; text-decoration:none; font-size:28px;}
+.entry { margin-top:10px; font-size:14pt;}
+p img {
+	padding: 0;
+	max-width: 100%;
+}
+.alignleft {float:left;}
+.alignright {float:right;}
+/* Post formatting styles */
+.entry p {margin-bottom:15px;}
+.entry blockquote { padding:15px; border-left:1px solid #999; margin-bottom:15px;}
+.entry blockquote p { margin:0;}
+.entry ol {padding-left:50px; padding-bottom:15px;}
+.entry ul {padding-left:50px; padding-bottom:15px;}
+
+a {
+	font-weight:bold;
+	color:#0060ff;
+	text-decoration:none;
+}
+
+
+.box, .imagebox, .blog-post, #boxlist li {
+padding: 20px 0 10px 0;
+}
+
+#printspecial {
+	display:none;
+}
+#blog-post-meta {
+	display:none;
+}

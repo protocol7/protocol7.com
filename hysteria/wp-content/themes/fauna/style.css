@@ -1,0 +1,882 @@
+/*  
+Theme Name: Fauna
+Theme URI: http://www.noscope.com/fauna/
+Description: Fauna is a highly adaptive open-source draping for WordPress powered websites. Fauna is primarily developed by <a href="http://www.noscope.com">Joen Asmussen</a>. To easily customize Fauna, click "Fauna Options" above. This theme and several hundred of others are available for free download at <a href="http://www.wordpresstemplates.com/">Wordpress Templates</a>.
+Version: 1.0
+Author: Joen Asmussen
+Author URI: http://www.noscope.com/fauna/
+
+      ___
+     /   
+    (___  ___       ___  ___ 
+    |    |   )|   )|   )|   )
+    |    |__/||__/ |  / |__/|
+
+
+	This is the main stylesheet file.
+	It contains layout, margins and positioning. 
+	All colors and images are separated out into styles in the styles directory.
+	The default style is "styles/default/default.css".
+
+*/
+
+/* 
+
+	Basics
+	
+*/
+html { 	/* Force vertical scrollbar */
+	overflow-y: scroll;
+	height: 100%;
+	margin-bottom: .0001em;
+}
+* {		/* Reset margins and paddings */
+	margin: 0;
+	padding: 0;
+}
+
+/*
+
+	Positioning
+	
+*/
+body {
+	padding-bottom: 4em; 	/* Add some extra scroll space */
+}
+#wrapper {
+	margin: 0 auto;
+	position: relative;
+}
+#body {
+	margin: 0 auto 0 auto;
+}
+#sidebar ul, #sidebar li {
+	list-style: none;
+}
+#main {
+	margin: 0 0 .8em 0;
+}
+#footer {
+	padding-bottom: 1em;
+	clear: both;
+	text-align: center;
+}
+#footer a {
+	text-decoration: none;
+}
+.entry-meta {
+	font-size: 90%;
+	clear: both;
+	display: block;
+}
+#header {
+	margin: 0 0 .8em;
+}
+
+/* 
+
+	Sidebar
+	
+*/
+#sidebar ul.inner {
+	margin: 0;
+}
+#sidebar ul.inner ul {
+	margin: .4em .8em 1.6em .8em !important;
+}
+#sidebar ul.inner ul li {
+	padding-bottom: 0 !important;
+}
+#sidebar ul.inner ul ul.children {
+	margin: 0 1.6em !important;
+}
+#sidebar ul.inner ul ul.children li {
+	margin: .4em 0 0 0;
+}
+
+/*
+
+	Content Box
+	
+*/
+.box, .box-blank, #sidebar ul.inner li, .notice { 
+	position: relative;
+	text-align: left;
+	padding: .8em;
+	margin: 0 0 .8em 0;
+}
+.box-blank {
+	background: none;
+}
+.box::after, .box-blank::after { 	/* Auto clearing float */
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+/* 
+
+	Header
+	
+*/
+h1 {
+	text-align: left;
+	margin: .8em 0 0 1.5em;
+}
+h1 a:link, h1 a:visited, h1 a:hover, h1 a:active {
+	text-decoration: none;
+}
+#menu {
+	margin: 1em 0 .6em 1.5em;
+	float: left;
+}
+#searchbox {
+	vertical-align: top;
+	margin: 1em 2em 0 0;
+	float: right;
+	text-align: right;
+	padding: 2px 0;
+	top: -2px;
+	position: relative;
+}
+#nav::after { 	/* Auto clearing float */
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+#header {
+	clear: both;
+}
+#menu, #searchbox {
+	text-transform: lowercase;
+}
+#menu {
+	max-width: 530px;
+}
+#menu ul, #menu ul li {
+	list-style: none;
+	display:inline;
+}
+#menu a {
+	float: left;
+	display: block;
+	text-decoration: none;
+	padding: 0 .6em;
+}
+#searchbox fieldset {
+	border: 0;
+	background: none;
+	padding: 0;
+}
+#searchbox legend {
+	display: none;
+}
+#searchbox form, #searchbox input {
+	display: inline;
+}
+
+/* 
+
+	Text, Headings & Formatting
+	
+*/
+h2 {
+	padding: .4em 0;
+}
+h2 a {
+	text-decoration: none !important;
+	padding: .4em 0;
+}
+h2 a:hover, h2 a:focus {
+	text-decoration: underline !important;
+}
+h3, h4 {
+	margin: 0 0 .6em 0;
+	font-weight: bold;
+	font-size: 100%;
+}
+#main h3 {
+	margin: 1.6em 0 .8em 0;
+}
+.noteworthy {
+	display: block;
+	float: right;
+	margin: .4em;
+}
+.noteworthy a {
+	padding: .4em;
+	text-decoration: none !important;
+}
+.clear {
+	clear: both;
+}
+.prev {
+	float: left;
+}
+.next {
+	float: right;
+}
+
+/* 
+
+	Various
+
+*/
+img {
+	border: 0;
+}
+#main p a img {
+	padding-bottom: 2px;
+}
+#main p a img:hover {
+	padding-bottom: 2px;
+}
+hr { /* Shown only to CSS disabled browsers, making it slightly tidier */
+	display: none;
+}
+acronym, abbr {
+	font-size: 100%;
+}
+acronym, abbr, span.caps {
+	cursor: help;
+}
+small {
+	font-size: 85%;
+	line-height: 200%;
+}
+cite {
+	font-size: 90%;
+	font-style: normal;
+}
+strike, del {
+	text-decoration: line-through;
+}
+ins {
+	text-decoration: none;
+}
+label {
+	cursor: pointer;
+}
+ul {
+	margin: .8em;
+}
+#sidebar ul.inner ul {
+	margin: .4em .8em;
+}
+#sidebar ul.inner ul li {
+	margin: .4em 0;
+	padding: .2em 0;
+}
+dl {
+	margin: 0 .8em;
+}
+dt {
+	font-weight: bold;
+}
+dd {
+	margin: 0 1.6em;
+}
+p, pre, kbd, blockquote {
+	margin: 1.6em 0;
+}
+#sidebar p {
+	margin: 0 0 1.6em 0;
+}
+pre, blockquote {
+	padding: 0 1.6em;
+	margin-left: 3%;
+}
+pre {
+	overflow: auto;
+	padding-bottom: 1em;
+}
+blockquote[cite]:after {
+	content: "\00BB \0020 Source: " attr(cite);
+	display: block;
+	margin-top: .8em;
+	font-size: 90%;
+}
+fieldset {
+	padding: 0 .8em .4em .8em;
+}
+legend {
+	font-weight: bold;
+	padding: 0 .4em;
+}
+
+/* 
+
+	Icons
+	
+*/
+.feedicon img, #categorylist img {
+	width: 12px;
+	height: 12px;
+}
+.feeds a {
+	padding: 1px 0 2px 0;
+}
+.feeds img {
+	vertical-align: middle;
+	margin-top: -3px;
+}
+#categorylist img {
+	vertical-align: middle;
+	margin: 0 .25em;
+}
+#sidebar .feedicon img {
+	position: relative;
+	float: right;
+	top: -2.4em;
+}
+span.edit a:focus, a.quote {
+	-moz-outline-style: none;
+}
+span.edit a:hover {
+	cursor: pointer;
+}
+.edit a {
+	position: absolute;
+	z-index: 1;
+	right: .75em;
+	top: 1em;
+
+	text-decoration: none !important;
+	display: block;
+	width: 26px;
+	height: 26px;
+	border: 0 !important;
+	text-indent: -9999px;
+	background: url(images/icon_edit.gif) no-repeat right top !important;
+}
+#trackbacklist li .edit a {
+	width: 26px;
+	height: 12px;
+}
+.edit a:hover {
+	background: url(images/icon_edit_hover.gif) no-repeat right top !important;
+}
+.sidenote {
+	position: relative;
+}
+.sidenote .edit a {
+	top: 0;
+	right: 0;
+}
+span.tags {
+	background: url(images/icon_tag.gif) no-repeat left center;
+	padding-left: 16px;
+	margin-left: 1em;
+}
+ul.wp-tag-cloud li {
+	display: inline;
+	margin-right: 1em !important;
+}
+
+/* 
+
+	Alignments (Use in Posts)
+
+*/
+.align-left {
+	padding-right: .8em;
+	float: left;
+}
+.align-right {
+	padding-left: .8em;
+	float: right;
+}
+.align-center {
+	margin: 0 auto;
+	display: block;
+}
+.column-left {
+	float: left;
+	width: 50%;
+}
+.column-right {
+	float: right;
+	width: 50%;
+}
+ul.column-right, ul.column-left {
+	margin: 0;
+	padding: 0;
+}
+
+/* 
+
+	List Items
+	
+*/
+html>body #main ul {
+	list-style: none;
+	text-indent: -1em;
+} 
+#main ul {
+	margin-left: 0;
+	padding-left: 1em;
+}
+#main ul li {
+	margin-left: 1em;
+	margin-bottom: 1.6em;
+}
+#main ul li::before, #sidebar ul li.page_item::before {	/* Show right angle quotes to cool browsers */
+	content: "\00BB \0020";
+}
+ol {
+	margin: 0 0 .8em 1em;
+	padding-left: 2em;
+}
+#main ol li {
+	margin-bottom: 1.6em;
+}
+
+/*
+
+	Forms
+	
+*/
+input, select, textarea {
+	font-size: 100%;
+	line-height: 100%;
+}
+.inputbox, #commentform textarea, .searchbox {
+	padding: 1px 2px;
+}
+#commentform {
+	display: inline;
+}
+#commentform textarea {
+	padding: 2px;
+	
+	-moz-box-sizing:border-box; /* Mozilla: Change Box Model Behaviour */
+	width: 100%; /* Moz Only */
+}
+.inputbox {
+	width: 160px;
+}
+.pushbutton, .pushbutton-wide {
+	cursor: pointer;
+}
+.pushbutton-wide {
+	padding: .6em 2em;
+}
+.checkbox {
+	cursor: pointer;
+}
+
+/* 
+
+	Search Page
+
+*/
+.searchbox {
+	width: 80%;
+}
+.search-results {
+	position: relative;
+}
+
+
+/* 
+
+	Posts
+
+*/
+p.commentlink {
+	width: 120px;
+	float: right;
+	margin: 0 0 10px 10px;
+	padding: 0 0 0 10px !important;
+}
+p.commentlink span {
+	display: block;
+	padding: .4em 0;
+}
+p.commentlink a {
+	border-bottom: 0;
+	display: block;
+	text-decoration: none;
+	padding: .4em 0;
+}
+p.commentlink a:hover {
+	text-decoration: underline;
+}
+
+/* 
+
+	Asides
+
+*/
+.asides .aside {
+	padding: 0;
+	margin: .5em 0 2em 0.5em !important;
+}
+.asides h2 {
+	padding: .4em 0;
+}
+.asides h2 a {
+	text-decoration: none;
+	margin: .4em 0;
+}
+.asides p {
+	padding: 0 1.6em;
+}
+.asides p, .asides pre, .asides blockquote {
+	margin-top: 0;
+	margin-bottom: .8em;
+}
+.asides pre, .asides kbd, .asides blockquote {
+	margin: 1.6em 7%;
+}
+.asides h3 {
+	margin: 1.6em 0 .8em 0;
+}
+.asides ul {
+	margin: .8em 1.3em;
+}
+.asides ol {
+	margin: .8em 2em;
+}
+.aside {
+	position: relative;
+}
+.aside .edit a {
+	top: 0;
+	right: 0;
+}
+
+/* 
+
+	Sidenotes
+	
+*/
+.sidenote {
+	padding: 0;
+	margin: .5em 0 1em 0;
+}
+.sidenote h2 {
+	margin: 0 0 .6em 0;
+}
+.sidenote h2 a {
+	display: inline;
+	margin-right: .5em;
+}
+.sidenote p {
+	padding: 0 0 0 .8em;
+}
+.sidenote p, .sidenote pre, .sidenote blockquote {
+	margin-top: 0;
+	margin-bottom: .8em;
+}
+
+/* 
+
+	Comments
+	
+*/
+ol#commentlist, ol#trackbacklist {
+	margin-bottom: 3.2em;
+}
+.commentbox {
+	padding-top: 2em;
+	width: 280px;
+	float:left;
+	text-align:left;
+}
+#comment-author p {
+	margin: 0 0 1.6em 0;
+}
+.formatting {
+	float: left;
+	height: 3em;
+	padding-top: 2em;
+}
+#tags-allowed {
+	clear: both;
+}
+#tags-allowed li {
+	margin: .6em;
+}
+#tags-allowed blockquote {
+	display: inline;
+}
+#tags-allowed .column-left, #tags-allowed .column-right {
+	width: 45%;
+}
+#tags-allowed .close {
+	float: right;
+}
+#tags-allowed::after, #comment-author::after { 	/* Auto clearing float */
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+.comment-header {
+	margin-bottom: .8em;
+}
+.notice, #tags-allowed { /* Moderation Message */
+	font-size: 100%;
+	padding: .8em 1.2em;
+}
+.notice p, .notice h4, #tags-allowed p, #tags-allowed h4 {
+	margin: .6em 0;
+}
+#commentlist .notice {
+	margin: .6em 0;
+}
+#commentlist {
+	margin: 0;
+	padding: 0;
+}
+#commentlist li  {
+	min-height: 90px;
+	position: relative;
+	display: block;
+	list-style: none;
+	margin: .8em 0 !important;
+	padding: .8em;
+}
+#commentlist li small {
+	position: absolute;
+	z-index: 3;
+	right: 95px;
+	width: 45px;
+}
+#commentlist li small span.edit {
+	position: relative;
+	top: -.5em;
+	float: right;
+}
+#commentlist li small a.quote {
+	float: left;
+	margin: .5em 0 0 0;
+	display: block;
+	width: 12px;
+	height: 12px;
+	border: 0;
+	text-indent: -9999px;
+	background: url(images/icon_quote.gif) no-repeat;
+}
+#commentlist li small a.quote:hover {
+	background: url(images/icon_quote_hover.gif) no-repeat;
+}
+
+/*
+
+	Trackbacks
+	
+*/
+#trackbacklist {
+	margin-left: 0;
+	padding-left: 0;
+}
+#trackbacklist li {
+	position: relative;
+	margin-left: 0;
+	padding: 0;
+	margin-top: .8em;
+	list-style: none;
+}
+#trackbacklist li a {
+	padding: .4em;
+	display: block;
+	text-decoration: none;
+}
+#trackbacklist li p {
+	padding: 0 .4em;
+}
+#trackbacklist li a span {
+	text-decoration: underline;
+}
+
+/* 
+
+	Calendar
+	
+*/
+#wp-calendar {
+	empty-cells: show;
+	width: 100%;
+}
+#wp-calendar #next a {
+	padding-right: 1em;
+	text-align: right;
+}
+#wp-calendar #prev a {
+	padding-left: 1em;
+	text-align: left;
+}
+#wp-calendar a {
+	display: block;
+	font-weight: bold;
+}
+#wp-calendar a:hover {
+	text-decoration: none !important;
+}
+#wp-calendar caption {
+	text-align: left;
+	width: 100%;
+}
+#wp-calendar td {
+	padding: .3em 0;
+	text-align: center;
+}
+
+/* 
+
+	Plugins
+	
+*/
+/* Recent Activity */
+ul#recent-activity {
+	margin: 0 !important;
+	padding: 0 !important;
+	list-style: none;
+}
+ul#recent-activity li {
+	font-size: 100%;
+	margin: 0 !important;
+	padding: 0 !important;
+}
+ul#recent-activity small {
+	font-size: 85%;
+	padding-left: .8em;
+}
+
+/* Comment/Trackback Favatars & Gravatars */
+a.comment-favatar {
+	border: 0 !important;
+	margin-right: .4em;
+}
+.eg-image {
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	float: right;
+	text-align: center;
+	padding: 2px;
+	line-height: 0;
+	margin: 0;
+	border: 1px solid #A5A5A3;
+	display: block;
+	filter: alpha(opacity=50);
+	-moz-opacity: .5;
+	opacity: .5;
+	background: #fff url(images/gravatar.jpg) no-repeat center center;
+}
+#commentlist li::after { 	/* Auto clearing float */
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+
+a.comment-favatar img, .trackback-favatar {
+	width: 16px;
+	height: 16px;
+}
+.eg-image:hover, a.comment-favatar:hover img {
+	filter:alpha(opacity=100);
+	-moz-opacity: 1;
+	opacity: 1;
+}
+.trackback-favatar {
+	background: center center;
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin: 2px 6px 0 2px;
+	cursor: pointer;
+}
+
+
+/* Extended Live Archives */
+#af-ela {
+	margin: 0 0 2em 0;
+}
+#af-ela::after { 	/* Auto clearing float */
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+#af-ela ul, #af-ela ul li {
+	border: none;
+}
+#af-ela ul li a {
+	padding: .5em 0;
+}
+#af-ela ul li::before {
+	content: "";
+}
+ul#af-ela-menu {
+	text-align: center;
+	margin: 1em auto 2em auto;
+}
+ul#af-ela-menu li {
+	font: normal 135% Arial, Helvetica, sans-serif;
+	padding: 0 !important;
+	margin: 0 1em;
+}
+ul#af-ela-tag li {
+	padding: 0 !important;
+}
+ul#af-ela-menu li:hover, ul#af-ela-menu li.selected, ul#af-ela-tag li:hover, ul#af-ela-tag li.selected {
+	color: #000 !important;
+	border-bottom: 1px dotted #000 !important;
+	background: none !important;
+	padding: 0;
+}
+ul#af-ela-category, ul#af-ela-year, ul#af-ela-month, ul#af-ela-tag, ul#af-ela-post-chrono {
+	padding: 1em 0;
+	text-align: center;
+	margin: 0 0 2em 0;
+	float: none !important;
+	width: 100%;
+}
+ul#af-ela-tag {
+	font: normal 60% Arial, Helvetica, sans-serif;
+}
+ul#af-ela-post-tags li, ul#af-ela-post-tags li:hover, ul#af-ela-category li, ul#af-ela-post-cats li, ul#af-ela-post-cats li:hover, #af-ela-post-chrono li, ul#af-ela-post-chrono li:hover {
+	font-weight: normal;
+	padding: 0 !important;
+	margin: 1em 4em !important;
+	border: none !important;
+	background: none !important;
+	
+}
+ul#af-ela-post-tags li::before, ul#af-ela-post-cats li::before, ul#af-ela-post-chrono li::before {	/* Show right angle quotes to cool browsers */
+	content: "\00BB \0020";
+}
+ul#af-ela-category li, ul#af-ela-year li, ul#af-ela-month li {
+	font-weight: normal;
+	padding: 0 !important;
+	margin: 1em 4em !important;
+	border: none !important;
+	background: none !important;
+	margin: 0 1em !important;
+	display: inline !important;
+}
+ul#af-ela-category li:hover, ul#af-ela-year li:hover, ul#af-ela-month li:hover, ul#af-ela-category li.selected, ul#af-ela-year li.selected, ul#af-ela-month li.selected  {
+	color: #000 !important;
+	border: none !important;
+	background: none !important;
+	border-bottom: 1px dotted #000 !important;
+}
+ul#af-ela-category li.selected {
+	color: #000 !important;
+	margin: 0 1em !important;
+	background: none !important;
+	border: none !important;
+	border-bottom: 1px dotted #000 !important;
+}	
+

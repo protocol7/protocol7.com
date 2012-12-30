@@ -1,0 +1,22 @@
+.p7CollapsTable{
+	font-family:arial;
+	font-size: 0.8em;
+}
+.p7CollapsTable th{
+	font-size:110%;
+	text-align:left;
+}
+.p7CollapsTable td{
+	border-right: 1px solid #CCC;
+}
+
+.percDiv{
+	width:80px;
+	height:10px;
+	border:1px solid black;
+	font-size:0px;
+}
+.percDiv div{
+	background-color:#999;
+	height:10px;
+}

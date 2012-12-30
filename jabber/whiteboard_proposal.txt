@@ -1,0 +1,142 @@
+Jabber
+Whiteboarding using SVG
+Proposal for protocol standard
+
+1. Introduction
+A good protocol for whiteboarding in Jabber would be very valuable. There is today a protocol draft for sending streaming XPM over Jabber (http://docs.jabber.org/draft-proto/html/sxpm.html). XPM is a bitmap format, which makes it great for some applications (smaller drawings, sketches). But bigger changes in the image will require sending large amounts of XML data (even with the compressions in the protocol draft), it also does not scale without loss of resolution or support metadata.
+
+For most applications of whiteboarding, a vector format would be more appropriate. The proposed standard for vector graphics is SVG (http://www.w3.org/Graphics/SVG/). Since SVG is based on XML it will work good with the Jabber protocol, but the current SVG specification does not make any considerations for streaming SVG. Also, SVG is a very complex format, much more then is necessary for whiteboarding. Therefore, a SVG subset changed to work with streaming would be perfect for Jabber.
+
+This proposal also defines the protocol for setting up and communicating during a whiteboard session (both peer-to-peer and conference).
+
+2. Requirements
+This section describes the requirements that this proposal should fulfil.
+
+* Work both with peer-to-peer and conferencing
+* It should be possible to detect if a client supports SVG whiteboarding
+* Be transparent to clients that do not support SVG whiteboarding
+* It should be possible to join in the middle of a session
+* Use as compact messages as possible and practical to save bandwidth
+* Support a subset of SVG, enough for normal whiteboarding but as compact as possible
+* Support streaming of SVG
+* The SVG subset should be extensible to include symbol definitions for, for example UML
+* Should not use any CSS
+* Should support adding, changing and deleting SVG objects
+
+3. Protocol proposal
+SVG data is sent using <x xmlns="jabber:x:whiteboard:svg"> tags included in regular message tags. For example:
+	<message to="nikgus@jabber.org" thread="234324">
+		<x xmlns="jabber:x:whiteboard:svg">
+			<svg>
+				<line id="nikgus@jabber.org/1" x1="10" y="12" x2="112" y2="343" />
+			</svg>
+		</x>
+	</message>
+
+A whiteboard session is defined by the thread attribute in the message tag. This can be used to have multiple whiteboards at the same time. For conferencing, only one session can be active at the same time. SVG messages without a thread attribute has to be discarded. 
+
+Also, for conferencing an entire room is always defined as a whiteboarding room. This room will have jabber:x:whiteboard:svg as a required namespace in accordance with the new conferencing protocol (http://jabber.org/?oid=1538). During a conference one whiteboard will be active at a time. Sending a message with a new thread will set that whiteboard as the currently active. When a new user enters a conference with a whiteboard, the server will send the entire currently active image in a regular message tag. 
+
+
+During some chats clients might want to get acknowledgements to check that the other client has recived or shown the SVG content. This is done using the regular message event protocol (http://docs.jabber.org/draft-proto/html/events.html), for example:
+	<message to="nikgus@jabber.org" thread="234324" id="SVG_MSG_01">
+		<x xmlns="jabber:x:whiteboard:svg">
+			<svg>
+				<line id="nikgus@jabber.org/1" x1="10" y="12" x2="112" y2="343" />
+			</svg>
+		</x>
+		<x xmlns="jabber:x:event">
+			<displayed/>
+		</x>
+	</message>
+
+Returned:
+	<message to="bar@foo.org">
+		<x xmlns="jabber:x:event">
+			<displayed/>
+			<id>SVG_MSG_01</id>
+		</x>
+	</message>
+
+
+EXAMPLES:
+Peer-to-peer
+	Browsing other client for whiteboard support
+		SEND: <iq type="get"><query xmlns="jabber:iq:browse" /></iq>
+		RECV: <ns>jabber:x:svg</ns>
+
+
+Conferencing
+	Adding a SVG object
+		<message to="room@server" thread="1">
+			<x xmlns="jabber:x:svg">
+				<svg>
+				<line id="room@server/id/counter" x1="" x2="" y1="" y2="" />
+			</svg>
+			</x>
+		</message>
+
+	Changing a SVG object
+		<message to="room@server" thread="1">
+			<x xmlns="jabber:x:svg">
+				<svg>
+					<line id="room@server/id/counter" x1="" />
+				</svg>
+			</x>
+		</message>
+
+	Deleting a SVG object
+		<message to="room@server" thread="1">
+			<x xmlns="jabber:x:svg">
+				<svg>
+					<line id="room@server/id/counter" />
+				</svg>
+			</x>
+		</message>
+
+	Using a symbol defined in a extended SVG subset
+		<message to="room@server" thread="1">
+			<x xmlns="jabber:x:svg:uml">
+				<svg>
+				<use id="room@server/id/counter" xlink:href="#conditional" x="" y=""/>
+			</svg>
+			</x>
+		</message>
+
+
+
+4. SVG subset
+The DTD for the SVG subset is attached to this document. (Notice: this is only the DTD for adding new SVG objects, when updating and removing objects, not all required attributes are needed). 
+
+The id attribute is always required for all SVG objects. An object sent without and id has to be discarded. All id's during a session has to be in the form: JID/counter. The client is responsible for keeping track of the number of object that the user has added and to increment the counter accordingly.
+
+The first SVG tag sent in a session should set the size of the whiteboard that is going to be used, for example:
+	<svg width="200" height="300">
+The size can be changed during a session.
+
+To add a SVG object, send a tag with, at least, all required attributes. For example:
+	<line id="nikgus@jabber.org/1" x1="10" y="12" x2="112" y2="343" />
+This will add a line from (10,12) to (112,343) with the default color (black) and width (1 px).
+
+To change a SVG object, send a tag with the correct id and only the other attributes that should be changed, for example:
+	<line id="nikgus@jabber.org/1" x2="203"" stroke-color="red" />
+
+To delete a SVG object you send a tag with only the id. This will remove the entire object from the whiteboard. For example:
+	<line id="nikgus@jabber.org/1" />
+
+The client can also, to save bandwidth, send several SVG objects in a single message, for example:
+	<message to="nikgus@jabber.org" thread="234324">
+		<x xmlns="jabber:x:whiteboard:svg">
+			<svg>
+				<line id="nikgus@jabber.org/1" x1="10" y="12" x2="112" y2="343" />
+				<text id="nikgus@jabber.org/2" x="100" y="34">This is a text</text>
+				<text id="nikgus@jabber.org/3" x="100" y="47">This is also a text</text>
+			</svg>
+		</x>
+	</message>
+
+The <image> tag can be used to load additional SVG files from a webserver. This will be used for loading definitions files containing symbol sets, for example for UML. 
+
+The SVG objects are added on top of each other, but objects can be moved on top or below of each other by using z-index in the transform attribute. This is an extension to the SVG standard.
+
+All SVG coordinates are defined as pixels (px). All colors are defined as #RRGGBB in hexadecimal numbers, for example: #FF00FF.

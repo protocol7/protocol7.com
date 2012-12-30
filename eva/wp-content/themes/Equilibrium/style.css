@@ -1,0 +1,298 @@
+/*
+------------------------------------------------------------------------
+Theme Name:Equilibrium
+Theme URI:http://madebyon.com
+Description:Magazine style WordPress theme. Visit <a href="http://equilibrium.madebyon.com"title="Equilibrium">http://equilibrium.madebyon.com</a> for more infomation.
+Version:1.4
+Author:Tudinh Duong
+Author URI:http://madebyon.com
+------------------------------------------------------------------------
+*/
+/*
+-----------------------------------------
+RESET
+----------------------------------------- 
+*/
+*, html, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, label, fieldset, input, p, blockquote, th, td{margin:0; padding:0}
+table{border-collapse:collapse; border-spacing:0}
+fieldset, img{border:0}
+address, caption, cite, code, dfn, em, strong, th, var{font-style:normal; font-weight:normal}
+ol, ul, li{list-style:none}
+caption, th{text-align:left}
+h1, h2, h3, h4, h5, h6{font-size:100%; font-weight:normal}
+q:before, q:after{content:''}
+
+strong{font-weight:bold}
+em{font-style:italic}
+a img{border:none}
+
+h1, h2, h3, h5, h5, h6{font-weight:bold}
+
+/*
+-----------------------------------------
+LAYOUT
+----------------------------------------- 
+*/
+.aligncenter{display:block; margin:0 auto}
+.alignleft{float:left}
+.alignright{float:right}
+.floatLeft{float:left}
+.floatRight{float:right}
+.clear{clear:both}
+
+/*
+-----------------------------------------
+STRUCTURE
+----------------------------------------- 
+*/
+html, body{height:100%}
+
+body{font-size:62.5%; font-family:Arial,Helvetica,sans-serif; color:#222; margin:0 auto -80px; text-align:center}
+
+#page-wrap{width:960px; min-height:100%; height:auto !important; height:100%; margin:0 auto -80px; padding-left:10px; padding-right:10px; text-align:left}
+
+.content{width:680px; float:left}
+
+/*
+-----------------------------------------
+TYPOGRAPHY
+----------------------------------------- 
+*/
+p{color:#222; font-size:1.2em; line-height:1.5; margin-top:1.5em; margin-bottom:1.5em; text-align:justify}
+
+p a, p a:visited{border-bottom:1px solid #c9c9c9; color:#0B96D0; text-decoration:none}
+
+p a:hover{border-bottom:1px solid #c9c9c9; color:#000; text-decoration:none}
+
+h1, strong{font-size:1.4em; font-weight:bold}
+
+.post h2{text-transform:none; padding-bottom:0; border-bottom:0; margin-top:0; margin-bottom:0}
+
+h4, h2{font-size:1.8em; color:#222; text-transform:uppercase; padding-bottom:4px; border-bottom:4px solid #c9c9c9; margin-top:28px; margin-bottom:28px; font-weight:bold}
+
+h3{border-bottom:4px solid #C9C9C9; color:#222; font-size:2.2em; font-weight:bold; margin-top:23.3px; padding-bottom:4px}
+
+h3 a{text-decoration:none; color:#222}
+
+.post ul li, 
+.post ol li{font-size:1.2em; list-style-type:square; margin:5px 0 5px 15px}
+
+#reply{border-bottom:4px solid #C9C9C9; color:#222; font-size:1.8em; margin-top:28px; margin-bottom:16px; padding-bottom:4px}
+
+/*
+-----------------------------------------
+TOP
+----------------------------------------- 
+*/
+#top{margin-top:55px; padding-bottom:70px}
+
+h1.logo a{float:left; font-size:2.6em; font-weight:bold; color:#000; text-transform:uppercase; text-decoration:none}
+
+#nav{float:right; margin-top:1.2em}
+
+#nav ul{list-style-type:none; width:100%}
+
+#nav li{display:block; display:inline}
+
+#nav a:link, 
+#nav a:visited{padding:5px; display:block; color:#353434; margin-right:10px; float:left; text-decoration:none; font-size:1.4em; font-weight:bold; text-transform:uppercase}
+
+#nav a:hover{color:#fff; background:#000}
+
+ul#nav li.current_page_item a:link, 
+ul#nav li.current_page_item a:visited, 
+ul#nav li.current_page_item a:hover, 
+ul#nav li.current_page_item a:active{color:#fff; text-decoration:none; background:#000}
+
+/*
+-----------------------------------------
+FEATURED
+----------------------------------------- 
+*/
+.front-post{width:303px; margin-right:25px; float:left}
+
+.front-post-last{width:303px; float:left}
+
+.featured-content{position:relative; width:303px}
+
+.featured-content p{margin-top:1em}
+
+.featured-post{position:relative; width:303px; height:231px; margin-bottom:1.2em}
+
+.featured-title h2{margin:8px 10px 7px; line-height:1.4em; font-size:1.1em; text-transform:none; padding-bottom:0; border-bottom:0}
+
+.featured-title h2 a{font-size:1.1em; display:block; color:#0B96D0; text-decoration:none; border-bottom:0}
+
+.featured-title h2 a:hover{color:#fff}
+
+.featured-title{background:#000; display:block; z-index:101; width:100%; bottom:0; filter:alpha(opacity=80); -moz-opacity:.80; opacity:.80; position:absolute; z-index:2}
+
+.featured-image{position:absolute; z-index:1}
+
+.featured-content h2{margin-top:15px}
+.featured-content h2 a{color:#0b96d0; text-decoration:none}
+.featured-content h2 a:hover{color:#000}
+
+/*
+-----------------------------------------
+SIDEBAR
+----------------------------------------- 
+*/
+#sidebar{float:right; width:260px; padding-left:20px; overflow:hidden}
+
+#sidebar li a{display:block; width:260px; margin:0; padding:8px 2px; list-style:none; border-bottom:1px solid #c9c9c9; font-size:1.4em; list-style-type:none; text-decoration:none; color:#222}
+
+#sidebar a{color:#e6e6e6; text-decoration:none}
+
+#sidebar a:hover{color:#fff; background-color:#282828}
+
+#sidebar h2{font-size:1.8em; color:#222; text-align:right; text-transform:uppercase; border-bottom:4px solid #c9c9c9; margin-top:28px; margin-bottom:0}
+
+/*
+-----------------------------------------
+LATEST
+----------------------------------------- 
+*/
+#front-bottom{margin-top:36px}
+
+#latest-wrap{float:left; width:680px}
+
+.latest-post-wrap{float:left; width:162px; margin-right:8px}
+
+.latest-post{position:relative; width:162px; height:118px}
+
+.latest-image{position:absolute; z-index:1}
+
+.latest-title h2{margin:8px 10px 7px; line-height:1.4em; font-size:1em; text-transform:none; padding-bottom:0; border-bottom:0}
+
+.latest-title h2 a{display:block; color:#0B96D0; text-decoration:none}
+
+.latest-title h2 a:hover{color:#fff}
+
+.latest-title{background:#000; display:block; z-index:101; width:100%; bottom:0; filter:alpha(opacity=80); -moz-opacity:.80; opacity:.80; position:absolute; z-index:2}
+
+.latest-content{position:relative; width:162px; height:200px; margin-bottom:20px}
+
+.latest-content h2{margin-top:15px}
+.latest-content h2 a{color:#0b96d0; text-decoration:none}
+.latest-content h2 a:hover{color:#000}
+
+.latest-content p{color:#222; font-size:1.2em; line-height:1.5; margin-top:8px; margin-bottom:1.5em; text-align:left}
+
+/*
+-----------------------------------------
+FOOTER
+----------------------------------------- 
+*/
+#push{height:80px}
+
+#footer{padding-top:20px; border-top:1px solid #C9C9C9; width:960px; margin:150px auto 0; height:80px; color:#4d4d4d}
+
+#footer p{font-size:1.2em; color:#4d4d4d; line-height:1.5em; margin-bottom:0; margin-top:0.6em}
+
+#footer p a{border-bottom:1px solid #c9c9c9; color:#4d4d4d; text-decoration:none}
+
+#footer p a:hover{border-bottom:1px solid #c9c9c9; color:#0b96d0; text-decoration:none}
+
+/*
+-----------------------------------------
+POSTMETA
+----------------------------------------- 
+*/
+.postMeta{font-size:1.2em; margin-bottom:18px; margin-top:8px; padding-bottom:24px; border-bottom:1px solid #c9c9c9}
+
+.postMeta-featured{margin-top:8px; font-size:1.2em; width:303px}
+
+.postMeta-front{margin-top:8px; font-size:1.2em}
+
+.postMeta-post{font-size:1.2em; margin-bottom:18px; margin-top:8px; border-bottom:1px solid #c9c9c9; padding-bottom:10px}
+
+.postMeta span.date, 
+.postMeta-post span.date, 
+.postMeta-featured span.date, 
+.postMeta-front span.date{color:#8a8a8a; float:left}
+
+.postMeta span.comments a, 
+.postMeta span.date a, 
+.postMeta-post span.comments a, 
+.postMeta-post span.date a, 
+.postMeta-featured span.comments a, 
+.postMeta-featured span.date a, 
+.postMeta-front span.comments a, 
+.postMeta-front span.date a{float:left; color:#8a8a8a; text-decoration:none}
+
+.postMeta span.comments, 
+.postMeta-featured span.comments, 
+.postMeta-post span.comments, 
+.postMeta-front span.comments{float:right; background:#FFF url(images/comment.gif) no-repeat left center; padding-left:15px; margin-left:2px}
+
+/*
+-----------------------------------------
+POSTS
+----------------------------------------- 
+*/
+.post-category{color:#8a8a8a; float:left; margin-bottom:8px}
+
+.post-tags{color:#8a8a8a; float:right}
+
+.post-category p, 
+.post-tags p{color:#8A8A8A; font-size:1em; line-height:1.5em; margin-bottom:0em; margin-top:0em; text-align:none}
+.post img{margin:0.5em 1em;}
+.post blockquote p{margin:0 2.6em; font-style:italic}
+
+/*
+-----------------------------------------
+COMMENTS
+----------------------------------------- 
+*/
+.comment-heading{margin-bottom:26px; text-transform:none; border:none}
+
+.commentwrap{border-top:3px solid #C9C9C9; padding-bottom:15px; padding-top:15px}
+
+.commentpost{float:right; width:510px}
+
+.commentpost p{margin-top:0}
+
+.commentmetadata{float:left; width:20%; color:#2F2B23; line-height:1.5em; padding-right:20px; color:#999; font-size:1.1em}
+
+.commentmetadata li{list-style-type:none; padding:.3em; margin:0 .5em 0 0}
+
+.commentmetadata li a{border-bottom:1px solid #c9c9c9; color:#0B96D0; text-decoration:none}
+
+.warning{padding:10px; background:#282828; border:1px solid #323232; ; margin-bottom:10px}
+
+#comments label input{border:1px solid #E5E5E5; padding:5px 4px; margin-bottom:10px; width:160px}
+
+#comments label span{line-height:27px}
+
+#comments label{font-family:"Lucida Sans Unicode"; font-size:1.1em}
+
+#comment_author{margin:20px 20px 20px 0px; padding:0px; width:150px; float:left}
+
+#comments-content{display:block; border-bottom:1px solid #C9C9C9; margin:10px 0px 10px 0px; padding:0px}
+
+#comments textarea{margin-top:10px; padding:4px 0px; width:100%; border:1px solid #E5E5E5}
+
+.button{border:1px solid #E5E5E5; font-size:1.1em; font-weight:bold; height:25px; margin-top:10px; margin-bottom:10px; padding:0 8px; text-transform:uppercase}
+
+.children {margin-left: 50px}
+
+.children div {border:none}
+
+.children .commentwrap {border-top: 1px solid #C9C9C9;}
+
+.children .commentmetadata {padding-right:0px}
+
+.children .commentpost {text-align:left; float:right; width:78%}
+
+
+/*
+-----------------------------------------
+SEARCH
+----------------------------------------- 
+*/
+#searchform{float:left; margin-top:1em; height:2.3em}
+
+#searchsubmit{border:1px solid #E5E5E5; font-size:1.1em; font-weight:bold; height:2.1em; padding:2px 8px; text-transform:uppercase; float:right; background-color:#F0F0F0}
+
+#s{float:left; width:204px; margin-right:6px; padding-top:4px; padding-bottom:4px; padding-left:2px; padding-right:2px; border:1px solid #E5E5E5; font-size:1.1em}

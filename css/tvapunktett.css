@@ -1,0 +1,200 @@
+body, td{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+body{
+	font-size: 70%;
+	background-color: #BAC3C6;
+	margin: 0px;
+	padding: 5px;
+}
+
+#outer{
+	background-color: white;
+	position: absolute;
+	left:130px;
+	top:90px;
+	width: 620px;
+	border: 1px solid #8998A1;
+}
+
+#logo{
+}
+
+a{
+	color:black;
+}
+
+#onlyCol{
+	width: 600px;
+	background-color: #fff;
+	padding-top: 5px;
+}
+
+#leftCol{
+	width: 400px;
+	padding-right: 5px;
+	padding-top: 5px;
+	background-color: #fff;
+	float: left;
+}
+
+#rightCol{
+	width: 190px;
+	float: left;
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: #fff;
+}
+
+#nav{
+	position: absolute;
+	left: 120px;
+	top: 115px;
+	z-index: 3;
+}
+
+body>#nav{
+	top: 102px;	
+}
+
+#navbg{
+	background-color: #D6D6D6;
+	height: 40px;	
+	margin-left: -10px;
+	margin-right: -10px;
+	margin-top: -10px;
+	margin-bottom: 10px;
+}
+
+#logo{
+	position: absolute;	
+	z-index: 2;
+	left: 10px;
+	top: 10px;
+}
+
+#nav a{
+	text-decoration: none;
+}
+
+#nav li{
+	display: inline;
+	list-style: none;
+	margin-left: 0px;
+	font-size: 90%;
+	font-weight: bold;
+	padding: 5px;
+	background-color: transparent;
+}
+
+#nav li a:before{
+	content: '\00BB';
+	color: #F12D0B
+}
+
+#nav li:first-child{
+	background-color: #8998A1;
+}
+
+#nav li:first-child a:before{
+	content: '\00AB'
+}
+
+#content{
+	background-color: white;
+	margin-bottom: 15px;
+	padding:10px;
+	border-top: 40px solid #D6D6D6;
+}
+
+h3 a{
+	text-decoration: none;
+}
+h3 a:before{
+/*	content: url(http://www.protocol7.com/images/perma.gif);*/
+	content: '\00BB';
+	color: #F12D0B
+}
+
+h3{
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
+.blogPost{
+	margin-top: 2px;
+	border-bottom: 1px dashed #8998A1;
+	padding-bottom: 5px;
+}
+
+.blogPost p{
+	margin: 0px;
+}
+
+.blogPost:last-child{
+	border-bottom: none;
+}
+
+.blogPostFooter{
+	padding-top: 4px;
+	font-size: 80%;
+
+}
+
+h2{
+	font-size: 90%;
+	background-color:#D6D6D6;
+	padding: 5px;
+	border: 1px solid #8998A1;
+}
+
+h3{
+	font-size: 90%;
+	margin-bottom: 2px;
+}
+
+.nb{
+	color:white;
+	padding: 5px;
+	border: 1px dashed black;
+	background-color: #8998A1
+}
+
+.nb h2{
+	color: #F12D0B;
+	font-size: 100%;
+	background-color:transparent;
+	padding: 0px;
+	margin:0px;
+}
+
+.rightFloater{
+	float:right;
+	clear:both;	
+	margin:5px;
+	margin-right: 0px;
+	border: 1px solid #8998A1;
+	padding:2px;
+	background-color: white;
+	width: 140px;
+}
+
+#calendar{
+}
+
+#calendar th a{
+	text-decoration:none;
+}
+
+#conformance{
+	border-top: 1px dashed #8998A1;
+	text-align: right;
+	font-size: 90%;
+	padding: 5px;
+}
+
+.permalink{
+	text-decoration: none;
+	color: #F12D0B;
+}

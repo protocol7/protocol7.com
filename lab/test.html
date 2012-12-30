@@ -1,0 +1,112 @@
+<html>
+<head>
+	<title>Untitled</title>
+<script src='vcXMLRPC.js'></script>
+<script language="JavaScript" type="text/javascript">
+//Set up routing.
+//XMLRPC.routeServer = "http://www.vcdn.org/cgi-bin/rpcroute.cgi";
+//XMLRPC.routeServer = "http://protocol7/Scripts/rpcroute.cgi";
+XMLRPC.routeServer = "http://www.protocol7.com/lab/getxml.asp"
+
+//Set up the Error handling.
+XMLRPC.onerror = function(e){
+   document.getElementById("RPCResult").innerHTML = "An Error has occured:<br><br><b>" + 
+   e.message + "</b><br><a href='help.php#errors'>Help about this error</a>";
+   return true;
+}
+
+//Function that is called by GUI.
+function pull(form){
+   document.getElementById("RPCResult").innerHTML = "Wait... Loading data....";
+
+   //prepare a 'struct' according to the Meerkat API.
+   var oStruct = {
+      channel : parseInt(form.channel.options[form.channel.selectedIndex].value),
+      time_period : form.time.options[form.time.selectedIndex].value,
+      ids : 0,
+      descriptions : 150,
+      categories : 0,
+      channels : 0,
+      dates : 1,
+      dc : 0,
+      num_items : parseInt(form.items.options[form.items.selectedIndex].text)
+   };
+
+   //Send Remote Procedure Call
+   rpcCall(displayNews, "http://www.oreillynet.com/meerkat/xml-rpc/server.php", "meerkat.getItems", oStruct);
+
+}
+
+function displayNews(data){
+   // make up the result as a nicely formatted link-list.
+
+   if(data || data == ""){
+      var sResult = '<UL>';
+      for(var i=0; i<data.length; i++){
+         sResult += '<LI>' + "<A HREF=" + data[i].link + " TARGET='_blank' TITLE=" +
+         data[i].description + ">" + data[i].title + "</a>" + '<\/LI>';
+      }
+      sResult += '<\/UL>';
+
+      document.getElementById("RPCResult").innerHTML = sResult;
+   }
+
+   return false;
+}
+</script>
+</head>
+
+<body>
+
+<table width='100%' CELLPADDING=0 CELLSPACING=0 BORDER=0>
+	<tr>
+		<td class='top' colspan='2'>
+		<b>Meerkat Service Example</b><br><br>
+		<form id='onlyone' onsubmit="return false">
+			Wire Service Channel :<br>
+			<select name="channel" size=1 class='input'>
+				<option value="4832">JavaScriptSource.com news</option>
+				<option value="1222">JavaScript Tip of the Day</option>
+				<option value="924">Apache Week</option>
+				<option value="584">Scripting News</option>
+				<option selected value="1097">WebReference News</option>
+				<option value="690">Security Focus</option>
+				<option value="1199">Web Developer News</option>
+				<option value="5056">Take23</option>
+				<option value="5564">O&#039;Reilly Network: Javascript and CSS DevCenter</option>
+				<option value="724">xmlhack</option>
+				<option value="16">Segfault.org latest headlines</option>
+				<option value="12">Slashdot Org latest news headlines</option>
+				<option value="242">Wired News</option>
+			</select><br><br>
+			
+			No older than :		Max hits :<br>
+			<select name="time" size=1 class='input'>
+				<option value="5DAY">5 days</option>
+				<option selected value="14DAY">14 days</option>
+				<option value="30DAY">30 days</option>
+				<option value="90DAY">3 months</option>
+				<option value="365DAY">1 year</option>
+			</select>
+			
+			<select name="items" size=1 class='input'>
+				<option>5</option>
+				<option>10</option>
+				<option selected>15</option>
+				<option>25</option>
+				<option>50</option>
+				<option>100</option>
+			</select><br><br>
+			<b><a href='javascript:void(0)' onclick="pull(document.getElementById('onlyone'))" class='button'>Go! get News</a></b>
+		</form>
+		</td>
+	</tr>
+	<tr>
+		<td class='content' colspan='2'>
+		<DIV id="RPCResult">
+			No Data Loaded.
+		</DIV>
+</td></tr></table>
+
+</body>
+</html>

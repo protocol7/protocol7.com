@@ -1,0 +1,76 @@
+div, td, body {
+	font-family: verdana;
+	font-size: 11px;
+	color: black;
+}
+body {
+	background-color: #CE8A06;
+}
+
+#pnlDirectories {
+	display: block;
+	background-color:red;	
+	padding-top: 5px;
+	margin: 0px;
+	margin-top: 20px;
+	width: 680px;
+}
+
+#pnlDirectories {
+
+}
+
+#dlDirectories td {
+	width: 120px;
+	padding: 5px;
+	text-align: center;
+	vertical-align: top;
+	background-color: #ECC67D;
+	padding:5px;
+}
+
+#dlDirectories img {
+	display:block;
+	margin:auto;
+}
+
+#dlDirectories caption {
+	background-color: #ECC67D;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px;
+}
+
+a {
+	color: #67490F;
+	text-decoration: none;
+}
+a:hover {
+	color: black;
+}
+
+h1 {
+	font-size: 24px;
+	
+}
+#lblPath {
+	display: block;
+}
+
+#breadcrumb{
+	display:inline;
+	margin:0px;
+	padding:0px;
+}
+
+#breadcrumb li{
+	display:inline;
+}
+
+/*#breadcrumb li:before{
+	content: "|";
+}
+
+#breadcrumb li:first-child:before{
+	content: "";
+}*/

@@ -1,0 +1,336 @@
+body, td{
+	font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+body{
+	font-size: 75%;
+	background-color: #BAC3C6;
+	background-image: url(../images/patterns/small_grey_circles.gif);
+	margin: 0px;
+	padding: 5px;
+}
+
+td{
+	font-size: 100%;
+}
+
+acronym{
+	border-bottom: 1px dotted black;
+}
+
+code{
+	font-family: "Courier New", Courier, monospace;
+	font-size: 120%;
+}
+
+ins{
+	text-decoration: none;
+}
+
+#outer{
+	background-color: white;
+	position: absolute;
+	left:20px;
+	top:0px;
+	width: 820px;
+	border-bottom: 1px solid #8998A1;
+	border-left: 1px solid #8998A1;
+	border-right: 1px solid #8998A1;
+}
+
+a{
+	color:black;
+}
+
+a img{
+	border: none;
+}
+
+#mainCol{
+	width: 600px;
+	background-color: #fff;
+	padding-top: 5px;
+}
+
+#leftCol{
+	width:590px;
+	padding-right: 15px;
+	padding-top: 5px;
+	background-color: #fff;
+	float: left;
+}
+
+#leftCol ul{
+	margin-top: 2px;
+	margin-bottom: 10px;
+}
+
+#leftCol li{
+	margin-top:0px;
+	margin-bottom: 3px;
+	padding-top:0px;
+	padding-bottom: 3px;
+	border: 1px sold red;
+}
+
+#leftCol pre {
+    margin-left: 25px;
+    border: 1px solid #ccc;
+    background-color: #eee;
+    font-size: 120%;
+    padding: 7px;
+}
+
+
+#rightCol{
+	width: 190px;
+	float: left;
+	padding-left: 5px;
+	padding-top: 5px;
+	background-color: #fff;
+}
+
+#rightCol ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+	margin-top: 2px;
+	margin-bottom: 10px;
+}
+
+#rightCol li{
+	margin-bottom: 3px;
+}
+
+#mainCol div, #leftCol div, rightCol div{
+	margin-bottom: 12px;
+}
+
+#nav{
+	position: absolute;
+	left: 20px;
+	top: 0px;
+	width: 820;
+	z-index: 3;
+    margin-top:5px;
+    padding-top:0px;
+    
+}
+
+body>#nav{
+	top: 0px;	
+}
+
+#logo{
+	position: absolute;	
+	z-index: 2;
+	left: 32px;
+	top: 3px;
+}
+
+#nav a{
+	text-decoration: none;
+}
+
+#nav li{
+	display: inline;
+	list-style: none;
+	margin-left: 0px;
+	font-size: 90%;
+	font-weight: bold;
+	padding: 6px;
+	padding-bottom: 3px;
+	background-color: transparent;
+}
+
+#nav li a:before{
+	content: '\00BB';
+	color: #F12D0B
+}
+
+#nav li:first-child{
+	background-color: #8998A1;
+}
+
+#nav li:first-child a:before{
+	content: '\00AB'
+}
+
+#content{
+	background-color: white;
+	margin-bottom: 15px;
+	padding:10px;
+	border-top: 22px solid #D6D6D6;
+}
+
+h1{
+	font-size: 200%;
+}
+
+h3 a{
+	text-decoration: none;
+}
+h3 a:before{
+/*	content: url(http://www.protocol7.com/images/perma.gif);*/
+	content: '\00BB';
+	color: #F12D0B
+}
+
+.blogPost{
+	margin-top: 2px;
+	border-bottom: 1px dashed #8998A1;
+	padding-bottom: 5px;
+}
+
+.blogPost h4{
+	margin-bottom: 3px;
+}
+
+.blogPost p{
+	margin: 0px;
+	margin-bottom: 5px;
+}
+
+
+/*.blogPost:last-child{
+	border-bottom: none;
+}*/
+
+.blogFooter{
+	padding-top: 4px;
+	font-size: 80%;
+}
+
+.np{
+	padding-top: 4px;
+	font-size: 80%;
+	display: inline;
+}
+
+
+
+h2{
+	font-size: 140%;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	border-bottom: 1px dashed #8998A1;
+	margin: 0px;
+	margin-bottom: 3px;
+}
+
+h3{
+	font-size: 120%;
+	margin-bottom: 2px;
+	padding: 0px;
+	margin: 0px;
+}
+
+h4{
+	font-size: 110%;
+}
+
+
+#content p{
+}
+
+.nb{
+	color:white;
+	padding: 5px;
+	border: 1px dashed black;
+	background-color: #8998A1
+}
+
+.nb h2{
+	color: #F12D0B;
+	font-size: 100%;
+	background-color:transparent;
+	padding: 0px;
+	margin:0px;
+}
+
+.rightFloater{
+	float:right;
+	clear:both;	
+	margin:5px;
+	margin-right: 0px;
+	border: 1px solid #8998A1;
+	padding:2px;
+	background-color: white;
+	width: 140px;
+}
+
+#calendar{
+}
+
+#calendar th a{
+	text-decoration:none;
+}
+
+#conformance{
+	border-top: 1px dashed #8998A1;
+	text-align: right;
+	font-size: 90%;
+	padding: 5px;
+}
+
+.permalink{
+	text-decoration: none;
+	color: #F12D0B;
+}
+
+iframe{
+	border: none;
+	width: 190px;
+	overflow: hidden;
+	height: 300px;
+}
+
+/* special styles for the archive iframe */
+#blogArchivePage{
+	background-color: white;
+	margin: 0px;
+	padding: 0px;
+}
+
+#blogArchivePage ul{
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+#blogArchivePage li{
+	font-weight:bold;
+}
+
+#blogArchivePage li li{
+	font-weight:normal;
+}
+
+#blogArchivePage ul ul{
+	list-style: none;
+	margin-left: 15px;
+}
+
+.imgSubTitle{
+	margin-top: 1px;
+	font-size: 90%;
+}
+
+#postComment label{
+	display: block;
+}
+
+.collapsable li{
+	font-weight: bold;
+}
+
+ul.collapsable > li:before{
+	content: '\00BB';
+	color: #F12D0B
+}
+
+
+.collapsable li li{
+	font-weight: normal;
+	margin-left: 11px;
+}

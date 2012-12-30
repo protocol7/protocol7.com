@@ -1,0 +1,454 @@
+/*  
+Theme Name: Lead
+Theme URI: http://www.amypink.com
+Description: The official AmyPink Theme
+Version: 1.0
+Author: Marcel Winatschek
+Author URI: http://www.amypink.com
+
+	
+ */
+
+html body {
+margin : 0;
+padding : 0;
+font : 11px/22px "Trebuchet MS", Arial, Helvetica, sans-serif;
+background : #fff url(images/back.gif) center top;
+text-align : left;
+color : #666;
+line-height : 16px;
+}
+a img {
+border : none;
+}
+a {
+text-decoration : none;
+color : #000;
+}
+a:hover {
+text-decoration : none;
+color : #ff0055;
+}
+b {
+font-size : 13px;
+color : #ff0055;
+text-transform : uppercase;
+font-weight : bold;
+letter-spacing : 0.035em;
+}
+strong {
+font-weight : normal;
+color : #000;
+}
+em {
+font-size : 11px;
+color : #ff0055;
+font-style : normal;
+}
+.banner_img {
+border : 1px solid #ccc;
+margin : 0;
+padding : 0;
+}
+.clr {
+clear : both;
+}
+h1, h2, h3 {
+margin : 0;
+font-size : 13px;
+color : #ff0055;
+text-transform : uppercase;
+font-weight : bold;
+letter-spacing : 0.035em;
+}
+#wrap {
+position : relative;
+width : 790px;
+margin : 0 auto;
+padding : 0;
+}
+#leftcol {
+position : absolute;
+top : 165px;
+left : 0;
+width : 475px;
+padding-bottom : 65px;
+}
+#entry img{
+width:475px;
+}
+#rightcol {
+position : absolute;
+top : 165px;
+float:right;
+left : 550px;
+width : 240px;
+}
+#footer {
+position : relative;
+width : 790px;
+margin : 0 auto;
+padding : 0;
+}
+#leftcol #thumbs img {
+margin : 0 15px 15px 0;
+}
+#leftcol #thumbs img.end {
+margin : 0 0 15px 0;
+}
+#leftcol #thumbs a img {
+border : 2px solid #fff;
+}
+#leftcol #thumbs a img:hover {
+border : 2px solid #ff0055;
+}
+#leftcol ul {
+clear : both;
+margin : 0;
+padding : 10px 0 0 0;
+list-style : none;
+}
+#leftcol li {
+list-style : none;
+line-height : 26px;
+float : left;
+margin-right : 20px;
+font-size : 14px;
+text-transform : uppercase;
+font-weight : bold;
+}
+#leftcol li a {
+color : #666;
+}
+#leftcol li a:hover {
+color : #ff0055;
+}
+#leftcol .active a {
+color : #000;
+}
+#header {
+position : absolute;
+top : 35px;
+left : 0;
+height : 165px;
+}
+#logo a {
+position : absolute;
+top : 0;
+left : 0;
+padding : 45px 0 0 0;
+height : 0 !important ;
+width : 121px;
+height : 32px;
+overflow : hidden;
+background : url(images/logo.gif) no-repeat top left;
+}
+#date {
+position : absolute;
+top : 70px;
+left : 0;
+height : 20px;
+width : 500px;
+}
+#menu {
+position : absolute;
+top : 25px;
+left : 0;
+height : 40px;
+width : 500px;
+text-transform : uppercase;
+}
+#menu ul {
+margin : 10px 0 0 0;
+padding : 0;
+}
+#menu li {
+position : relative;
+margin : 0;
+padding : 0;
+float : left;
+list-style : none;
+color : #000;
+letter-spacing : 0.05em;
+}
+#menu a {
+margin : 0 20px 0 0;
+padding : 0;
+font-size : 11px;
+line-height : 14px;
+color : #000;
+font-weight : bold;
+}
+#menu li a:hover {
+color : #ff0055;
+}
+#menu li a.active, #menu li a.active:hover {
+color : #ff0055;
+}
+.jury_member {
+margin : 0 0 30px 0;
+width : 470px;
+float : left;
+}
+.jury_member img {
+float : left;
+margin : 5px 20px 0 0;
+}
+.jury_member p {
+float : left;
+margin : 0;
+padding : 0;
+width : 320px;
+}
+.archive {
+margin : 0 0 50px 0;
+width : 470px;
+float : left;
+}
+.archive img {
+float : left;
+margin : 5px 25px 0 0;
+}
+.archive p {
+float : left;
+margin : 0;
+padding : 0;
+width : 215px;
+}
+.artist {
+margin : 0 0 60px 0;
+width : 470px;
+float : left;
+}
+.artist img {
+float : left;
+margin : 5px 20px 0 0;
+}
+.artist p {
+float : left;
+margin : 0;
+padding : 0;
+width : 320px;
+}
+.artist p img {
+float : left;
+margin : 20px 5px 0 0;
+border : 1px solid #fff;
+}
+.artist p img:hover {
+border : 1px solid #ff0055;
+}
+#pulse_credit {
+margin : 30px 0 30px 0;
+height : 55px;
+width : 240px;
+overflow : hidden;
+line-height : 19px;
+font-size : 11px;
+}
+#pulse_credit img {
+float : left;
+margin : 3px 12px 0 0;
+}
+#pulse_credit p {
+margin : 0;
+padding : 0;
+height : 85px;
+}
+.inpt_1 {
+float : left;
+width : 475px;
+overflow : hidden;
+color : #888;
+}
+.inpt_2 {
+float : left;
+width : 150px;
+overflow : hidden;
+color : #888;
+}
+.inpt_3 {
+float : left;
+width : 150px;
+overflow : hidden;
+color : #888;
+}
+.inpt_4 {
+float : left;
+width : 72px;
+overflow : hidden;
+color : #888;
+}
+.inpt_5 {
+float : left;
+width : 72px;
+overflow : hidden;
+color : #888;
+}
+.inpt_6 {
+float : left;
+overflow : hidden;
+color : #888;
+}
+.inpt_7 {
+float : left;
+width : 310px;
+overflow : hidden;
+color : #888;
+}
+.inpt_1 input {
+height : 18px;
+width : 98%;
+margin-top : 5px;
+border : 1px solid #ccc;
+}
+.inpt_2 input {
+height : 18px;
+width : 96%;
+margin-top : 5px;
+border : 1px solid #ccc;
+}
+.inpt_3 input {
+height : 18px;
+width : 96%;
+margin-top : 5px;
+border : 1px solid #ccc;
+}
+.inpt_4 input {
+height : 18px;
+width : 93%;
+margin-top : 5px;
+border : 1px solid #ccc;
+}
+.inpt_5 input {
+height : 18px;
+width : 93%;
+margin-top : 5px;
+border : 1px solid #ccc;
+}
+.inpt_7 input {
+height : 18px;
+width : 98%;
+margin-top : 5px;
+border : 1px solid #ccc;
+}
+.text_1 {
+float : left;
+width : 470px;
+margin : 15px 0 0 0;
+overflow : hidden;
+color : #888;
+}
+.text_1 textarea {
+width : 99%;
+margin : 5px 0 0 0;
+border : 1px solid #ccc;
+height : 50px;
+}
+.text_2 {
+float : left;
+width : 470px;
+margin : 15px 0 0 0;
+overflow : hidden;
+color : #888;
+}
+.text_2 textarea {
+width : 99%;
+margin : 5px 0 0 0;
+border : 1px solid #ccc;
+height : 300px;
+}
+.container_1 {
+float : left;
+width : 470px;
+margin : 15px 0 0 0;
+}
+.margin_1 {
+margin : 15px 0 0 0;
+}
+.margin_2 {
+margin : 15px 10px 0 0;
+}
+.margin_3 {
+margin : 15px 6px 0 0;
+}
+.margin_4 {
+margin : 8px 0 0 0;
+}
+.margin_5 {
+margin : 8px 10px 0 0;
+}
+.margin_6 {
+margin : 8px 6px 0 0;
+}
+.submit {
+float : left;
+width : 350px;
+height : 24px;
+margin : 38px 10px 50px 0;
+}
+.grey {
+color : #888;
+}
+#credit {
+margin-top : 35px;
+height : 20px;
+width : 150px;
+color : #666;
+font : 9px Arial, Helvetica, Sans-serif;
+text-align : left;
+}
+#credit a {
+text-decoration : none;
+color : #666;
+}
+#credit a:hover {
+text-decoration : none;
+color : #fff;
+background-color : #ff0055;
+}
+#commentform textarea {
+background : #f8f7f6;
+border : 1px solid #d6d3d3;
+width : 460px;
+}
+#commentform textarea:hover {
+background : #ffffff;
+border : 1px solid #d6d3d3;
+}
+#commentform textarea:focus {
+background : #ffffff;
+border : 1px solid #939793;
+}
+#commentform #email:focus, #commentform #author:focus, #commentform #url:focus {
+font-size : 1.1em;
+background : #ffffff;
+border : 1px solid #939793;
+width : 280px;
+}
+#commentform input {
+margin-bottom : 3px;
+}
+.com-list {}
+.com-list h3 { font-size: 18px; line-height: 22px; font-weight: normal; padding-bottom: 10px;  border-bottom: solid 1px #ebeadd;}
+.com-entry { background: url(images/com-top.png) no-repeat left top; margin-bottom: 20px;}
+.com-entry-bot { background: url(images/com-bot.png) no-repeat left bottom; padding: 10px 0px;}
+
+.com-con { padding: 10px 70px 10px 20px; font-size: 11px; line-height: 16px; color:#666; border-left: solid 1px #e7e5dd; border-right: solid 1px #e7e5dd; position: relative;}
+.com-name { }
+.com-avt { position: absolute; top: 10px; right: 20px; width: 30px; height: 30px; }
+* html .com-avt { right: 40px;}
+.com-avt img { border: 1px solid #ccc;}
+.com-date { font-size: 10px; color: #999; margin-bottom: 10px; }
+.com-text { width:200px; }
+.com-date a, .com-date a:visited, .com-date a:hover { color: #999; text-decoration: underline; }
+#flickr {
+margin-top : 10px;
+}
+#flickr img {
+padding-bottom : 10px;
+width : 475px;
+}
+
+#lastfm  { background-image: url(http://www.amypink.com/images/musicback.gif); margin-top:11px; list-style:none; width:240px; height:160px; }
+#lastfm img { width:79px; height: 79px; margin: 0 1px 1px 0; float:left; }

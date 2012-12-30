@@ -1,0 +1,1 @@
+<%Response.Redirect "outlines.swf"%>

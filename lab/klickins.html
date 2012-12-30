@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+<style>
+A {color:black; text-decoration:none;}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="kalle" onclick="klicka(this)" style="position:absolute; left:100px; top:100px; width:100px; height:100px; clip:rect(0 100 100 0);layer-background-color:blue;z-index:1;background-color:blue;">
+glenn
+</div>
+
+<div id="roffe" onclick="klicka(this)" style="position:absolute; left:150px; top:100px; width:100px; height:100px; clip:rect(0 100 100 0);layer-background-color:red;z-index:2;background-color:red;">
+är
+</div>
+
+<div id="carola" onclick="klicka(this)" style="position:absolute; left:100px; top:150px; width:100px; height:100px; clip:rect(0 100 100 0);layer-background-color:yellow;z-index:3;background-color:yellow;">
+en
+</div>
+
+<div id="runar" onclick="klicka(this)" style="position:absolute; left:150px; top:150px; width:100px; height:100px; clip:rect(0 100 100 0);layer-background-color:green;z-index:4;background-color:green;">
+klant
+</div>
+
+
+<script language="javascript" type="text/javascript">
+
+maxZIndex=5
+if(document.layers){
+	for(i=0; i<document.layers.length;i++){
+		document.layers[i].document.namn=document.layers[i].id
+		document.layers[i].document.captureEvents(Event.MOUSEUP)
+		document.layers[i].document.onmouseup = klicka
+	}
+}
+
+function klicka(e){
+	if(document.layers)	document.layers[e.target.namn].zIndex = maxZIndex++
+	else e.style.zIndex = maxZIndex++
+}
+</script>
+
+
+</body>
+</html>

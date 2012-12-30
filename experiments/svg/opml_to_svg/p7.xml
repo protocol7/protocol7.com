@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<opml version="1.0">
+	<head>
+		<title>protocol7</title>
+		<dateCreated>Sat, 16 Mar 2002 23:10:16 GMT</dateCreated>
+		<dateModified>Sat, 16 Mar 2002 23:10:16 GMT</dateModified>
+		<ownerName>Niklas Gustavsson</ownerName>
+		<ownerEmail>niklas@protocol7.com</ownerEmail>
+	</head>
+	<body>
+		<outline text="projects" type="link" url="http://www.protocol7.com/default.asp?x=projects">
+			<outline text="webjab" type="link" url="http://www.webjab.org"/>
+			<outline text="p7.lib"/>
+			<outline text="svg-wiki" type="link" url="http://www.protocol7.com/svg-wiki"/>
+		</outline>
+		<outline text="code" type="link" url="http://www.protocol7.com/default.asp?x=code">
+			<outline text="p7.soap" type="link" url="http://www.protocol7.com/default.asp?x=projdoc/p7_soap"/>
+			<outline text="p7.xmlrpc" type="link" url="http://www.protocol7.com/default.asp?x=projdoc/p7_xmlrpc"/>
+		</outline>
+		<outline text="services" type="link" url="http://www.protocol7.com/default.asp?x=services">
+			<outline text="echo" type="link" url="http://www.protocol7.com/services/echo.asp"/>
+			<outline text="openwiki" type="link" url="http://www.protocol7.com/services/openwiki.asp"/>
+			<outline text="shoutcast" type="link" url="http://www.protocol7.com/services/shoutcast.asp"/>
+			<outline text="dictionary" type="link" url="http://www.protocol7.com/services/dictionary.asp"/>
+		</outline>
+		<outline text="experiments" type="link" url="http://www.protocol7.com/default.asp?x=experiments">
+			<outline text="flash">
+				<outline text="A*" type="link" url="http://www.protocol7.com/default.asp?x=experiments/astar"/>
+				<outline text="poly" type="link" url="http://www.protocol7.com/default.asp?x=experiments/poly1"/>
+				<outline text="3D ball" type="link" url="http://www.protocol7.com/default.asp?x=experiments/3dball"/>
+				<outline text="golomb" type="link" url="http://www.protocol7.com/default.asp?x=experiments/golomb"/>
+			</outline>
+			<outline text="svg">
+				<outline text="iso" type="link" url="http://www.protocol7.com/default.asp?x=experiments/svg/iso1"/>
+				<outline text="lines" type="link" url="http://www.protocol7.com/default.asp?x=experiments/svg/lines"/>
+			</outline>
+		</outline>
+	</body>
+</opml>

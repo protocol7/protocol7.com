@@ -1,0 +1,62 @@
+<html>
+<head>
+	<title>Untitled</title>
+<script language="JavaScript" type="text/javascript">
+
+function Behavior(){
+	this.events = []
+	this.addEventListener = function(sEvent, fpFunction){
+		this.events[sEvent] = fpFunction
+	}
+	this.defaults = {}
+	this.defaults.style = {}
+}
+
+Object.prototype.clone = function(){
+	var ret = new Object()
+	for(var i in this){
+		if(typeof(this[i])=="object") ret[i] = this[i].clone()
+		else ret[i] = this[i]
+	}
+	return ret
+}
+
+addBehavior = function(elm, oBehavior){
+	var oBehavior = oBehavior.clone()
+	for(var i in oBehavior.events) elm.attachEvent(i, oBehavior.events[i])
+
+	function copyDefaults(oTar, oDef){
+		for(var i in oDef){
+			if(typeof(oDef[i])=="object") copyDefaults(oTar[i], oDef[i])
+			else if(typeof(oDef[i])!="function") oTar[i] = oDef[i]
+		}
+	}
+	copyDefaults(elm, oBehavior.defaults)
+}
+
+</script>
+
+<script language="JavaScript" type="text/javascript">
+
+p7window = new Behavior()
+p7window.addEventListener("onclick", function(){alert(88989)})
+p7window.defaults.style.color = "red"
+
+</script>
+
+<script language="JavaScript" type="text/javascript">
+
+window.onload = function(){
+	addBehavior(document.all["roffe"], p7window)
+}
+
+</script>
+
+</head>
+
+<body>
+
+<div id="roffe" style="position:absolute; left: 100px; top:100px;">roffe</div>
+
+</body>
+</html>

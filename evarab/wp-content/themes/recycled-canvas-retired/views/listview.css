@@ -1,0 +1,5 @@
+/* list view */
+#boxlist ul {margin:5px;margin-left:25px;list-style:square;}
+#boxlist li {margin-bottom:15px;}
+#boxlist li h3 span {display: inline; margin-left:15px; font-size:12px;}
+/* end list view */

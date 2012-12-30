@@ -1,0 +1,1 @@
+<%Response.Redirect "movingfonts.swf"%>

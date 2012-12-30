@@ -1,0 +1,441 @@
+/*
+
+	Fauna Default Style (Right-to-left edition)
+	
+	Nearly all aspects of Fauna can be customized with this file alone.
+	
+	If you want to override an existing style listed in style.css, simply copy and 
+	paste it here, and add !important to the end of it. 
+	
+	For example:
+
+		.box, .box-blank { 
+			text-align: justify !important;
+		}
+
+	will make sure all text is justified, instead of left-aligned.
+	
+	If you want to make your custom Fauna style and want to keep the core files "clean",
+	copy "styles/default" folder to "styles/mystyle" and type in the URL in the options page,
+	for instance "styles/mystyle/mystyle.css".
+	
+	
+*/
+
+/*
+
+	Main RTL Overrides. This is the only part of this stylesheet that is unique for the RTL version.
+	
+*/
+* {
+	direction: rtl !important;
+}
+.box, .box-blank, #sidebar ul.inner li, .notice {
+	text-align: right;
+}
+.prev {
+	float: right;
+}
+.next {
+	float: left;
+}
+span.tags {
+	display: block;
+	background: url(../../images/icon_tag.gif) no-repeat right center;
+	padding-right: 16px;
+}
+.entry-meta {
+	display: block;
+}
+blockquote, pre {
+	border-right: 1px solid #D9D9D9;
+	border-left: 0 !important;
+}
+.edit a {
+	left: -.75em !important;
+}
+.sidenote .edit a {
+	left: -1em !important;
+}
+h2 a {
+	text-decoration: none !important;
+	padding: .4em  !important;
+}
+ol {
+	margin:0 1em .8em 0 !important;
+	padding-left: 2em;
+}
+#sidebar .feedicon {
+	float: left !important;
+}
+body {
+	font: 70%/190% Tahoma, Arial, Helvetica, sans-serif !important;
+}
+h1 {
+	text-align: right;
+	margin: .8em 1.5em 0 0;
+}
+#menu {
+	margin: 1em 1.5em .6em;
+	float: right;
+}
+#searchbox {
+	margin: 1em 0 0 2em;
+	float: left;
+}
+p.commentlink {
+	float: left;
+	margin: 0 10px 10px 0;
+	padding: 0 10px 0 0 !important;
+	border-right: 1px dotted #C2C76D;
+	border-left: 0 !important;
+}
+#commentlist li small span.edit {
+	float: left;
+}
+#commentlist li small a.quote {
+	float: right;
+	text-decoration: none;
+	background: url(../../images/icon_quote.gif) no-repeat;
+}
+#commentlist li small {
+	left: 95px !important;
+}
+ol {
+	margin: 0 1em .8em 0;
+	padding-right: 2em;
+}
+#main ul {
+	padding-right: 1em;
+}
+#main ul li {
+	margin-right: 1em;
+}
+
+
+
+
+
+/*
+
+	Widths
+	
+*/
+#wrapper {
+	min-width: 780px;
+	width: 780px; 			/* Entire blog width */
+}
+#body {
+	padding: 0 1.5em;
+}
+#sidebar {
+	width: 31%;				/* Sidebar width */
+	float: right;
+}
+#main {
+	width: 69%;				/* Main column width */
+	float: left;
+}
+#sidebar ul.inner {
+	padding: 0 0 0 .8em;
+}
+#header {
+	height: 200px;
+}
+.left #sidebar {
+	float: left;
+}
+.left #sidebar ul.inner {
+	padding: 0 .8em 0 0;
+}
+.left #main {
+	float: right;
+}
+
+/* 
+
+	Background
+	
+*/
+.bg { 
+	background: #F5F5EF url('bg.gif') no-repeat center top;
+}
+#header {
+	background-image: url('../../images/masthead-fauna.jpg');
+	background-repeat: repeat-x !important;
+	background-position: center top;
+}
+
+/*
+
+	Colors
+
+*/
+body {
+	color: #565654;				/* Text color */
+}
+.box, #sidebar ul.inner li {
+	background-color: #fff;		/* Box background color */
+}
+#sidebar, #secondary, #copyright {
+	color: #A5A5A3;				/* Sidebar text color */
+}
+
+/* 
+
+	Link Colors
+	
+*/
+a:link, a:active { text-decoration: underline; color: #17A; }
+a:visited { text-decoration: underline; color: #035; }
+a:hover, a:focus { text-decoration: underline; color: #6BD; }
+
+#sidebar a:link, #sidebar a:active { text-decoration: none; color: #79A; }
+#sidebar a:visited { text-decoration: none; color: #578; }
+#sidebar a:hover { text-decoration: underline; color: #79A; }
+
+h2 a:link, h2 a:active, h2 a:visited {
+	color: #035;
+}
+h2 a:hover, h2 a:focus {
+	color: #39C;
+}
+p.commentlink, .entry-meta {
+	color: #989D3C !important;
+}
+p.commentlink a {
+	color: #989D3C !important;
+}
+p.commentlink a:hover, .entry-meta a:hover {
+	color: #D3D764 !important;
+}
+.entry-meta a {
+	color: #545621 !important;
+}
+#main p a img {
+	border-bottom: 1px solid #17A;
+}
+#main p a img:hover {
+	border-bottom: 1px solid #6BD;
+}
+#menu a:link, #menu a:visited { color: #767674; }
+#menu a:active, #menu a:hover { color: #000; }
+body#index li#current-index a, body#index #current-index a:visited,
+#menu .current_page_item a, #menu .current_page_item a:visited
+{
+	color: #000 !important;
+}
+#sidebar li.current_page_item>a, #sidebar li.current_page_item>a:visited {	/* Only works in modern browsers */
+	color: #A5A5A3;
+	font-weight: bold;
+}
+h1 a:link, h1 a:visited {	/* Logo */
+	color: #686865;
+}
+h1 a:hover, h1 a:active {
+	color: #A6A6A4;
+}
+
+/* 
+
+	Fonts
+	
+*/
+h1 {
+	font: bold 240%/100% "Trebuchet MS", Arial, Helvetica, sans-serif; 
+}
+body {
+	font: 70%/190% Verdana, Arial, Helvetica, sans-serif;
+}
+cite, input, textarea, select, .inputbox, #commentform textarea, .searchbox, .pushbutton, .pushbutton-wide {
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+}
+h2 {
+	font: normal 140% Arial, Helvetica, sans-serif;
+}
+#main h3 {
+	font: normal 135% Arial, Helvetica, sans-serif;
+}
+.noteworthy {
+	font: 135% "Lucida Sans Unicode", Arial, sans-serif;
+}
+/* Opera can't render &hearts; symbol with Lucida, so set generic font */
+@media all and (min-width: 0px){ 
+.noteworthy {
+	font: 135% serif;
+}
+}
+.noteworthy a {
+	color:#FF7953 !important;
+}
+.noteworthy a:hover {
+	color:#FF8F6F !important;
+}
+code, pre, kbd, samp {
+	font: 95% "Bitstream Vera Sans Mono", 'Courier New', Courier, Fixed, monospace;
+}
+p.commentlink {
+	border-left: 1px dotted #C2C76D;
+}
+p.commentlink {
+	font: normal 140% Arial, Helvetica, sans-serif;
+}
+.aside p.commentlink {
+	font: normal 100% Verdana, Arial, Helvetica, sans-serif;
+}
+.asides h2, .asides h3, .sidenote h2, .sidenote h3 {
+	font: normal 100% Verdana, Arial, Helvetica, sans-serif;
+}
+
+/*
+
+	Various
+	
+*/
+acronym, abbr {
+	border-bottom: 1px dashed #C63;
+}
+strike, del {
+	color: #B6B6B4;
+}
+ins {
+	color: #989D3C;
+}
+label:hover {
+	color: #000;
+}
+fieldset {
+	border: 1px solid #F4F8FB;
+	background-color: #F4F8FB;
+}
+legend {
+	background-color: #fff;
+}
+.notice { 	/* Moderation Message */
+	border-top: 1px solid #FFF200;
+	border-bottom: 1px solid #FFF200;
+	background-color: #FFFFF4;
+}
+blockquote, pre {
+	border-left: 1px solid #D9D9D9;
+}
+#tags-allowed {
+	border-top: 1px solid #D6E1ED;
+	border-bottom: 1px solid #D6E1ED;
+	background-color: #F8FAFC;
+}
+
+/* 
+
+	Comments & Trackbacks
+	
+*/
+.comment-even {
+	background-color: #F8FAFC;
+}
+.comment-odd {
+	background-color: #F8FAFC; 		/* Change this colour to add "Flip flopping" backgrounds */
+}
+.comment-author { 					/* Author background color */
+	background-color: #EEF4F9;
+}
+a.comment-permalink {
+	color: #565654 !important;				/* Text color */
+	text-decoration: none !important;
+	border-bottom: 1px dotted #565654;
+}
+#trackbacklist li a {
+	background-color: #FBFCFD;
+}
+#trackbacklist li {
+	border: 1px solid #FBFCFD;
+	background: #FEFEFE;
+}
+#trackbacklist li small {
+	color: #565654;
+}
+#trackbacklist li a:hover {
+	background-color:#F4F8FB;
+	color: #035;
+}
+#trackbacklist li a:active {
+	background-color:#FBFCFD;
+	color: #035;
+}
+
+/*
+
+	Search
+	
+*/
+.search-results small {
+	font-size: 100%;
+}
+.search-results small a {
+	color: #989D3C !important;
+	text-decoration: none !important;
+}
+
+
+/* 
+
+	Calendar
+	
+*/
+#wp-calendar caption {
+	color: #989D3C;
+}
+#wp-calendar a {
+	color: #39C;
+	background-color: #F8FAFC;
+}
+#wp-calendar a:hover {
+	color: #035 !important;
+	background-color: #EEF4F9 !important;
+}
+#wp-calendar td.pad:hover { /* Doesn't work in IE */
+	background-color: #F8FAFC;
+}
+
+/* 
+
+	Plugins
+
+*/	
+/* Brian's Latest Comments */
+#recent-activity small a:link, #recent-activity small a:visited, .secondary small a:link, .secondary small a:visited {
+	color: #ACC;
+}
+/* Ultimate Tag Warrior */
+.technoratitags {
+	color: #989D3C !important;
+}
+.technoratitags a {
+	color: #989D3C !important;
+	border-bottom: 1px dotted #989D3C;
+	text-decoration: none;
+}
+.technoratitags a:hover {
+	color: #D3D764 !important;
+	border-bottom: 1px dotted #D3D764;
+	text-decoration: none;
+}
+.longtailvert a {
+	padding: 0 .5em;
+	text-decoration: none;
+	color: #fff;
+}
+.longtailvert a:hover {
+	background: #17A;
+}
+
+/* Textile */
+.caps {	
+	font: 100% Verdana, Arial, Helvetica, sans-serif;
+}
+
+/* Google Hilite */
+.hilite {
+	background-color: #DEEBF3;
+	color: #000;
+}

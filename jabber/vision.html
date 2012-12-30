@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Whiteboarding over Jabber</title>
+</head>
+
+<body>
+
+<h2>Whiteboarding over Jabber</h2>
+<h3>Vision</h3>
+<br>
+<b>Version history</b><br>
+<table width="400"><tr>
+<td>1.0</td><td>Niklas Gustavsson</td><td>Initial draft</td></tr></table>
+<br><br>
+<table width="600"><tr><td>
+<b>What is whiteboarding?</b><br>
+Whiteboarding can be defined as an application data sharing protocol for graphics applications. It is composed of four separate activities/formats<br>
+<ol>
+<li>	User handling. User (two or more) joining and leaving a whiteboarding session
+<li>	Sending messages with data to each other
+<li>	Server keeping the current state of the whiteboard
+<li>	Data formats
+</ol>
+
+The three first activities could be regarded as the protocol carrying any data (4). Therefore, the four things above can be simplified to:
+<ol>
+<li>	Protocol
+<li>	Data formats
+</ol>
+By proposing a good protocol the Whiteboarding JIG proposal can later be used for any application data. Why don't make a collaborative spreadsheet? Or a 3D modeling tool. Or a real-time strategy game? 
+<br><br>
+
+<b>Conferencing and user-to-user</b><br>
+Whiteboarding should be supported both during user-to-user chats and conferencing. The latter adds some complexity since users should be able to join an ongoing whiteboarding session. This means that the server needs to have a history that keeps the current state of the whiteboard and sends that to users entering the room.
+<br><br>
+
+<b>Two initial data formats</b><br>
+In the first step, two different formats are needed: one for bitmap images and one for vector graphics. For bitmaps there is already a proposed format for Jabber, a compressed derivative of XPM (http://docs.jabber.org/draft-proto/html/sxpm.html). For vector images I propose to use SVG (http://www.w3.org/TR/SVG/). SVG is currently a W3C Recommendation for vector graphics and is therefore very likely to get a very wide support. SVG also include standards for, for example animations, metadata and scripting. 
+<br><br>
+Building a renderer and editor for SVG is not a simple task for Jabber client developers. But, there is already a set of available libraries that can help. For exemple, Windows and web developers can use the Adobe SVG Viewer ActiveX (http://www.adobe.com/svg) and for Java there is the Batik SVG toolkit (http://xml.apache.org/batik). 
+<br><br>
+The problem with SVG is it's complexity, it has a much bigger scope then needed for whiteboarding, therefore the whiteboarding-JIG should decide on a subset of SVG to use. Also, SVG will need a few additions, for example a z-index attribute and ownership/access rights for each element. These things are easy to add since SVG allows for keeping foreign data using separate namespaces.
+<br><br>
+<b>Transports</b><br>
+There are currently several tools for whiteboarding, for example Microsoft Netmeeting (integrated with MSN Messenger, http://www.microsoft.com/windows/NetMeeting/Features/Whiteboard) and Groove (http://www.groove.net/). There is also a standard for whiteboarding for multimedia telecom conferencing purposes, T.126 (http://www.imtc.org/t120.htm). The Jabber whiteboard should be able to communicate with these whiteboarding solutions via Jabber server transports. The protocol should also allow for other data formats (for example spreadsheets) to communicate with external application using other transports.
+<br><br>
+
+<b>Adding Jabber to existing applications</b><br>
+I think there are several existing applications that would greatly benefit from getting support for collaboration. What about being able to share, in real-time, a drawing in Photoshop with a friend who's using Gimp? This should be possible to do via Jabber, now wouldn't that be cool? :-)
+<br>
+<br>
+<br>
+<br>
+<br>
+</td></tr></table>
+
+</body>
+</html>

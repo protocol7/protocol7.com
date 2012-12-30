@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+    "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <circle cx="50%" cy="50%" r="10%" fill="blue"
+            cursor="url(#leftRight)"/>
+	<defs>
+		<path id="theCursor" stroke="black" fill="white" d="M0.5 8.5l5-5v3h5v-3l5 5l-5 5v-3h-5v3z">
+			<animateColor attributeName="fill" attributeType="CSS"
+	           			values="white;black;white"
+	           			begin="0s" dur="1s" repeatDur="indefinite" />
+		</path>
+	</defs>
+	
+	<cursor id="leftRight" x="8" y="8" xlink:href="#theCursor">
+
+	</cursor>
+</svg>

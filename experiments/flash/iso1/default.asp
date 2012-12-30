@@ -1,0 +1,1 @@
+<%Response.Redirect "iso1.swf"%>

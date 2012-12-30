@@ -1,0 +1,18 @@
+<html>
+<head>
+<title>Scroll</title>
+<script language="javascript" type="text/javascript" src="functions.js"></script>
+<script language="javascript" type="text/javascript" src="mainscript.js"></script>
+</head>
+
+<body onload="ff.barScroll.init('maintext1')" leftmargin=0 topmarging=0 topmargin=0>
+
+<script language="javaScript" type="text/javascript">
+if(ff.ie) document.write('<div id="maintext1" style="position:absolute; top:135px; left:20px; width:330px; z-index:5; clip:rect(0 330 130 0);"><iframe id="theframe" src="thelayer.html" frameborder=no height=10></iframe></div>')
+else document.write('<layer name="maintext1" top=135 left=20 width=330 clip="0 0 330 130" src="thelayer.html"></layer>')
+</script>
+
+<a href="javascript:ff.barScroll.gotoAnchor2('maintext1', 'anc1')">gå till anchor 1</a><br>
+<a href="javascript:ff.barScroll.gotoAnchor2('maintext1', 'anc2')">gå till anchor 2</a>
+</body>
+</html>

@@ -1,0 +1,1 @@
+<%Response.Redirect "organic1.swf"%>

@@ -1,0 +1,790 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Fauna\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: 2007-09-27 15:49+0100\n"
+"Last-Translator: Joen <joen@noscope.com>\n"
+"Language-Team: Ralph Inselsbacher <l10n@vernetzt.ws>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Country: AUSTRIA\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: _e;__\n"
+"X-Poedit-Basepath: C:\\Webserver\\wwwroot\\fauna\\dev\\wp-content\\themes\\fauna\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:9
+msgid "404 Error: Not Found"
+msgstr ""
+
+#: 404.php:10
+msgid "What you were looking for isn't here anymore. It might be a temporary error, it might be permanent."
+msgstr ""
+
+#: author.php:13
+#, php-format
+msgid "About %s"
+msgstr ""
+
+#: author.php:27
+msgid "Full name:"
+msgstr ""
+
+#: author.php:28
+msgid "Web site:"
+msgstr ""
+
+#: author.php:29
+msgid "Contact via AIM (AOL Instant Messenger):"
+msgstr ""
+
+#: author.php:30
+msgid "Contact via YIM (Yahoo Instant Messenger):"
+msgstr ""
+
+#: author.php:31
+msgid "Contact via Jabber / Google Talk:"
+msgstr ""
+
+#: author.php:34
+#, php-format
+msgid "Entries Authored by %s"
+msgstr ""
+
+#: author.php:36
+#, php-format
+msgid "You can follow entries authored by %1$s via an <a href=\"%2$s\" title=\"RSS 2.0\">author-only RSS feed</a>."
+msgstr ""
+
+#: author.php:37
+#, php-format
+msgid "%1$s has authored %2$s entries on this weblog:"
+msgstr ""
+
+#: author.php:40
+#: templates/template-aside.php:16
+#: templates/template-post.php:18
+#: templates/template-sidenote.php:9
+msgid "Permanent Link:"
+msgstr ""
+
+#: category.php:8
+msgid "Category Archive"
+msgstr ""
+
+#: category.php:9
+#, php-format
+msgid "The following is a list of all entries from the %s category."
+msgstr ""
+
+#: comments-popup.php:12
+#: comments-popup.php:40
+#, php-format
+msgid "Comments on %s"
+msgstr ""
+
+#: comments.php:3
+msgid "Please do not load this page directly. Thanks!"
+msgstr ""
+
+#: comments.php:10
+msgid "Protected Post"
+msgstr ""
+
+#: comments.php:11
+msgid "This post is password protected. Enter the password to view comments."
+msgstr ""
+
+#: footer.php:7
+msgid "Powered by <a href=\"http://www.wordpress.org\" title=\"State-of-the-art semantic personal publishing platform\">WordPress</a> &amp; <a href=\"http://www.noscope.com/fauna/\" title=\"Highly adaptive open-source draping for Wordpress sites\">Fauna</a>"
+msgstr ""
+
+#: footer.php:7
+msgid "Site Admin"
+msgstr ""
+
+#: footer.php:11
+msgid "Syndicate Entries using RSS 2.0"
+msgstr ""
+
+#: footer.php:11
+#: footer.php:12
+#: sidebar.php:84
+#: sidebar.php:95
+#: templates/template-postmeta.php:10
+#: templates/template-sidenotes.php:9
+msgid "Feed"
+msgstr ""
+
+#: footer.php:11
+msgid "Entries"
+msgstr ""
+
+#: footer.php:12
+#: sidebar.php:83
+msgid "Syndicate Comments using RSS 2.0"
+msgstr ""
+
+#: footer.php:12
+#: templates/template-comments.php:19
+msgid "Comments"
+msgstr ""
+
+#: footer.php:17
+msgid "queries."
+msgstr ""
+
+#: footer.php:17
+msgid "seconds."
+msgstr ""
+
+#: functions-custom.php:135
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: functions-custom.php:162
+#, php-format
+msgid "Posts by %s"
+msgstr ""
+
+#: functions.php:185
+msgid "Sidenotes"
+msgstr ""
+
+#: functions.php:196
+msgid "Sidenotes are tiny posts embedded in the sidebar. Only posts filed in a category called \"Sidenotes\" will show up there. "
+msgstr ""
+
+#: functions.php:197
+msgid "Title:"
+msgstr ""
+
+#: functions.php:198
+msgid "Total notes:"
+msgstr ""
+
+#: header.php:7
+#: templates/template-categorylist.php:8
+msgid "Categories"
+msgstr ""
+
+#: header.php:7
+msgid "About Author"
+msgstr ""
+
+#: header.php:7
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: header.php:7
+msgid " | Tags | "
+msgstr ""
+
+#: header.php:16
+msgid "RSS 2.0"
+msgstr ""
+
+#: header.php:17
+msgid "Comments RSS 2.0"
+msgstr ""
+
+#: header.php:18
+msgid "RSS 0.92"
+msgstr ""
+
+#: header.php:19
+msgid "Atom 0.3"
+msgstr ""
+
+#: header.php:86
+msgid "Home"
+msgstr ""
+
+#: header.php:98
+#: header.php:100
+#: search.php:8
+#: search.php:11
+#: sidebar.php:37
+msgid "Search"
+msgstr ""
+
+#: page-archives.php:17
+#: page.php:14
+#: templates/template-aside.php:17
+#: templates/template-post.php:37
+#: templates/template-sidenote.php:11
+msgid "Continue reading this entry"
+msgstr ""
+
+#: page-archives.php:19
+#: page.php:15
+#: templates/template-aside.php:18
+#: templates/template-post.php:40
+#: templates/template-sidenote.php:12
+msgid "Page:"
+msgstr ""
+
+#: page-archives.php:21
+#: page.php:11
+#: search.php:24
+#: templates/template-aside.php:10
+#: templates/template-post.php:10
+#: templates/template-sidenote.php:10
+#: templates/template-trackbacks.php:18
+msgid "Edit This"
+msgstr ""
+
+#: page-archives.php:36
+msgid "Weighted Tags"
+msgstr ""
+
+#: page-archives.php:41
+msgid "Last 20 Entries"
+msgstr ""
+
+#: page-archives.php:49
+msgid "Archives by Month"
+msgstr ""
+
+#: search.php:16
+msgid "Search Results"
+msgstr ""
+
+#: search.php:17
+#, php-format
+msgid "These are the search results for your search on <strong>\"%s\"</strong>:"
+msgstr ""
+
+#: search.php:25
+#, php-format
+msgid "Permanent link to %s:"
+msgstr ""
+
+#: sidebar.php:38
+msgid "All keywords are searched for."
+msgstr ""
+
+#: sidebar.php:56
+#: options/archive.php:11
+#: options/display.php:94
+msgid "Archives"
+msgstr ""
+
+#: sidebar.php:57
+#, php-format
+msgid "You are viewing the archives for %s. "
+msgstr ""
+
+#: sidebar.php:58
+#, php-format
+msgid "There are currently %1$s posts and %2$s comments, contained within %3$s categories."
+msgstr ""
+
+#: sidebar.php:82
+msgid "Ongoing Discussions"
+msgstr ""
+
+#: sidebar.php:94
+msgid "Category:"
+msgstr ""
+
+#: sidebar.php:95
+#, php-format
+msgid "Syndicate %s using RSS 2.0"
+msgstr ""
+
+#: sidebar.php:117
+msgid "All Tags"
+msgstr ""
+
+#: tag.php:8
+msgid "Tag Archive"
+msgstr ""
+
+#: tag.php:9
+msgid "The following is a list of all entries tagged with"
+msgstr ""
+
+#: options/display.php:8
+msgid "No Style"
+msgstr ""
+
+#: options/display.php:16
+msgid "Options saved."
+msgstr ""
+
+#: options/display.php:18
+#: options/display.php:143
+msgid "To upload your own custom header graphic, click the <a href=\"themes.php?page=custom-header\">Custom Image Header</a> tab."
+msgstr ""
+
+#: options/display.php:31
+#: options/options.php:12
+msgid "Fauna Options"
+msgstr ""
+
+#: options/display.php:34
+#, php-format
+msgid "You can find help, documentation and more custom styles for Fauna at the <a href=\"http://www.noscope.com/fauna/\">Fauna home page</a>. Added functionality is available through <a href=\"%s\">Widgets</a>. "
+msgstr ""
+
+#: options/display.php:37
+#: options/display.php:166
+msgid "Update Options"
+msgstr ""
+
+#: options/display.php:42
+msgid "Custom Style"
+msgstr ""
+
+#: options/display.php:49
+msgid "Get custom styles from the <a href=\"http://www.noscope.com/fauna/styles/\">Fauna style directory</a>."
+msgstr ""
+
+#: options/display.php:53
+msgid "About Text"
+msgstr ""
+
+#: options/display.php:55
+msgid "Text typed here will be used as an introduction to your site."
+msgstr ""
+
+#: options/display.php:58
+msgid "Sticky Note Text"
+msgstr ""
+
+#: options/display.php:60
+msgid "Text typed here will appear as a yellow \"sticky-hote\"."
+msgstr ""
+
+#: options/display.php:64
+msgid "Rename the \"Blog\" tab"
+msgstr ""
+
+#: options/display.php:68
+msgid "Sidebar Position"
+msgstr ""
+
+#: options/display.php:69
+msgid "Left"
+msgstr ""
+
+#: options/display.php:69
+msgid "Right (Default)"
+msgstr ""
+
+#: options/display.php:72
+msgid "Scalemode"
+msgstr ""
+
+#: options/display.php:73
+msgid "Fixed width (Default)"
+msgstr ""
+
+#: options/display.php:73
+msgid "Liquid"
+msgstr ""
+
+#: options/display.php:76
+msgid "Noteworthy Icon"
+msgstr ""
+
+#: options/display.php:78
+msgid "Default is a heart: <code>%26hearts;</code>. To show a star use: <code>%26#9733;</code>. HTML is allowed."
+msgstr ""
+
+#: options/display.php:81
+msgid "Comments and Trackbacks"
+msgstr ""
+
+#: options/display.php:83
+msgid "Enable Popup Comments"
+msgstr ""
+
+#: options/display.php:84
+msgid "Show Trackback Body Text"
+msgstr ""
+
+#: options/display.php:88
+msgid "Author info"
+msgstr ""
+
+#: options/display.php:90
+msgid "Show author link in posts"
+msgstr ""
+
+#: options/display.php:97
+msgid "Enable Archives Page"
+msgstr ""
+
+#: options/display.php:101
+msgid "Custom Header"
+msgstr ""
+
+#: options/display.php:130
+msgid "Type in the full URL to your custom header below."
+msgstr ""
+
+#: options/display.php:132
+msgid "Header URL"
+msgstr ""
+
+#: options/display.php:150
+msgid "Header Extras"
+msgstr ""
+
+#: options/display.php:152
+msgid "Height (px)"
+msgstr ""
+
+#: options/display.php:153
+msgid "Round top header corners (requires JavaScript)"
+msgstr ""
+
+#: options/display.php:158
+msgid "Custom Background"
+msgstr ""
+
+#: options/display.php:160
+msgid "Type in the full URL to the background graphic."
+msgstr ""
+
+#: options/display.php:169
+msgid "Uninstall Fauna"
+msgstr ""
+
+#: options/display.php:170
+msgid "If you want to uninstall Fauna, press the \"Delete Options \" button to clean things up in the database. You will be redirected to Presentation section and the Default theme will have been activated."
+msgstr ""
+
+#: options/display.php:173
+msgid "Delete Options"
+msgstr ""
+
+#: templates/template-aside.php:13
+#: templates/template-post.php:13
+msgid "Comments (0)"
+msgstr ""
+
+#: templates/template-aside.php:13
+#: templates/template-post.php:13
+msgid "Comments (1)"
+msgstr ""
+
+#: templates/template-aside.php:13
+#: templates/template-post.php:13
+msgid "Comments (%)"
+msgstr ""
+
+#: templates/template-authormeta.php:8
+msgid "Author Archive"
+msgstr ""
+
+#: templates/template-authormeta.php:9
+msgid "This page details authors of this weblog."
+msgstr ""
+
+#: templates/template-authormeta.php:14
+#, php-format
+msgid "There are %s authors/users attached to this weblog:"
+msgstr ""
+
+#: templates/template-authormeta.php:19
+msgid "There is one author attached to this weblog."
+msgstr ""
+
+#: templates/template-categorylist.php:11
+#: templates/template-categorylist.php:18
+msgid "Syndicate using RSS 2.0"
+msgstr ""
+
+#: templates/template-categorylist.php:15
+msgid "Special Categories"
+msgstr ""
+
+#: templates/template-commentform.php:9
+msgid "Edit your Comment"
+msgstr ""
+
+#: templates/template-commentform.php:9
+msgid "Leave a Comment"
+msgstr ""
+
+#: templates/template-commentform.php:14
+#, php-format
+msgid "You must be <a href=\"%s\">logged in</a> to post a comment."
+msgstr ""
+
+#: templates/template-commentform.php:26
+#, php-format
+msgid "Logged in as %s."
+msgstr ""
+
+#: templates/template-commentform.php:26
+msgid "Log out of this account"
+msgstr ""
+
+#: templates/template-commentform.php:26
+msgid "Logout"
+msgstr ""
+
+#: templates/template-commentform.php:35
+#, php-format
+msgid "Welcome back <strong>%s</strong>"
+msgstr ""
+
+#: templates/template-commentform.php:36
+msgid "Change"
+msgstr ""
+
+#: templates/template-commentform.php:37
+#: templates/template-commentform.php:66
+msgid "Close"
+msgstr ""
+
+#: templates/template-commentform.php:49
+msgid "Name"
+msgstr ""
+
+#: templates/template-commentform.php:49
+#: templates/template-commentform.php:51
+msgid "(required)"
+msgstr ""
+
+#: templates/template-commentform.php:51
+msgid "E-mail"
+msgstr ""
+
+#: templates/template-commentform.php:53
+msgid "Website"
+msgstr ""
+
+#: templates/template-commentform.php:62
+msgid "Description opens inline (right here)"
+msgstr ""
+
+#: templates/template-commentform.php:62
+msgid "Formatting your Comment"
+msgstr ""
+
+#: templates/template-commentform.php:66
+msgid "Hide this description"
+msgstr ""
+
+#: templates/template-commentform.php:67
+msgid "Formatting Your Comment"
+msgstr ""
+
+#: templates/template-commentform.php:68
+msgid "The following <abbr title=\"eXtensible Hypertext Markup Language\">XHTML</abbr> tags are available for use:"
+msgstr ""
+
+#: templates/template-commentform.php:70
+msgid "URLs are automatically converted to hyperlinks."
+msgstr ""
+
+#: templates/template-commentform.php:74
+msgid "Textile"
+msgstr ""
+
+#: templates/template-commentform.php:75
+msgid "Textile is a method that uses simple symbols to quickly write rich text markup. These are the most common:"
+msgstr ""
+
+#: templates/template-commentform.php:77
+msgid "_emphasis_"
+msgstr ""
+
+#: templates/template-commentform.php:78
+msgid "*strong*"
+msgstr ""
+
+#: templates/template-commentform.php:79
+msgid "-deleted text-"
+msgstr ""
+
+#: templates/template-commentform.php:80
+msgid "!imageurl.gif!"
+msgstr ""
+
+#: templates/template-commentform.php:83
+msgid "\"link text\":http://link.url"
+msgstr ""
+
+#: templates/template-commentform.php:84
+msgid "bq. quoted content"
+msgstr ""
+
+#: templates/template-commentform.php:85
+msgid "@short code snippet@"
+msgstr ""
+
+#: templates/template-commentform.php:94
+msgid "Submit Edit"
+msgstr ""
+
+#: templates/template-commentform.php:94
+msgid "Post"
+msgstr ""
+
+#: templates/template-commentmeta.php:11
+#: templates/template-commentmeta.php:41
+msgid "There are no responses"
+msgstr ""
+
+#: templates/template-commentmeta.php:11
+#: templates/template-commentmeta.php:41
+msgid "There is one response"
+msgstr ""
+
+#: templates/template-commentmeta.php:11
+#: templates/template-commentmeta.php:41
+msgid "There are % responses"
+msgstr ""
+
+#: templates/template-commentmeta.php:11
+#: templates/template-commentmeta.php:41
+msgid "<a href=\"#respond\">Respond</a>."
+msgstr ""
+
+#: templates/template-commentmeta.php:16
+#: templates/template-commentmeta.php:29
+msgid "Trackback URI to this entry"
+msgstr ""
+
+#: templates/template-commentmeta.php:16
+#: templates/template-commentmeta.php:29
+msgid "Trackback"
+msgstr ""
+
+#: templates/template-commentmeta.php:20
+#: templates/template-commentmeta.php:33
+msgid "Hide"
+msgstr ""
+
+#: templates/template-comments.php:38
+msgid "Click here or select text to quote comment"
+msgstr ""
+
+#: templates/template-comments.php:38
+msgid "Quote"
+msgstr ""
+
+#: templates/template-comments.php:41
+#: templates/template-comments.php:43
+msgid "Edit Comment"
+msgstr ""
+
+#: templates/template-comments.php:53
+#: templates/template-comments.php:59
+#: templates/template-trackbacks.php:20
+#, php-format
+msgid "Visit %s"
+msgstr ""
+
+#: templates/template-comments.php:66
+msgid "(subscribed)"
+msgstr ""
+
+#: templates/template-comments.php:67
+msgid "said"
+msgstr ""
+
+#: templates/template-comments.php:69
+msgid "Permanent link to this comment"
+msgstr ""
+
+#: templates/template-comments.php:69
+#: templates/template-post.php:25
+#: templates/template-trackbacks.php:26
+#, php-format
+msgid "%s ago"
+msgstr ""
+
+#: templates/template-comments.php:72
+msgid "Your comment is awaiting moderation. This is just a spam counter-measure, and will only happen the first time you post here. Your comment will be approved as soon as possible."
+msgstr ""
+
+#: templates/template-nextprev.php:9
+msgid "Previous Entries"
+msgstr ""
+
+#: templates/template-nextprev.php:10
+msgid "Next Entries"
+msgstr ""
+
+#: templates/template-notfound.php:8
+msgid "Not Found"
+msgstr ""
+
+#: templates/template-notfound.php:9
+msgid "Sorry, nothing was found."
+msgstr ""
+
+#: templates/template-post.php:23
+msgid "Filed in"
+msgstr ""
+
+#: templates/template-post.php:27
+msgid "by"
+msgstr ""
+
+#: templates/template-postmeta.php:8
+msgid "This Entry"
+msgstr ""
+
+#: templates/template-postmeta.php:9
+#: templates/template-sidenotes.php:8
+msgid "Syndicate Sidenotes using RSS 2.0"
+msgstr ""
+
+#: templates/template-postmeta.php:16
+#, php-format
+msgid "This entry was written %1$s %2$s by %3$s."
+msgstr ""
+
+#: templates/template-postmeta.php:18
+#, php-format
+msgid "Categorized: %1$s."
+msgstr ""
+
+#: templates/template-postmeta.php:19
+msgid "Tagged:"
+msgstr ""
+
+#: templates/template-sidenote.php:9
+msgid "(Comment)"
+msgstr ""
+
+#: templates/template-sidenote.php:9
+msgid "(1 Comment)"
+msgstr ""
+
+#: templates/template-sidenote.php:9
+msgid "(% Comments)"
+msgstr ""
+
+#: templates/template-trackbacks.php:13
+msgid "Trackbacks &amp; Pingbacks"
+msgstr ""
+
+#: templates/template-trackbacks.php:24
+msgid "commented"
+msgstr ""
+
+#: templates/template-trackbacks.php:24
+msgid "trackbacked"
+msgstr ""
+
+#: templates/template-trackbacks.php:24
+msgid "pingbacked"
+msgstr ""
+
+#: templates/template-trackbacks.php:28
+#, php-format
+msgid "Posted  %1$s, %2$s"
+msgstr ""
+

@@ -1,0 +1,67 @@
+<!-- <!DOCTYPE article PUBLIC "-//JABBER//DTD DocBook V3.1-Based Extension V1.0//EN" "jep.dtd"> -->
+<article>
+<artheader>
+  <title>Whiteboarding JIG Formation</title>
+  <abstract><para>A proposal to form a JIG to develop a protocol for whiteboarding over Jabber</para></abstract>
+  <legalnotice><para>This document has been placed in the public domain.</para></legalnotice>
+  <authorgroup>
+    <author>
+      <firstname>Niklas</firstname>
+      <surname>Gustavsson</surname>
+      <affiliation>
+        <orgname>protocol7</orgname>
+        <address>
+          <email>niklas@protocol7.com</email>
+          <otheraddr>nikgus@jabber.org</otheraddr>
+        </address>
+      </affiliation>
+    </author>
+  </authorgroup>
+  <revhistory>
+    <revision>
+      <revnumber></revnumber>
+      <date>2001-09-19</date>
+      <authorinitials>ng</authorinitials>
+      <revremark>Initial release</revremark>
+    </revision>
+  </revhistory>
+  <jepinfo>
+    <jepnumber></jepnumber>
+    <jepstatus>Proposed</jepstatus>
+    <jeptype>JIG Formation</jeptype>
+    <jigs>
+      <primaryjig>None</primaryjig>
+      <secondaryjigs>None</secondaryjigs>
+    </jigs>
+  </jepinfo>
+</artheader>
+<section>
+<title>Introduction</title>
+<para>In collaborative work, the ability to draw (for example design sketches, UML schemas, house architectures, organisational plans) is essential, as exemplified by the real-world whiteboard and applications like Microsoft NetMeeting. Whiteboarding can also be used for entertainment purposes such as games and quizzes.</para>
+<para>Therefore, a good protocol for whiteboarding in Jabber would be very valuable. There is today a protocol draft for sending streaming XPM over Jabber<footnote id="xpm">XPM over Jabber (http://docs.jabber.org/draft-proto/html/sxpm.html)</footnote>. XPM is a bitmap format, which makes it great for some applications (smaller drawings, sketches). But big changes in the image will require sending large amounts of XML data (even with the compressions in the protocol draft). Also, for example, XPM does not scale without loss of resolution or support metadata.</para>
+<para>And, the current draft only specifics the data format, not the way the data will be sent or handled by the Jabber server or client.</para>
+<para>Therefore, the Whiteboard JIG should develop a standard way of handling whiteboards in Jabber and a format for data transfer. This might be based on vector graphics, bitmap data or a combination of both.</para>
+<para>The protocol should work for both regular messaging and conferencing. The protocol for whiteboarding during conferencing might depend on the new protocol proposal to come from the Conferencing JIG <footnote>Conferencing protocol draft (http://jabber.org/?oid=1538)</footnote>.</para>
+</section>
+<section>
+<title>Deliverables</title>
+<para>The JIG should develop the following deliverables:</para>
+<section>
+<title>Requirements</title>
+<para>A set of requirements that the proposed protocol should fulfill.</para>
+</section>
+<section>
+<title>Analysis of existing work</title>
+<para>There are today at least four different attempts<footnote>SVG over Jabber (http://www.protocol7.com/jabber/)</footnote><footnote>Distributed SVG documents (http://www.jabber.org/?oid=1025)</footnote><footnote>JabberZilla Whiteboard (http://jabberzilla.mozdev.org)</footnote><footnoteref linkend="xpm"/> to create a whiteboard protocol in Jabber. This JIG should evaluate them all and see what is worth keeping.</para>
+</section>
+<section>
+<title>Graphic data format</title>
+<para>One or more data formats for the graphic data presented as a description and a DTD.</para>
+</section>
+<section>
+<title>Jabber protocol</title>
+<para>The actual protocol for how the graphics data is sent over Jabber. This will also include an analysis of any changes needed to the Jabber server.</para>
+</section>
+<para>These deliverables will be presented to the Jabber Software Foundation Council as a JEP.</para>
+</section>
+</article>

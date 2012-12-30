@@ -1,0 +1,29 @@
+
+.entry h3, h4 {
+  display: block;
+}
+
+.entry h3 {
+   font-size: 1.4em;
+}
+
+.note {
+    border-style: solid; 
+    border-width: 1px; 
+    border-color: #F0C000; 
+    background-color: #FFFFCE; 
+    text-align:left; 
+    margin: 5px; 
+    padding: 8px;
+    padding-left: 35px;
+    background-image:url('/images/famfam/icon_component.gif');
+    background-repeat: no-repeat;
+    background-position: 10px 10px; 
+}
+
+.post-logo {
+  float:right;
+  padding-left:25px;
+  padding-bottom:25px;
+
+}

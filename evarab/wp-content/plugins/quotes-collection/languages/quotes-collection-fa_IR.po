@@ -1,0 +1,237 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Quotes Collection 1.1.2\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/quotes-collection\n"
+"POT-Creation-Date: 2008-05-24 14:49+0530\n"
+"PO-Revision-Date: 2009-04-09 10:47+0330\n"
+"Last-Translator: Ehsan SH <mastaaneh@gmail.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Poedit-Language: Persian\n"
+"X-Poedit-Country: IRAN, ISLAMIC REPUBLIC OF\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-KeywordsList: __;_e;__ngettext:1,2;_c;__ngettext_noop:1,2\n"
+
+#: quotes-collection.php:60
+#: quotes-collection.php:96
+#: quotes-collection.php:100
+msgid "Next quote"
+msgstr "جمله بعدی"
+
+#: quotes-collection.php:61
+msgid "Loading..."
+msgstr "در حال بارگذاری ..."
+
+#: quotes-collection.php:62
+msgid "Error getting quote"
+msgstr "اشکال در دریافت جمله"
+
+#: quotes-collection.php:120
+#: quotes-collection.php:137
+msgid "Random Quote"
+msgstr "عبارت تصادفی"
+
+#: quotes-collection.php:164
+msgid "Title"
+msgstr "عنوان"
+
+#: quotes-collection.php:165
+msgid "Show author?"
+msgstr "نام نویسنده نمایش داده شود؟"
+
+#: quotes-collection.php:166
+msgid "Show source?"
+msgstr "نام منبع نمایش داده شود؟"
+
+#: quotes-collection.php:167
+msgid "Ajax refresh feature"
+msgstr "امکان بارگذاری مجدد عبارت توسط آژاکس"
+
+#: quotes-collection.php:169
+msgid "Manage your collection of quotes at"
+msgstr "مدیریت عبارات شما در"
+
+#: quotes-collection.php:169
+msgid "Manage"
+msgstr "مدیریت"
+
+#: quotes-collection.php:186
+msgid "Nothing added to the database."
+msgstr "چیزی به پایگاه داده اضافه نشد."
+
+#: quotes-collection.php:190
+#: quotes-collection.php:228
+msgid "Database table not found"
+msgstr "جدول پایگاه داده یافت نشد."
+
+#: quotes-collection.php:215
+#: quotes-collection.php:258
+#: quotes-collection.php:272
+msgid "There was an error in the MySQL query"
+msgstr "اشکالی در MySQL query موجود است."
+
+#: quotes-collection.php:217
+msgid "Quote added"
+msgstr "عبارت اضافه شد."
+
+#: quotes-collection.php:223
+msgid "Quote not updated."
+msgstr "عبارت به روز نشد."
+
+#: quotes-collection.php:260
+msgid "Changes saved"
+msgstr "تغییرات ذخیره شد."
+
+#: quotes-collection.php:274
+msgid "Quote deleted"
+msgstr "عبارت پاک شد."
+
+#: quotes-collection.php:276
+msgid "The quote cannot be deleted"
+msgstr "عبارت نمی‌تواند پاک شود."
+
+#: quotes-collection.php:292
+#: quotes-collection.php:385
+msgid "Add Quote"
+msgstr "اضافه کن"
+
+#: quotes-collection.php:308
+#: quotes-collection.php:389
+msgid "Save changes"
+msgstr "ذخیره تغییرات"
+
+#: quotes-collection.php:309
+msgid "Back"
+msgstr "بازگشت"
+
+#: quotes-collection.php:313
+#: quotes-collection.php:491
+msgid "The quote"
+msgstr "عبارت"
+
+#: quotes-collection.php:314
+#: quotes-collection.php:477
+#: quotes-collection.php:493
+msgid "Author"
+msgstr "نویسنده"
+
+#: quotes-collection.php:315
+#: quotes-collection.php:478
+#: quotes-collection.php:493
+msgid "Source"
+msgstr "منبع"
+
+#: quotes-collection.php:316
+#: quotes-collection.php:495
+msgid "Tags"
+msgstr "برچسب"
+
+#: quotes-collection.php:317
+#: quotes-collection.php:496
+msgid "Visible?"
+msgstr "نمایان"
+
+#: quotes-collection.php:318
+msgid "optional"
+msgstr "انتخابی"
+
+#: quotes-collection.php:319
+msgid "comma separated"
+msgstr "توسط کاما جدا شود"
+
+#: quotes-collection.php:355
+#: quotes-collection.php:368
+msgid "Nothing done!"
+msgstr "چیزی انجام نشد!"
+
+#: quotes-collection.php:362
+#, php-format
+msgid "Visibility status of selected quotes set to '%s'"
+msgstr "تغییر حالت نمایش عبارت انتخاب شده به '%s'"
+
+#: quotes-collection.php:373
+msgid "Quote(s) deleted"
+msgstr "عبارت(ها) پاک شد."
+
+#: quotes-collection.php:394
+msgid "Edit quote"
+msgstr "ویرایش عبارت"
+
+#: quotes-collection.php:404
+#: quotes-collection.php:455
+#: quotes-collection.php:469
+#: quotes-collection.php:505
+msgid "Delete"
+msgstr "پاک کردن"
+
+#: quotes-collection.php:406
+#: quotes-collection.php:470
+#: quotes-collection.php:506
+msgid "Make visible"
+msgstr "قابل روئیت شود"
+
+#: quotes-collection.php:409
+#: quotes-collection.php:471
+#: quotes-collection.php:507
+msgid "Make invisible"
+msgstr "مخفی شود"
+
+#: quotes-collection.php:454
+msgid "Edit"
+msgstr "ویرایش"
+
+#: quotes-collection.php:455
+msgid "Are you sure you want to delete this quote?"
+msgstr "آیا برای پاک کردن این عبارت مطمئن هستید؟"
+
+#: quotes-collection.php:462
+#, php-format
+msgid "Currently, you have %d quote."
+msgid_plural "Currently, you have %d quotes."
+msgstr[0] "تا کنون %d عبارت نوشته شده است."
+msgstr[1] "تا کنون %d عبارت نوشته شده است."
+
+#: quotes-collection.php:464
+#: quotes-collection.php:521
+msgid "Add new quote"
+msgstr "عبارت جدیدی اضافه نمایید."
+
+#: quotes-collection.php:473
+msgid "Sort by: "
+msgstr "مرتب کردن بر اساس:"
+
+#: quotes-collection.php:475
+#: quotes-collection.php:476
+msgid "Quote"
+msgstr "عبارت"
+
+#: quotes-collection.php:479
+msgid "Date added"
+msgstr "زمان اضافه شدن"
+
+#: quotes-collection.php:480
+msgid "Date updated"
+msgstr "زمان به روز رسانی"
+
+#: quotes-collection.php:481
+msgid "Visibility"
+msgstr "وضعیت نماش"
+
+#: quotes-collection.php:484
+msgid "Go"
+msgstr "برو"
+
+#: quotes-collection.php:497
+msgid "Action"
+msgstr "فعالیت"
+
+#: quotes-collection.php:515
+msgid "No quotes in the database"
+msgstr "هیچ عبارتی در پایگاه داده موجود نیست."
+
+#~ msgid "from"
+#~ msgstr "aus"
+

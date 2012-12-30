@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+
+<body>
+<script language="javascript" type="text/javascript">
+
+ff.createLayer = function(id, left, top, width, content, parentLayer){
+	if(parentLayer) parentLayer = ff.getObj(parentLayer)
+	else parentLayer = (ff.ns4) ? window : document.body
+	top = top || 0; left = left || 0; width = width || 0; content = content || "&nbsp;swesdsd"
+	if(ff.ie || ff.w3c){
+		if(ff.ie){
+			parentLayer.innerHTML += "<div id='" + id + "' style='position:absolute;'></div>"
+			var curLay = ff.getObj(id)
+		}
+		else if(ff.w3c){
+			var curLay = document.createElement("DIV");
+			curLay.id = id
+			curLay.style.position = "absolute"
+		}
+		curLay.style.left = left + "px"
+		curLay.style.top = top + "px"
+		curLay.style.width = width + "px"
+		curLay.innerHTML = content
+		if(ff.w3c) parentLayer.appendChild(curLay)
+	}
+	else if(ff.ns4){
+		var curLay = new Layer(width, parentLayer)
+		curLay.left = left
+		curLay.top = top
+		curLay.visibility = "show"
+		curLay.document.open()
+		curLay.document.write(content)
+		curLay.document.close()
+		if(parentLayer) parentLayer.document.layers[id] = curLay
+		else document.layers[id] = curLay
+	}
+}
+
+function hhh(){
+	ff.createLayer("lagret", 20, 30, 200, "Det funkade", "maintext1")
+	alert(ff.getY("lagret"))
+}
+
+function getRealName(jsName, objParent){
+	for(k in objParent.document.layers)	if(objParent.document.layers[k].name==jsName) return k
+}
+
+</script>
+
+
+</body>
+</html>

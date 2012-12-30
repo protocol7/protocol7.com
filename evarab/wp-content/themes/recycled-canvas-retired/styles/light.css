@@ -1,0 +1,126 @@
+
+body {
+	color:#444;
+	background: url(images/bg.gif) top left repeat-x #fff;
+}
+
+#header {
+	color: #000;
+}
+
+#page {   padding:10px;
+}
+#header h1 a {
+	color: #000;
+}
+
+#headerimg img {
+	border:1px solid #ccc; 
+}
+#menu a {
+	color:#000;
+}
+
+#menu .current_page_item a {background:#000; color:#fff;}
+
+#search-input {
+border:1px solid #ccc;
+}
+#postloop { background:url(images/fold.png) left 10px no-repeat; }
+
+
+#sidebar h4 {
+	
+}
+#sidebar ul li {
+	color:#ccc;
+}
+#sidebar h4 span {
+	
+}
+#singlepost {
+	background:url(images/fold.png) center 10px no-repeat;
+}
+#singlepost h3 a {
+	color:#000;
+}
+
+
+.commentlist li {
+	background: url(images/comment.png) 10px 5px no-repeat;
+}
+#respond textarea {
+border:1px solid #ccc;
+
+}
+#respond input {
+	border:1px solid #ccc;
+	
+}
+
+
+
+.entry blockquote { background:#eee;}
+
+
+a {
+	color:#0060ff;
+	text-decoration:none;
+}
+
+
+/* Box View */
+.box span {
+	border-left:1px solid #ececec;
+	border-right:1px solid #ececec;
+	
+}
+.box h3 a {
+	color:#333;
+}
+.box .extra {
+	color:#999999;
+}
+#callout h3 {
+	border-bottom:1px solid #333;	
+}
+#callout h3 a {
+	color:#000;
+}
+
+#boxlist li h3 a {
+	color:#000;
+}
+
+.blog-post h3 a { color:#000;}
+
+
+#image-callout {
+	background:#eee;
+	border:1px solid #000;
+}
+
+#frame {
+	border-bottom:1px solid #999;	
+}
+
+#caption {
+	background:#000;
+}
+
+#caption a {
+	color:#fff;
+}
+.imagebox {
+	border:1px solid #ccc;
+}
+
+.imagebox h3 a {
+	color:#000000;
+	background:#FFFFFF;
+	border-bottom:1px solid #ccc;
+}
+.imagebox:hover {background:#fff;}
+.imagebox:hover span { color: #000000; background:#fff;}
+
+

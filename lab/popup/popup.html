@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+	<title>Untitled</title>
+</head>
+
+<body>
+
+
+<script language="javascript" type="text/javascript">
+function ff_popUp(strURL,w,h,blnCentered,strOptions){
+	var name="popup"+parseInt(Math.random()*100)
+	if(strOptions) strOptions+=","
+	else var strOptions=""
+	if(blnCentered){
+		var x = (screen.width - w) / 2
+		x = (x<0) ? 0 : x
+		var y = (screen.height - h) / 2
+		y = (y<0) ? 0 : y
+		strOptions+="left=" + x + ",top=" + y+ ","
+	}
+	if(w) strOptions+="width="+w + ","
+	if(h) strOptions+="height="+h + ","
+	if(strOptions.substr(strOptions.length-1)==",") strOptions = strOptions.substr(0,strOptions.length-1)
+	var win=window.open(strURL,name,strOptions);
+	if(strURL.indexOf("http://")==-1 || strURL.indexOf(document.location.hostname)>-1) win.focus();
+	return win
+}
+
+
+ff_popUp("popen.html",300,300)
+
+
+window.showModalDialog("popen.html",window,"status:false;dialogWidth:300px;dialogHeight:300px");
+//showModelessDialog("popen.html",300,300)
+
+
+
+</script>
+
+
+</body>
+</html>

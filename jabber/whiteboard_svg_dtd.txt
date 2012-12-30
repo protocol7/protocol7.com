@@ -1,0 +1,129 @@
+<!ELEMENT svg (desc|text|rect|ellipse|line|polyline|polygon|use|g|defs|image)* >
+<!ATTLIST svg
+  width CDATA #IMPLIED
+  height CDATA #IMPLIED >
+
+<!ELEMENT image EMPTY>
+<!ATTLIST image
+  id CDATA #REQUIRED
+  xlink:href CDATA #REQUIRED
+  transform CDATA #IMPLIED
+  x CDATA #REQUIRED
+  y CDATA #REQUIRED
+  width CDATA #IMPLIED
+  height CDATA #IMPLIED >
+
+  
+<!ELEMENT use EMPTY>
+<!ATTLIST use
+  id CDATA #REQUIRED
+  xlink:href CDATA #REQUIRED
+  transform CDATA #IMPLIED
+  x CDATA #REQUIRED
+  y CDATA #REQUIRED
+  width CDATA #IMPLIED
+  height CDATA #IMPLIED >
+
+<!ELEMENT defs (desc|text|rect|ellipse|line|polyline|polygon|use|g)* >
+<!ATTLIST defs
+  id CDATA #REQUIRED >
+  
+<!ELEMENT g (desc|text|rect|ellipse|line|polyline|polygon|use|g)* >
+<!ATTLIST g
+  id CDATA #REQUIRED
+  transform CDATA #IMPLIED >
+  
+<!ELEMENT desc (#PCDATA)* >
+<!ATTLIST desc
+  id CDATA #REQUIRED >
+
+<!ELEMENT rect EMPTY>
+<!ATTLIST rect
+  id CDATA #REQUIRED
+  fill CDATA #IMPLIED
+  fill-opacity CDATA #IMPLIED
+  stroke CDATA #IMPLIED
+  stroke-width CDATA #IMPLIED
+  stroke-dasharray CDATA #IMPLIED
+  stroke-opacity CDATA #IMPLIED
+  transform CDATA #IMPLIED
+  x CDATA #REQUIRED
+  y CDATA #REQUIRED
+  width CDATA #REQUIRED
+  height CDATA #REQUIRED
+  rx CDATA #IMPLIED
+  ry CDATA #IMPLIED >
+  
+<!ELEMENT line EMPTY>
+<!ATTLIST line
+  id CDATA #REQUIRED
+  stroke CDATA #IMPLIED
+  stroke-width CDATA #IMPLIED
+  stroke-dasharray CDATA #IMPLIED
+  stroke-opacity CDATA #IMPLIED
+  transform CDATA #IMPLIED
+  x1 CDATA #REQUIRED
+  y1 CDATA #REQUIRED
+  x2 CDATA #REQUIRED
+  y2 CDATA #REQUIRED >
+
+<!ELEMENT ellipse EMPTY>
+<!ATTLIST ellipse
+  id CDATA #REQUIRED
+  fill CDATA #IMPLIED
+  fill-opacity CDATA #IMPLIED
+  stroke CDATA #IMPLIED
+  stroke-width CDATA #IMPLIED
+  stroke-dasharray CDATA #IMPLIED
+  stroke-opacity CDATA #IMPLIED
+  transform CDATA #IMPLIED
+  cx CDATA #REQUIRED
+  cy CDATA #REQUIRED
+  rx CDATA #REQUIRED
+  ry CDATA #REQUIRED >
+  
+<!ELEMENT polyline EMPTY>
+<!ATTLIST polyline
+  id CDATA #REQUIRED
+  stroke CDATA #IMPLIED
+  stroke-width CDATA #IMPLIED
+  stroke-dasharray CDATA #IMPLIED
+  stroke-opacity CDATA #IMPLIED
+  transform CDATA #IMPLIED
+  points CDATA #REQUIRED >
+  
+<!ELEMENT polygon EMPTY>
+<!ATTLIST polygon
+  id CDATA #REQUIRED
+  fill CDATA #IMPLIED
+  fill-opacity CDATA #IMPLIED
+  stroke CDATA #IMPLIED
+  stroke-width CDATA #IMPLIED
+  stroke-dasharray CDATA #IMPLIED
+  stroke-opacity CDATA #IMPLIED
+  transform CDATA #IMPLIED
+  points CDATA #REQUIRED >
+  
+<!ELEMENT text (tspan | #PCDATA)*>
+<!ATTLIST text
+  id CDATA #REQUIRED
+  fill CDATA #IMPLIED
+  fill-opacity CDATA #IMPLIED
+  transform CDATA #IMPLIED
+  x CDATA #REQUIRED
+  y CDATA #REQUIRED 
+  font-family CDATA #IMPLIED
+  font-size CDATA #IMPLIED
+  font-style (normal | italic) #IMPLIED
+  font-weight (normal | bold) #IMPLIED >
+
+<!ELEMENT tspan (tspan | #PCDATA)*>
+<!ATTLIST tspan
+  id CDATA #REQUIRED
+  fill CDATA #IMPLIED
+  fill-opacity CDATA #IMPLIED
+  font-family CDATA #IMPLIED
+  font-size CDATA #IMPLIED
+  font-style (normal | italic) #IMPLIED
+  font-weight (normal | bold) #IMPLIED >
+  

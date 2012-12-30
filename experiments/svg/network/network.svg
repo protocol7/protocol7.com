@@ -1,0 +1,168 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/2000/svg">
+<svg xmlns:a3="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" a3:scriptImplementation="Adobe" onload="_onload()"> 
+<style type="text/css">
+
+circle{
+	stroke: #C37700;
+	stroke-width:3px;
+	fill: none;
+}
+line{
+	fill: none;
+	stroke: #E08900;
+	stroke-width:2px;
+}
+</style>
+
+<script>
+	<![CDATA[
+		
+		conns = []
+		function Connection(parent1, parent2){
+			this.parent1 = parent1
+			this.parent2 = parent2
+			this.strength = 100
+
+			this.rndID = "conn" + Math.round(Math.random()*1000000)
+			conns[this.rndID] = this
+			this.parent1.conns[this.rndID] = this
+			this.parent2.conns[this.rndID] = this
+			
+			this.line = null
+			
+			this.draw = function(){
+				if(!this.line) var e = document.createElement("line")
+				else var e = this.line
+				e.setAttribute("x1", this.parent1.getAttribute("cx"))
+				e.setAttribute("y1", this.parent1.getAttribute("cy"))
+				e.setAttribute("x2", this.parent2.getAttribute("cx"))
+				e.setAttribute("y2", this.parent2.getAttribute("cy"))
+				if(!this.line){
+					e.setAttribute("fill", "none")
+					e.setAttribute("stroke", "black")
+					e.setAttribute("stroke-width", "1px")
+					this.line = linesGroup.appendChild(e)
+				}
+				this.line.setAttribute("stroke-opacity", this.strength/100)
+			}
+				
+			this.update = function(){
+				if(this.strength>0){
+					this.strength--
+					//this.draw()
+					setTimeout("conns['" + this.rndID + "'].update()", 50)
+				}
+				else{
+					conns[this.rndID] = null
+					this.parent1.conns[this.rndID] = null
+					this.parent2.conns[this.rndID] = null
+					if(this.line) linesGroup.removeChild(this.line)
+				}
+			}
+			this.update()
+		}
+		
+		var linesGroup
+		var balls = []
+		function _onload(){
+			linesGroup = document.getElementById("lines")
+			var e = document.getElementById("ball1")
+			while(e){
+				e.orgcx = Number(e.getAttribute("cx"))
+				e.orgcy = Number(e.getAttribute("cy"))
+				e.curcx = Number(e.getAttribute("cx"))
+				e.curcy = Number(e.getAttribute("cy"))
+				e.conns = []
+				balls.push(e)
+								
+				var e = document.getElementById("ball" + (balls.length + 1))
+			}
+			
+			setInterval("update()", 100)
+		}
+
+		function update(){
+			generateConns()
+			
+			for(var i = 0; i<balls.length; i++){
+				var e = balls[i]
+				var sumx = e.curcx
+				var sumy = e.curcy
+				var count = 1
+
+				for(var c in e.conns){
+					if(e.conns[c]){
+						var conn = e.conns[c]
+						if(conn.parent1 == e) var e2 = conn.parent2
+						else if(conn.parent2 == e) var e2 = conn.parent1
+						
+						sumx += (e2.orgcx - e.orgcx) * (conn.strength/100) + e.orgcx
+						sumy += (e2.orgcy - e.orgcy) * (conn.strength/100) + e.orgcy
+						count++
+//						conn.draw()	//två gånger
+					}
+				}
+				
+				var avgx = sumx/count
+				var avgy = sumy/count
+				
+				var cx = e.curcx
+				var cy = e.curcy
+				var dx = cx - avgx
+				var dy = cy - avgy
+				dx = dx/10
+				dy = dy/10
+				e.curcx = cx-dx
+				e.curcy = cy-dy
+				e.setAttribute("cx", e.curcx)
+				e.setAttribute("cy", e.curcy)
+				for(var c in e.conns){
+					if(e.conns[c]){
+						e.conns[c].draw()
+					}
+				}				
+			}
+		}
+		
+		function generateConns(){
+			for(var i = 0; i<balls.length; i++){
+				var a = Math.round(Math.random() * 100)
+				var b = Math.round(Math.random() * 100)
+				
+				if(a<balls.length && b<balls.length){
+					var conn = new Connection(balls[a], balls[b])
+					conn.draw()
+				}
+			}
+		}
+	]]>
+</script>
+
+<title>Network v001</title>
+
+<rect x="-1000000" y="-1000000" width="10000000%" height="10000000%" fill="#FF9C00" />
+
+<g id="lines">
+
+</g>
+
+<circle id="ball1" cx="100" cy="100" r="10" stroke="#222" />
+<circle id="ball2" cx="200" cy="100" r="10" fill="white" stroke="#222" />
+<circle id="ball3" cx="150" cy="150" r="10" fill="white" stroke="#222" />
+<circle id="ball4" cx="350" cy="250" r="10" fill="white" stroke="#222" />
+<circle id="ball5" cx="450" cy="50" r="10" fill="white" stroke="#222" />
+<circle id="ball6" cx="100" cy="350" r="10" fill="white" stroke="#222" />
+<circle id="ball7" cx="70" cy="150" r="10" fill="white" stroke="#222" />
+<circle id="ball8" cx="50" cy="50" r="10" fill="white" stroke="#222" />
+<circle id="ball9" cx="150" cy="76" r="10" fill="white" stroke="#222" />
+
+<g transform="translate(10,20)">
+	<line x1="-5" y1="-12" x2="-5" y2="18" stroke="#654321" fill="none" />
+	<text x="0" y="0" fill="#654321" font-size="12px">
+		<tspan>A network of transiently</tspan>
+		<tspan x="0" dy="1em">connected nodes.</tspan>
+	</text>
+</g>
+
+</svg>

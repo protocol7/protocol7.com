@@ -1,0 +1,33 @@
+<!-- FILE: jep.dtd -->
+<!-- DESCRIBES: Jabber Enhancement Proposals -->
+<!-- VERSION: 0.2 -->
+<!-- DATE: 2001-09-09 -->
+<!-- AUTHOR: Peter Saint-Andre (stpeter@jabber.org) -->
+<!-- NOTES: You may need to change the path to the DocBook DTD
+            as defined in the entity declaration a few lines 
+            down. E.g. in Red Hat you might need to change 
+            this to something like /usr/lib/sgml/docbook.dtd 
+-->
+
+<!ENTITY % local.bibliocomponent.mix "|JepInfo">
+<!ENTITY % DocBookDTD PUBLIC "-//OASIS//DTD DocBook V3.1//EN" "/usr/share/sgml/docbook/dtd/3.1/docbook.dtd">
+%DocBookDTD;
+
+<!ELEMENT JepInfo - - (JepNumber, JepStatus, JepType, Jigs)>
+<!ATTLIST JepInfo
+                %common.attrib;
+                %revision.role.attrib;
+                %local.revision.attrib;
+>
+
+<!ELEMENT JepNumber - - ((%docinfo.char.mix;)+)>
+<!ELEMENT JepStatus - - ((%docinfo.char.mix;)+)>
+<!ELEMENT JepType - - ((%docinfo.char.mix;)+)>
+<!ELEMENT Jigs - - (PrimaryJig, SecondaryJigs*)>
+<!ATTLIST Jigs
+                %common.attrib;
+                %revision.role.attrib;
+                %local.revision.attrib;
+>
+<!ELEMENT PrimaryJig - - ((%docinfo.char.mix;)+)>
+<!ELEMENT SecondaryJigs - - ((%docinfo.char.mix;)+)>

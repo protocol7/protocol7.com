@@ -1,0 +1,204 @@
+/*  
+Theme Name: Recycled Canvas CC-BY-ND
+Theme URI: http://www.creativesynthesis.net/blog/projects/recycled-research/recycled-canvas/
+Description: CC-BY-ND Version of Recycled Canvas
+Version: 1.0
+Author: Creative Synthesis Collaborative
+Author URI: http://www.creativesynthesis.net/
+*/
+
+* {margin:0; padding:0;}
+
+
+body {
+	margin:0;
+	padding:0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	line-height:1.2;
+	
+}
+#page {
+	margin: 0 auto;
+	padding:5px;
+	width:960px;
+}
+#header {
+	margin-top:20px;
+	height:80px;
+	
+}
+#header h1 {
+	float:left;
+}
+#header h1 a {
+	font-size:30px;
+	text-decoration:none;	
+}
+#header span {
+	font-size:14px;
+	font-weight:normal;
+	display:inline;
+}
+#headerimg img {
+	width:960px; height:100px; 
+	margin-top:-20px;
+}
+#menu {
+float:right;
+margin-top:15px;	
+}
+#menu a {
+	text-decoration:none;
+	padding:2px;
+}
+#menu ul {}
+#menu li {
+	list-style:none;
+	margin-left:10px;
+	float:left;
+}
+#search-input {
+	width:150px;
+}
+
+#content {
+	padding-bottom:10px;
+}
+
+#sidebar {
+	width:175px;
+	padding:10px;
+	margin-top:30px;
+	float:right;
+	font-size:small;
+}
+#sidebar h1 {
+	height:25px; overflow:hidden; 
+margin-left:-5px; padding:0; margin-bottom:10px;
+}
+#sidebar h1 span {
+	font-size:30px; height:10px;
+}
+#sidebar h4 {
+	font-size:16px;
+}
+#sidebar p {
+	margin-bottom:15px;
+}
+#sidebar ul {
+	list-style:square;
+	margin-left:15px;
+	margin-bottom:15px;
+}
+
+/* Weird Widgets */
+#sidebar #calendar_wrap {
+	margin-bottom:15px;
+}
+
+#sidebar .linkcat {
+	list-style:none;
+}
+/* ---- */
+#sidebar ul li ul {
+	margin-bottom:0;
+}
+#sidebar a{
+	font-weight:normal;
+}
+#boxlist {
+	width:747px;
+	
+	padding-top:20px;
+}
+h3.archive {
+	font-size:22px;
+	margin-bottom:15px;
+	padding:5px;
+}
+#singlepost {
+	width:747px;
+	padding-top:20px;
+}
+
+#comments {
+	margin-top:30px;
+}
+#comments h4 {
+	font-size:16px;
+}
+.commentlist {
+	list-style:none;
+	font-size:14px;
+	margin-left:10px;
+	margin-top:10px;
+}
+.commentlist li {
+	padding:5px 10px 5px 60px;
+}
+.commentlist li .commentmeta { font-size:12px; display:block; margin-top:5px; margin-left:2px;}
+
+
+
+#respond {
+	margin-top:20px;
+}
+#respond textarea {
+	width:725px;
+	margin-top:5px;
+	padding:5px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.clear {
+	clear:both;
+}
+
+#footer {
+	margin-top:20px;
+	text-align:right;
+	font-size:x-small;
+}
+
+.navigation {margin:20px 0 20px 0; width:735px; font-size:14px; display:block; }
+
+.post {padding:5px;}
+.post h3 a { text-decoration:none; font-size:28px;}
+.entry { margin-top:10px; font-size:small;}
+.entry a img {border:0;}
+.entry ul li {margin-bottom:5px;}
+p img {
+	padding: 0;
+	max-width: 735px;
+}
+.alignleft {float:left;}
+.alignright {float:right;}
+/* Post formatting styles */
+.entry p {margin-bottom:15px;}
+.entry blockquote { padding:5px; margin-bottom:15px;}
+.entry blockquote p { margin:0;}
+.entry ol {padding-left:50px; padding-bottom:15px;}
+.entry ul {padding-left:50px; padding-bottom:15px;}
+
+a {
+	font-weight:bold;
+	text-decoration:none;
+}
+
+a:hover {
+	text-decoration:underline;
+}
+
+#printspecial {
+	display:none;
+}
+
+.post h3 span {
+	display:inline;
+	font-size:14px;
+	margin-left:5px;
+	
+}
+
+#archivepage ul li {
+	float:left;
+}

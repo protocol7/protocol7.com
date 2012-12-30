@@ -1,0 +1,154 @@
+%PDF-1.4
+1 0 obj
+<< 
+   /Type /Catalog 
+   /Outlines 2 0 R
+   /Pages 3 0 R 
+   /Names 8 0 R 
+>> 
+endobj
+2 0 obj
+<< /Type /Outlines
+   /Count 0
+>>
+endobj
+3 0 obj
+<< /Type /Pages
+   /Kids [4 0 R]
+   /Count 1
+>>
+endobj
+4 0 obj
+<< /Type /Page
+   /Parent 3 0 R
+   /MediaBox [0 0 612 792]
+   /Contents 5 0 R
+   /Resources << /ProcSet 6 0 R
+                 /Font << /F1 7 0 R >>
+              >>
+>>
+endobj
+5 0 obj
+<< /Length 77 >>
+stream
+    BT
+        /F1 48 Tf
+        36 720 Td
+        (SVG in a PDF) Tj
+    ET
+endstream
+endobj
+6 0 obj
+    [/PDF /Text]
+endobj
+7 0 obj
+<<  /Type /Font
+    /Subtype /Type1
+    /Name /F1
+    /BaseFont /Helvetica
+    /Encoding /MacRomanEncoding
+>>
+endobj
+8 0 obj
+<< 
+    /AlternatePresentations 11 0 R 
+    /JavaScript 9 0 R
+>> 
+endobj
+9 0 obj
+<< 
+    /Names [ (OnLoadJavaScript)<< /S /JavaScript /JS 10 0 R >> ] 
+>>
+endobj
+10 0 obj
+<<  /Length 147 >>
+stream
+if (alternatePresentations['MySVGFile.svg'] != null ) {
+    app.fs.isFullScreen = true;
+    alternatePresentations['MySVGFile.svg'].start(null);
+}
+endstream
+endobj
+11 0 obj
+<< 
+    /Names [ (MySVGFile.svg)12 0 R ] 
+>> 
+endobj
+12 0 obj
+<< 
+    /Type /SlideShow 
+    /Subtype /Embedded 
+    /Resources 13 0 R 
+    /StartResource (MySVGFile.svg)
+>> 
+endobj
+13 0 obj
+<< 
+    /Names [ (MySVGFile.svg)14 0 R ] 
+>> 
+endobj
+14 0 obj
+<< 
+    /Type /FileSpec 
+    /F (MySVGFile.svg)
+    /EF 15 0 R 
+>> 
+endobj
+15 0 obj
+<< 
+    /F 16 0 R 
+>> 
+endobj
+16 0 obj
+<<
+    /Length 728
+    /Type /EmbeddedFile
+    /Subtype /image#2Fsvg+xml
+>>
+stream
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 20010904//EN"
+    "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg xmlns="http://www.w3.org/2000/svg"
+     xmlns:xlink="http://www.w3.org/1999/xlink">
+    <circle cx="50%" cy="50%" r="10%" fill="blue"
+            cursor="url(#leftRight)"/>
+	
+	<cursor id="leftRight" shape-rendering="optimizeSpeed" x="8" y="8" width="16" height="16">
+		<path stroke="black" fill="white" d="M0.5 8.5l5-5v3h5v-3l5 5l-5 5v-3h-5v3z">
+			<animateColor attributeName="fill" attributeType="CSS"
+           			values="white;black;white"
+           			begin="0s" dur="1s" repeatDur="indefinite" />
+		</path>
+	</cursor>
+</svg>
+
+endstream
+
+endobj
+xref
+0 16
+0000000000 65535 f 
+0000000009 00000 n 
+0000000104 00000 n 
+0000000153 00000 n 
+0000000216 00000 n 
+0000000400 00000 n 
+0000000526 00000 n 
+0000000558 00000 n 
+0000000683 00000 n 
+0000000764 00000 n 
+0000000852 00000 n 
+0000001052 00000 n 
+0000001114 00000 n 
+0000001242 00000 n 
+0000001304 00000 n 
+0000001388 00000 n 
+0000001427 00000 n 
+trailer
+<< /Size 17
+   /Root 1 0 R
+>>
+startxref
+2663
+%%EOF
